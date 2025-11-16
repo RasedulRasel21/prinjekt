@@ -1,0 +1,166 @@
+{% comment %}
+  Experiences / Text Columns Section
+  Screenshot-style: Left big heading, right multi-paragraph copy
+{% endcomment %}
+
+{{ 'section-experiences.css' | asset_url | stylesheet_tag }}
+
+<section
+  id="xp-{{ section.id }}"
+  class="xp-section"
+  style="
+    --xp-bg: {{ section.settings.bg_color }};
+    --xp-text: {{ section.settings.text_color }};
+    --xp-heading: {{ section.settings.heading_color }};
+    --xp-max: {{ section.settings.max_width }}px;
+    --xp-pad: {{ section.settings.side_padding }}px;
+    --xp-gap: {{ section.settings.col_gap }}rem;
+    --xp-vpad-top: {{ section.settings.padding_top }}px;
+    --xp-vpad-bottom: {{ section.settings.padding_bottom }}px;
+  "
+>
+  <div class="xp-wrap">
+    <div class="xp-grid">
+      <div class="xp-left">
+        {% case section.settings.heading_tag %}
+          {% when 'h1' %}
+            <h1 class="xp-title">{{ section.settings.heading }}</h1>
+          {% when 'h2' %}
+            <h2 class="xp-title">{{ section.settings.heading }}</h2>
+          {% when 'h3' %}
+            <h3 class="xp-title">{{ section.settings.heading }}</h3>
+        {% endcase %}
+      </div>
+
+      <div class="xp-right">
+        {% for block in section.blocks %}
+          {% case block.type %}
+            {% when 'rich' %}
+              <div class="xp-paragraph" {{ block.shopify_attributes }}>
+                {{ block.settings.text }}
+              </div>
+          {% endcase %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Experiences",
+  "tag": "section",
+  "class": "xp-experiences",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Erfahrungen"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "label": "Heading level",
+      "default": "h1",
+      "options": [
+        { "value": "h1", "label": "H1" },
+        { "value": "h2", "label": "H2" },
+        { "value": "h3", "label": "H3" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Content max width",
+      "min": 900,
+      "max": 1600,
+      "step": 10,
+      "unit": "px",
+      "default": 1280
+    },
+    {
+      "type": "range",
+      "id": "side_padding",
+      "label": "Side padding",
+      "min": 0,
+      "max": 80,
+      "step": 2,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "col_gap",
+      "label": "Column gap (desktop)",
+      "min": 1,
+      "max": 6,
+      "step": 0.5,
+      "unit": "rem",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Section padding top",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Section padding bottom",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 60
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background",
+      "default": "#eeeeee"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Body text color",
+      "default": "#333333"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#0a0a0a"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "rich",
+      "name": "Paragraph",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "Text",
+          "default": "<p>Seit den Anfängen des 3D-Drucks bis zu den heutigen, hochmodernen Technologien sind wir stolz darauf, Teil dieser faszinierenden Entwicklung gewesen zu sein. Angefangen bei frühesten privaten 3D-Druckern über maßgeschneiderte Lösungen für Unternehmen bis hin zu den heutigen benutzerfreundlichen Geräten und sogar Metall-3D-Druckern – wir haben diese Entwicklung aktiv mitgestaltet und unsere Expertise kontinuierlich ausgebaut.</p>"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Experiences",
+      "blocks": [
+        { "type": "rich" },
+        { "type": "rich" },
+        { "type": "rich" }
+      ]
+    }
+  ]
+}
+{% endschema %}

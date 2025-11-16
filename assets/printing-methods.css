@@ -1,0 +1,193 @@
+/* 3D Printing Methods Section Styles */
+
+.printing-methods-section {
+  background-color: #ebebeb;
+  padding: 80px 20px;
+}
+
+.printing-methods-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.printing-methods-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  align-items: start;
+}
+
+/* Left Side Styles */
+.printing-methods-left {
+  padding-right: 40px;
+}
+
+.printing-methods-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #111111;
+  margin: 0 0 30px 0;
+  font-family: "Stara", sans-serif !important;
+}
+
+.printing-methods-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #111111;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Right Side - Cards */
+.printing-methods-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.printing-method-card {
+  background: linear-gradient(to right, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  border-radius: 10px;
+  padding: 35px 40px;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 2px solid #c7c7c7;
+  position: relative;
+  overflow: hidden;
+}
+
+.printing-method-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 0;
+}
+
+.printing-method-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.printing-method-card:hover::before {
+  opacity: 1;
+}
+
+.card-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #FF9900;
+  margin: 0 0 15px 0;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  font-family: "Stara", sans-serif !important;
+}
+
+.printing-method-card:hover .card-title {
+  color:rgb(224, 105, 0);
+}
+
+.card-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #111111;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+  .printing-methods-section {
+    padding: 60px 20px;
+  }
+
+  .printing-methods-content {
+    gap: 40px;
+  }
+
+  .printing-methods-title {
+    font-size: 42px;
+  }
+
+  .printing-methods-left {
+    padding-right: 20px;
+  }
+
+  .printing-method-card {
+    padding: 30px 35px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .printing-methods-section {
+    padding: 50px 15px;
+  }
+
+  .printing-methods-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .printing-methods-left {
+    padding-right: 0;
+  }
+
+  .printing-methods-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .printing-methods-description {
+    font-size: 15px;
+  }
+
+  .printing-method-card {
+    padding: 25px 30px;
+  }
+
+  .card-title {
+    font-size: 22px;
+    margin-bottom: 12px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .printing-methods-section {
+    padding: 40px 15px;
+  }
+
+  .printing-methods-title {
+    font-size: 28px;
+  }
+
+  .printing-method-card {
+    padding: 20px 25px;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .printing-method-card:hover {
+    transform: translateY(-5px);
+  }
+}

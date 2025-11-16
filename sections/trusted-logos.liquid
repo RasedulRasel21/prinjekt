@@ -1,0 +1,204 @@
+{% comment %}
+  Trusted Logos – left heading + right continuous slider
+  Save as: sections/trusted-logos.liquid
+{% endcomment %}
+
+{{ 'trusted-logos.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="trusted-logos-section {% if section.settings.grayscale %}is-grayscale{% endif %}"
+  aria-label="{{ section.settings.heading | escape | default: 'Trusted by' }}"
+  style="
+    --tl-gap: {{ section.settings.logo_gap }}px;
+    --tl-height: {{ section.settings.logo_max_height }}px;
+    --tl-opacity: {{ section.settings.logo_opacity | divided_by: 100.0 }};
+    --tl-speed: {{ section.settings.speed }}s;
+    --tl-head-gap: {{ section.settings.heading_gap }}px;
+
+    /* NEW: dynamic width controls */
+    --tl-item-min: {{ section.settings.logo_min_width }}px;
+    --tl-item-max: {{ section.settings.logo_max_width }}px;
+
+    /* NEW: optional mobile overrides */
+    --tl-item-min-mobile: {{ section.settings.logo_min_width_mobile }}px;
+    --tl-item-max-mobile: {{ section.settings.logo_max_width_mobile }}px;
+  "
+>
+  <div class="trusted-logos-inner page-width">
+    <div class="trusted-logos-heading">
+      <h2 class="trusted-logos-title">
+        {{ section.settings.heading | default: 'Trusted by' }}
+      </h2>
+    </div>
+
+    <div class="trusted-logos-viewport" aria-hidden="true">
+      {% if section.blocks.size > 0 %}
+        <!-- Track 1 -->
+        <div class="trusted-logos-track">
+          {% for block in section.blocks %}
+            {% if block.settings.logo != blank %}
+              <a
+                {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %}
+                class="trusted-logos-item"
+                target="{{ section.settings.link_target }}"
+                rel="noopener"
+                {{ block.shopify_attributes }}
+              >
+                <img
+                  src="{{ block.settings.logo | image_url: width: 480 }}"
+                  srcset="
+                    {{ block.settings.logo | image_url: width: 240 }} 240w,
+                    {{ block.settings.logo | image_url: width: 360 }} 360w,
+                    {{ block.settings.logo | image_url: width: 480 }} 480w
+                  "
+                  sizes="(max-width: 768px) 140px, 200px"
+                  alt="{{ block.settings.alt | default: block.settings.logo.alt | escape }}"
+                  loading="lazy"
+                  class="trusted-logos-img"
+                >
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+
+        <!-- Track 2 (clone) -->
+        <div class="trusted-logos-track trusted-logos-track--clone">
+          {% for block in section.blocks %}
+            {% if block.settings.logo != blank %}
+              <a
+                {% if block.settings.link != blank %}href="{{ block.settings.link }}"{% endif %}
+                class="trusted-logos-item"
+                target="{{ section.settings.link_target }}"
+                rel="noopener"
+              >
+                <img
+                  src="{{ block.settings.logo | image_url: width: 480 }}"
+                  srcset="
+                    {{ block.settings.logo | image_url: width: 240 }} 240w,
+                    {{ block.settings.logo | image_url: width: 360 }} 360w,
+                    {{ block.settings.logo | image_url: width: 480 }} 480w
+                  "
+                  sizes="(max-width: 768px) 140px, 200px"
+                  alt="{{ block.settings.alt | default: block.settings.logo.alt | escape }}"
+                  loading="lazy"
+                  class="trusted-logos-img"
+                >
+              </a>
+            {% endif %}
+          {% endfor %}
+        </div>
+      {% else %}
+        <p class="trusted-logos-empty">Add at least one logo block.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <style>
+    /* Per-instance animation speed */
+    #shopify-section-{{ section.id }} .trusted-logos-track {
+      animation-duration: var(--tl-speed);
+    }
+  </style>
+</section>
+
+{% schema %}
+{
+  "name": "Trusted logos slider",
+  "tag": "section",
+  "class": "section--trusted-logos",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Trusted by" },
+    {
+      "type": "range", "id": "heading_gap", "label": "Space between heading and slider",
+      "min": 8, "max": 60, "step": 2, "unit": "px", "default": 20
+    },
+    {
+      "type": "range", "id": "speed", "label": "Scroll speed (lower = faster)",
+      "min": 10, "max": 80, "step": 2, "unit": "s", "default": 36
+    },
+    {
+      "type": "range", "id": "logo_max_height", "label": "Logo max height",
+      "min": 24, "max": 120, "step": 2, "unit": "px", "default": 44
+    },
+    {
+      "type": "range", "id": "logo_opacity", "label": "Logo opacity",
+      "min": 20, "max": 100, "step": 5, "unit": "%", "default": 55
+    },
+    {
+      "type": "range", "id": "logo_gap", "label": "Gap between logos",
+      "min": 8, "max": 60, "step": 2, "unit": "px", "default": 28
+    },
+
+    /* NEW: dynamic width controls */
+    {
+      "type": "range",
+      "id": "logo_min_width",
+      "label": "Logo min width",
+      "min": 60,
+      "max": 240,
+      "step": 4,
+      "unit": "px",
+      "default": 120
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width",
+      "label": "Logo max width",
+      "min": 120,
+      "max": 360,
+      "step": 4,
+      "unit": "px",
+      "default": 200
+    },
+
+    /* NEW: optional mobile overrides */
+    {
+      "type": "range",
+      "id": "logo_min_width_mobile",
+      "label": "Logo min width (mobile)",
+      "min": 60,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "logo_max_width_mobile",
+      "label": "Logo max width (mobile)",
+      "min": 100,
+      "max": 260,
+      "step": 4,
+      "unit": "px",
+      "default": 160
+    },
+
+    { "type": "checkbox", "id": "grayscale", "label": "Show logos in grayscale", "default": true },
+    {
+      "type": "select", "id": "link_target", "label": "Logo link target", "default": "_self",
+      "options": [
+        { "value": "_self", "label": "Open in same tab" },
+        { "value": "_blank", "label": "Open in new tab" }
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Logo",
+      "limit": 24,
+      "settings": [
+        { "type": "image_picker", "id": "logo", "label": "Logo image" },
+        { "type": "text", "id": "alt", "label": "Alt text" },
+        { "type": "url", "id": "link", "label": "Optional link" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Trusted logos slider",
+      "blocks": [{ "type": "logo" }, { "type": "logo" }, { "type": "logo" }, { "type": "logo" }, { "type": "logo" }]
+    }
+  ]
+}
+{% endschema %}

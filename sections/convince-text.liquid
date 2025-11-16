@@ -1,0 +1,104 @@
+{% comment %}
+  Section: Convince Text (Title + Description)
+  Author: NexaLance
+{% endcomment %}
+
+{{ 'convince-text.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="nl-convince"
+  style="--pad-top: {{ section.settings.pad_top }}px; --pad-bottom: {{ section.settings.pad_bottom }}px;"
+>
+  <div class="nl-convince__container nl-convince__container--{{ section.settings.container_width }}">
+    <div
+      class="nl-convince__copy nl-convince__copy--{{ section.settings.text_align }}"
+      style="max-width: {{ section.settings.max_text_width }}px"
+    >
+      {% if section.settings.title != blank %}
+        <h2 class="nl-convince__title">
+          {{ section.settings.title }}
+        </h2>
+      {% endif %}
+
+      {% if section.settings.description != blank %}
+        <div class="nl-convince__desc rte">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Title Image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Überzeugen Sie sich selbst!"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Wir sind eine 3D-Druck-Firma, die höchste Präzision und Qualität liefert. Unser Fokus liegt darauf, dass jedes Teil perfekt gedruckt wird. Durch modernste Technologie und sorgfältig ausgewählte Materialien gewährleisten wir eine unvergleichliche Detailtreue und Genauigkeit. Unser erfahrenes Team arbeitet eng mit Kunden zusammen, um maßgeschneiderte Lösungen zu entwickeln. Strenge Qualitätskontrollen stellen sicher, dass jedes Produkt unsere hohen Standards erfüllt.</p>"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text alignment",
+      "default": "left",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ]
+    },
+    {
+      "type": "select",
+      "id": "container_width",
+      "label": "Section width",
+      "default": "normal",
+      "options": [
+        { "value": "narrow", "label": "Narrow" },
+        { "value": "normal", "label": "Normal" },
+        { "value": "wide", "label": "Wide" }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "max_text_width",
+      "label": "Max text width",
+      "min": 480,
+      "max": 1200,
+      "step": 20,
+      "unit": "px",
+      "default": 980
+    },
+    {
+      "type": "range",
+      "id": "pad_top",
+      "label": "Padding top",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "pad_bottom",
+      "label": "Padding bottom",
+      "min": 0,
+      "max": 140,
+      "step": 4,
+      "unit": "px",
+      "default": 24
+    }
+  ],
+  "presets": [
+    { "name": "Title Image" }
+  ]
+}
+{% endschema %}

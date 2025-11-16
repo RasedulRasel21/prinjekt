@@ -1,0 +1,293 @@
+/* section-3d-print-order.css */
+
+.print-order-section {
+  background: #ebebeb;
+  padding: 80px 0;
+  width: 100%;
+}
+
+.print-order-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.print-order-content {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+/* Left Side Styles */
+.print-order-left {
+  flex: 0 0 45%;
+  max-width: 550px;
+}
+
+.print-order-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+  color: #111111;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-family: "Stara", sans-serif !important;
+}
+
+.print-order-description {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #111111;
+  margin: 0 0 35px 0;
+  font-weight: 300;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.print-order-button {
+  display: inline-block;
+  background-color: transparent;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.print-order-button:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+}
+
+/* Right Side Styles */
+.print-order-right {
+  flex: 1;
+}
+
+.print-order-right-inner {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Features/Tabs Styles (Left side of right section) */
+.print-order-features {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 0 0 320px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.feature-item:hover {
+  background-color: #f5f5f5;
+  transform: translateX(5px);
+}
+
+.feature-item.active {
+  background-color: #000;
+  color: #fff;
+  border-color: #000;
+}
+
+.feature-icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+.feature-item.active .feature-icon svg {
+  stroke: #fff;
+}
+
+.feature-text {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Image Container (Right side of right section) */
+.print-order-image-wrapper {
+  position: relative;
+  flex: 1;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 400px;
+}
+
+.print-order-image {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.print-order-image.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .print-order-content {
+    gap: 40px;
+  }
+
+  .print-order-left {
+    flex: 0 0 42%;
+  }
+
+  .print-order-title {
+    font-size: 48px;
+  }
+
+  .print-order-features {
+    flex: 0 0 280px;
+  }
+
+  .print-order-image-wrapper {
+    min-width: 350px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .print-order-title {
+    font-size: 42px;
+  }
+
+  .print-order-features {
+    flex: 0 0 260px;
+  }
+
+  .print-order-image-wrapper {
+    min-width: 300px;
+    height: 350px;
+  }
+
+  .feature-item {
+    padding: 15px 20px;
+  }
+
+  .feature-text {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  .print-order-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .print-order-left {
+    flex: 1;
+    max-width: 100%;
+  }
+
+  .print-order-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .print-order-right-inner {
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+  }
+
+  .print-order-image-wrapper {
+    width: 100%;
+    min-width: unset;
+    height: 400px;
+    flex: none;
+  }
+
+  .print-order-features {
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .print-order-section {
+    padding: 50px 20px;
+  }
+
+  .print-order-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+
+  .print-order-description {
+    font-size: 15px;
+    margin-bottom: 25px;
+  }
+
+  .print-order-image-wrapper {
+    height: 350px;
+  }
+
+  .print-order-features {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .print-order-title {
+    font-size: 28px;
+  }
+
+  .print-order-button {
+    padding: 12px 28px;
+    font-size: 13px;
+  }
+
+  .print-order-image-wrapper {
+    height: 280px;
+  }
+
+  .feature-item {
+    padding: 12px 15px;
+  }
+
+  .feature-text {
+    font-size: 14px;
+  }
+}

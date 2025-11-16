@@ -1,0 +1,141 @@
+/* Trusted Logos – left/right layout + continuous slider (tighter spacing) */
+.trusted-logos-section {
+  --tl-gap: 12px;        /* default gap between logos (overridden per section) */
+  --tl-height: 44px;     /* default logo height */
+  --tl-opacity: .55;
+  --tl-speed: 36s;
+  --tl-head-gap: 12px;   /* space between heading and slider */
+
+  /* Section spacing + bg (adjust as you like) */
+  padding: 100px 0;
+  background: #ebebeb;
+}
+
+/* Constrain section content to 1500px and center it */
+.section--trusted-logos .trusted-logos-inner,
+.section--trusted-logos .page-width {
+  max-width: 1500px;
+  margin-inline: auto;
+  padding-inline: 0;
+}
+
+.trusted-logos-inner {
+  display: grid;
+  grid-template-columns: auto 1fr;  /* left heading, right slider */
+  align-items: center;
+  column-gap: var(--tl-head-gap);
+}
+
+/* Heading (left) */
+.trusted-logos-heading { min-width: max-content; }
+.trusted-logos-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  line-height: 1.3;
+  white-space: nowrap;
+  font-family: "Stara", sans-serif !important;
+}
+
+/* Slider (right) */
+.trusted-logos-viewport {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Remove edge fades entirely (no white bands at the ends) */
+.trusted-logos-viewport:before,
+.trusted-logos-viewport:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 0 !important;      /* <- hides the fade strips */
+  height: 100%;
+  pointer-events: none;
+  background: none !important;
+}
+
+/* Tracks */
+.trusted-logos-track {
+  display: flex;
+  align-items: center;
+  gap: var(--tl-gap);
+  white-space: nowrap;
+  will-change: transform;
+  animation-name: tl-marquee;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.trusted-logos-track--clone { position: absolute; left: 0; top: 0; }
+.trusted-logos-viewport .trusted-logos-track,
+.trusted-logos-viewport .trusted-logos-track--clone { width: max-content; }
+
+/* Items (now fully dynamic via CSS variables) */
+.trusted-logos-item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Width is fluid between min/max, with a viewport middle value.
+     The min/max are supplied from the section settings. */
+  min-width: clamp(var(--tl-item-min, 120px), 10vw, var(--tl-item-max, 200px));
+
+  /* Height is controlled by the section “Logo max height” */
+  height: var(--tl-height);
+
+  opacity: var(--tl-opacity);
+  transition: opacity .2s ease, filter .2s ease, transform .2s ease;
+  text-decoration: none;
+}
+
+.trusted-logos-item:hover,
+.trusted-logos-item:focus-visible {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+.trusted-logos-img {
+  max-height: var(--tl-height);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* Grayscale option */
+.is-grayscale .trusted-logos-img { filter: grayscale(100%); }
+.is-grayscale .trusted-logos-item:hover .trusted-logos-img,
+.is-grayscale .trusted-logos-item:focus-visible .trusted-logos-img { filter: grayscale(0%); }
+
+/* Empty state */
+.trusted-logos-empty { opacity: .6; font-size: 14px; margin: 0; }
+
+/* Animation */
+@keyframes tl-marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* Pause on hover (desktop) */
+@media (hover: hover) {
+  .trusted-logos-viewport:hover .trusted-logos-track { animation-play-state: paused; }
+}
+
+/* Small screens: stack vertically and use mobile width overrides if provided */
+@media (max-width: 768px) {
+  .trusted-logos-inner {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+  }
+  .trusted-logos-title { font-size: 16px; }
+
+  .trusted-logos-item {
+    min-width: clamp(
+      var(--tl-item-min-mobile, var(--tl-item-min, 100px)),
+      22vw,
+      var(--tl-item-max-mobile, var(--tl-item-max, 160px))
+    );
+  }
+}

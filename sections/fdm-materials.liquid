@@ -1,0 +1,304 @@
+{{ 'fdm-materials.css' | asset_url | stylesheet_tag }}
+
+<section class="fdm-materials-section" style="background-color: {{ section.settings.background_color }}; padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
+  <div class="fdm-container" style="max-width: {{ section.settings.container_width }}px;">
+    <!-- Header -->
+    <div class="fdm-header">
+      <div class="fdm-header-content">
+        {% if section.settings.title != blank %}
+          <h2 class="fdm-title" style="color: {{ section.settings.title_color }}; font-size: {{ section.settings.title_size }}px;">
+            {{ section.settings.title }}
+          </h2>
+        {% endif %}
+        {% if section.settings.description != blank %}
+          <p class="fdm-description" style="color: {{ section.settings.description_color }};">
+            {{ section.settings.description }}
+          </p>
+        {% endif %}
+      </div>
+      {% if section.settings.button_text != blank %}
+        <a href="{{ section.settings.button_link }}" class="fdm-button" style="color: {{ section.settings.button_text_color }}; border-color: {{ section.settings.button_border_color }};">
+          {{ section.settings.button_text }}
+        </a>
+      {% endif %}
+    </div>
+
+    <!-- Materials Grid -->
+    {% if section.blocks.size > 0 %}
+      <div class="fdm-materials-grid" style="grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr); gap: {{ section.settings.card_gap }}px;">
+        {% for block in section.blocks %}
+          <div class="fdm-material-card" {{ block.shopify_attributes }} 
+               style="background: {{ block.settings.card_background }}; border-radius: {{ section.settings.card_border_radius }}px;">
+            {% if block.settings.material_name != blank %}
+              <h3 class="material-title" style="color: {{ block.settings.title_color }}; font-size: {{ block.settings.title_size }}px;">
+                {{ block.settings.material_name }}
+              </h3>
+            {% endif %}
+            {% if block.settings.material_description != blank %}
+              <p class="material-description" style="color: {{ block.settings.description_color }};">
+                {{ block.settings.material_description }}
+              </p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  .fdm-button:hover {
+    background-color: {{ section.settings.button_border_color }} !important;
+    color: {{ section.settings.button_hover_text_color }} !important;
+  }
+  
+  .fdm-material-card:hover .material-title {
+    color: {{ section.settings.card_title_hover_color }} !important;
+  }
+</style>
+
+{% schema %}
+{
+  "name": "FDM Materials",
+  "class": "fdm-materials-section-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#e8e8e8"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Top",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding Bottom",
+      "default": 60
+    },
+    {
+      "type": "range",
+      "id": "container_width",
+      "min": 1000,
+      "max": 1800,
+      "step": 50,
+      "unit": "px",
+      "label": "Container Max Width",
+      "default": 1400
+    },
+    {
+      "type": "header",
+      "content": "Title & Description"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section Title",
+      "default": "Fused Deposition Modeling (FDM)"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 24,
+      "max": 72,
+      "step": 2,
+      "unit": "px",
+      "label": "Title Font Size",
+      "default": 42
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#1a1a1a"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Section Description",
+      "default": "Es gibt verschiedene Materialien, mit denen Sie Ihre Teile produzieren lassen können. Hier präsentieren wir Ihnen eine kleine Auswahl, welche wir im FDM-Bereich anbieten können:"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#4a4a4a"
+    },
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Materialübersicht"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#f5a623"
+    },
+    {
+      "type": "color",
+      "id": "button_border_color",
+      "label": "Button Border Color",
+      "default": "#f5a623"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_text_color",
+      "label": "Button Hover Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "header",
+      "content": "Grid Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "label": "Columns on Desktop",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "card_gap",
+      "min": 8,
+      "max": 48,
+      "step": 4,
+      "unit": "px",
+      "label": "Gap Between Cards",
+      "default": 24
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 32,
+      "step": 2,
+      "unit": "px",
+      "label": "Card Border Radius",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Card Hover Color"
+    },
+    {
+      "type": "color",
+      "id": "card_title_hover_color",
+      "label": "Card Title Hover Color",
+      "default": "#e69515"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "material",
+      "name": "Material Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "material_name",
+          "label": "Material Name",
+          "default": "Material Name"
+        },
+        {
+          "type": "range",
+          "id": "title_size",
+          "min": 16,
+          "max": 40,
+          "step": 2,
+          "unit": "px",
+          "label": "Title Font Size",
+          "default": 24
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title Color",
+          "default": "#f5a623"
+        },
+        {
+          "type": "textarea",
+          "id": "material_description",
+          "label": "Material Description",
+          "default": "Enter your material description here."
+        },
+        {
+          "type": "color",
+          "id": "description_color",
+          "label": "Description Color",
+          "default": "#4a4a4a"
+        },
+        {
+          "type": "color_background",
+          "id": "card_background",
+          "label": "Card Background",
+          "default": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "FDM Materials",
+      "blocks": [
+        {
+          "type": "material",
+          "settings": {
+            "material_name": "Polylactide (PLA)",
+            "material_description": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt."
+          }
+        },
+        {
+          "type": "material",
+          "settings": {
+            "material_name": "Acrylnitril-Butadien-Styrol (ABS)",
+            "material_description": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche."
+          }
+        },
+        {
+          "type": "material",
+          "settings": {
+            "material_name": "Polymethylmethacrylat (PMMA)",
+            "material_description": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas."
+          }
+        },
+        {
+          "type": "material",
+          "settings": {
+            "material_name": "Acrylester-Styrol-Acrylnitril (ASA)",
+            "material_description": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

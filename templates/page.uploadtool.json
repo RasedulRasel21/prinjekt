@@ -1,0 +1,35 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_liquid_zVih4B": {
+      "type": "custom-liquid",
+      "name": "t:sections.custom-liquid.presets.name",
+      "settings": {
+        "custom_liquid": "<div class=\"digifabster-widget-container\">\n\n  <div class=\"iframe-container\">\n    <iframe\n      src=\"https://app.digifabster.com/prinjekt/widget/upload/?mode=iframe\"\n      frameborder=\"0\"\n      width=\"100%\"\n      height=\"100%\"\n      title=\"3D-Druck-Konfigurator\"\n      allowfullscreen=\"true\"\n      style=\"min-height: 1400px; display: block;\"\n    >\n      <p>Ihr Browser unterstützt keine Iframes.</p>\n    </iframe>\n  </div>\n\n</div>\n\n<style>\n  /*\n    Styles sind hier im Liquid-Snippet enthalten.\n    Die Breitenbeschränkung und automatische Zentrierung wurden für die volle Seitenbreite entfernt.\n  */\n  .digifabster-widget-container {\n    width: 100%; /* Stellt sicher, dass es die volle Breite einnimmt */\n    /* max-width und margin: 0 auto wurden entfernt */\n  }\n  \n  /* Der Container garantiert die volle Breite */\n  .iframe-container {\n    width: 100%;\n    min-height: 100%; \n  }\n  \n  /* Wichtig: Der Iframe dehnt sich auf die volle Höhe des Containers aus */\n  .iframe-container iframe {\n      display: block;\n      width: 100%;\n      height: 100%;\n  }\n\n  /*\n    *** HEADER ENTFERNEN (VERSUCH) ***\n    Diese Selektoren versuchen, den Shopify-Header auszublenden.\n    Sie funktionieren möglicherweise nicht in allen Themes und müssen ggf. angepasst werden.\n    Wenn der Header weiterhin sichtbar ist, müssen Sie die korrekte ID/Klasse aus Ihrem Theme verwenden.\n  */\n  #shopify-section-header,\n  .header-wrapper,\n  .site-header {\n      display: none !important;\n  }\n</style>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "custom_liquid_zVih4B",
+    "main"
+  ]
+}

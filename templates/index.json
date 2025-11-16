@@ -1,0 +1,691 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "3d_hero_section_bm6hJA": {
+      "type": "3d-hero-section",
+      "blocks": {
+        "feature_hw7hTP": {
+          "type": "feature",
+          "settings": {
+            "icon": "📦",
+            "button_link": "https://prinjekt.myshopify.com/pages/leistungen",
+            "text": "Prototyping"
+          }
+        },
+        "feature_BRdGLr": {
+          "type": "feature",
+          "settings": {
+            "icon": "⚙️",
+            "button_link": "https://prinjekt.myshopify.com/pages/leistungen",
+            "text": "Einzelaufträge"
+          }
+        },
+        "feature_NWeGRD": {
+          "type": "feature",
+          "settings": {
+            "icon": "📋",
+            "button_link": "shopify://collections/all",
+            "text": "Serienanfertigungen"
+          }
+        }
+      },
+      "block_order": [
+        "feature_hw7hTP",
+        "feature_BRdGLr",
+        "feature_NWeGRD"
+      ],
+      "name": "3D Hero Section",
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/ac4acaf5a00346f5ab56951d356eb29e.mp4",
+        "heading_highlight": "3D-Druck",
+        "heading": "in höchster Qualität",
+        "description": "Unsere Leidenschaft gilt dem 3D-Druck und das spiegelt sich in jedem Detail wieder. Wir fertigen Ihr Modell nach Ihren individuellen Wünschen und beraten Sie bei der Auswahl des besten Materials. Bei Bedarf begleiten wir Ihre Projektidee von der Konstruktion bis zum Druck.",
+        "cta_text": "Klicken Sie auf den Link, um mit Ihrem 3D-Druck zu beginnen",
+        "button_text": "3D-Druck starten",
+        "button_link": "shopify://pages/uploadtool",
+        "privacy_text": "Alle Uploads sind geschützt und werden nicht weitergegeben."
+      }
+    },
+    "how_it_works_gpFjGi": {
+      "type": "how-it-works",
+      "name": "How it works (3 cards)",
+      "settings": {
+        "heading": "So funktioniert es:",
+        "card1_number": "1",
+        "card1_title": "3D-Model hochladen",
+        "card1_text": "Folgende Dateiformate sind möglich: STL, OBJ, STEP, 3MF",
+        "card2_number": "2",
+        "card2_title": "Material auswählen",
+        "card2_text": "Wählen Sie aus einer großen Vielzahl von Materialien und Farben.",
+        "card3_number": "3",
+        "card3_title": "Bestellung bestätigen",
+        "card3_text": "Wir fertigen schnell und zuverlässig und versenden termingerecht."
+      }
+    },
+    "services_mosaic_X4nB8U": {
+      "type": "services-mosaic",
+      "blocks": {
+        "text_card_qNHFrJ": {
+          "type": "text_card",
+          "settings": {
+            "title": "Einzelaufträge",
+            "description": "Senden Sie Ihre Druckdatei einfach über unser Upload-Tool. Wir werden Ihre Datei sorgfältig prüfen, Ihnen ggf. Empfehlungen zur Optimierung geben und Ihre Bestellung schnell und zuverlässig bearbeiten.",
+            "bg_color": "#fff5e6",
+            "title_color": "#ffb84d"
+          }
+        },
+        "image_card_iwqBVy": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/66566d400f11d6ed2e992b7c_Prinjekt_3D_Druck.webp"
+          }
+        },
+        "image_card_f8Kdpj": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/66566e3bcdc9ffcafb3e4d73_Prinjekt_Work.webp"
+          }
+        },
+        "image_card_h6kCmt": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/66566d6556fec602a8f076e4_3D_Druck_Hannover.webp"
+          }
+        },
+        "text_card_mVTiMF": {
+          "type": "text_card",
+          "settings": {
+            "title": "Prototypen",
+            "description": "Wichtig dabei ist, Zeit und Kosten während der Entwicklung zu sparen. Das Material und Design muss am Ende stimmen. Gerne helfen wir Ihnen bei der Prototypenentwicklung.",
+            "bg_color": "#fff5e6",
+            "title_color": "#ffb84d"
+          }
+        },
+        "text_card_6BXaiW": {
+          "type": "text_card",
+          "settings": {
+            "title": "Serienfertigung",
+            "description": "Mit unseren 3D-Druckverfahren ist oftmals eine schnellere und kostengünstigere Produktion Ihrer Serien möglich, als bei herkömmlichen Verfahren wie Spritzguss.",
+            "bg_color": "#fff5e6",
+            "title_color": "#ffb84d"
+          }
+        },
+        "image_card_TwYTtL": {
+          "type": "image_card",
+          "settings": {
+            "image": "shopify://shop_images/66673a6ba52ed36b0b221797_3D_Druck_Prinjekt-p-2000.webp"
+          }
+        }
+      },
+      "block_order": [
+        "text_card_qNHFrJ",
+        "image_card_iwqBVy",
+        "image_card_f8Kdpj",
+        "image_card_h6kCmt",
+        "text_card_mVTiMF",
+        "text_card_6BXaiW",
+        "image_card_TwYTtL"
+      ],
+      "name": "Services Mosaic",
+      "settings": {
+        "heading": "Unsere Leistungen im Überblick",
+        "description": "Wir sind Ihre Anlaufstelle für alles rund um das Thema 3D-Druck. Egal, ob Sie ein Unternehmen sind, das maßgeschneiderte Prototypen oder Serien benötigt, ein Künstler, der seine Ideen zum Leben erwecken möchte, oder ein Hobbybastler auf der Suche nach neuen Möglichkeiten - bei uns sind Sie genau richtig."
+      }
+    },
+    "trusted_logos_KnAUdB": {
+      "type": "trusted-logos",
+      "blocks": {
+        "logo_36zaxj": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/66548843d75b8bca3b319a01_Work_Fraunhofer_ee39eca4-29b4-4b78-9454-4a8465b6103c.webp",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_pq4rik": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/66548843de8174c9da47fd17_Work_Vodafone-p-500_c5ef1e1d-d892-48fa-9208-e96eba7712e7.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_QhxeQe": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/66548843cbb6cd0a812b3cef_Work_Hochschule_Hannover-p-500_11a06634-3358-48e4-9c41-5443f80ef667.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_aGWJ9n": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/66548843409e2bb8b444bec1_Work_Leibniz_Universitat.webp",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_nhze7Q": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/66548843c2f82cf5956d47df_Work_University_Plymouth-p-500_287d2cb6-c2e4-4d0b-af72-f7cc23ea9032.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_zMBzGM": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/66548843c2f82cf5956d47df_Work_University_Plymouth-p-500_287d2cb6-c2e4-4d0b-af72-f7cc23ea9032.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_GeQ4HY": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/665488437ade4b5a3b3b4e17_Work_Continental.webp",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_geE8m4": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/665488434832e8d442408a59_Work_Craftcloud-p-500_42955aa2-ee19-4884-9009-6e4356325410.png",
+            "alt": "",
+            "link": ""
+          }
+        },
+        "logo_HaBJVn": {
+          "type": "logo",
+          "settings": {
+            "logo": "shopify://shop_images/6654884320ef58fc7c62c2d8_Work_Bric-p-500.png",
+            "alt": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "logo_36zaxj",
+        "logo_pq4rik",
+        "logo_QhxeQe",
+        "logo_aGWJ9n",
+        "logo_nhze7Q",
+        "logo_zMBzGM",
+        "logo_GeQ4HY",
+        "logo_geE8m4",
+        "logo_HaBJVn"
+      ],
+      "name": "Trusted logos slider",
+      "settings": {
+        "heading": "Trusted by",
+        "heading_gap": 20,
+        "speed": 40,
+        "logo_max_height": 48,
+        "logo_opacity": 55,
+        "logo_gap": 48,
+        "logo_min_width": 120,
+        "logo_max_width": 200,
+        "logo_min_width_mobile": 100,
+        "logo_max_width_mobile": 160,
+        "grayscale": true,
+        "link_target": "_self"
+      }
+    },
+    "stats_cards_riBe9G": {
+      "type": "stats-cards",
+      "blocks": {
+        "card_wRNiAE": {
+          "type": "card",
+          "settings": {
+            "number_text": "7000+",
+            "label_text": "Umgesetzte Projekte",
+            "right_image": "shopify://shop_images/666a8a40ae6ed036a07d6588_Prnjekt_3d_Drucker_74b50b4a-e3f3-47b1-92f1-9872d6ebf2ef.webp",
+            "accent_color": "#ffb24a",
+            "text_color": "#0f0f0f",
+            "bg_color": "#fff9f0"
+          }
+        },
+        "card_p6QyYJ": {
+          "type": "card",
+          "settings": {
+            "number_text": "2 M",
+            "label_text": "Teile Produziert",
+            "right_image": "shopify://shop_images/666a8c5680e7dbb649fb39bb_Prnjekt_3d_Drucker_Drucken_7fda05af-9668-4cb8-818a-9695253e8d0b.webp",
+            "accent_color": "#ffb24a",
+            "text_color": "#0f0f0f",
+            "bg_color": "#fff9f0"
+          }
+        },
+        "card_kFgY9e": {
+          "type": "card",
+          "settings": {
+            "number_text": "90+",
+            "label_text": "Verschiedene 3D-Drucker",
+            "right_image": "shopify://shop_images/666a91c8153e1921e2c42c25_Prnjekt_viele_Drucker_b3f58f6e-d792-4bed-81eb-82a1b328ec1a.webp",
+            "accent_color": "#ffb24a",
+            "text_color": "#0f0f0f",
+            "bg_color": "#fff9f0"
+          }
+        },
+        "card_R7kdWf": {
+          "type": "card",
+          "settings": {
+            "number_text": "800+",
+            "label_text": "Zufriedene Kunden",
+            "right_image": "shopify://shop_images/666a98e1af6bc1b86b8b63aa_Prinjekt_Druck_Hannover_1af168ad-76a4-48e1-b740-0be51f5736c4.webp",
+            "accent_color": "#ffb24a",
+            "text_color": "#0f0f0f",
+            "bg_color": "#fff9f0"
+          }
+        }
+      },
+      "block_order": [
+        "card_wRNiAE",
+        "card_p6QyYJ",
+        "card_kFgY9e",
+        "card_R7kdWf"
+      ],
+      "name": "Stats cards",
+      "settings": {
+        "section_heading": "",
+        "section_subheading": "",
+        "desktop_columns": 2,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "industry_icons_mfWCkw": {
+      "type": "industry-icons",
+      "blocks": {
+        "item_8VhUcn": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.5 10V17.5C5.5 18.4428 5.5 18.9142 5.79289 19.2071C6.08579 19.5 6.55719 19.5 7.5 19.5H16.5C17.4428 19.5 17.9142 19.5 18.2071 19.2071C18.5 18.9142 18.5 18.4428 18.5 17.5V10\" stroke=\"currentcolor\"></path>\n<path d=\"M20.5 11.5L12.5767 5.90707C12.231 5.66303 11.769 5.66303 11.4233 5.90707L3.5 11.5\" stroke=\"currentcolor\" stroke-linecap=\"round\"></path>\n<path d=\"M14.5 19V15C14.5 13.8954 13.6046 13 12.5 13H11.5C10.3954 13 9.5 13.8954 9.5 15V19\" stroke=\"currentcolor\" stroke-linejoin=\"round\"></path>\n<path d=\"M17.5 9V5.5\" stroke=\"currentcolor\" stroke-linecap=\"round\"></path>\n</svg>",
+            "label": "Haushalt / Konsumgüter",
+            "url": ""
+          }
+        },
+        "item_XnMtmm": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M12 21V13M12 21L5.83752 16.5982C5.42695 16.305 5.22166 16.1583 5.11083 15.943C5 15.7276 5 15.4753 5 14.9708V8M12 21L18.1625 16.5982C18.573 16.305 18.7783 16.1583 18.8892 15.943C19 15.7276 19 15.4753 19 14.9708V8M12 13L5 8M12 13L19 8M5 8L10.8375 3.83034C11.3989 3.42938 11.6795 3.2289 12 3.2289C12.3205 3.2289 12.6011 3.42938 13.1625 3.83034L19 8\" stroke=\"currentcolor\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "label": "Lageristik",
+            "url": ""
+          }
+        },
+        "item_6ckLRP": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M4.87157 9.99464L3.33219 8.6263C3.1258 8.44284 2.80976 8.46143 2.6263 8.66782C2.44284 8.87421 2.46143 9.19025 2.66782 9.37371L4.11705 10.6619C4.37441 10.4333 4.62579 10.2106 4.87157 9.99464ZM7.92571 13.9682C8.25546 14.2298 8.56828 14.4637 8.86885 14.6691C9.94113 15.4019 10.9102 15.8102 12 15.8102C13.0898 15.8102 14.0589 15.4019 15.1312 14.6691C16.1856 13.9485 17.3907 12.8772 18.9485 11.4925L18.9485 11.4925L18.9758 11.4683L21.3322 9.37371C21.5386 9.19025 21.5572 8.87421 21.3737 8.66782C21.1903 8.46143 20.8742 8.44284 20.6678 8.6263L18.3115 10.7208C16.7207 12.1349 15.5625 13.1631 14.5669 13.8435C13.5831 14.5159 12.8112 14.8102 12 14.8102C11.1888 14.8102 10.4169 14.5159 9.4331 13.8435C9.19629 13.6817 8.95028 13.5001 8.69144 13.2984C8.453 13.5045 8.19872 13.7273 7.92571 13.9682Z\" fill=\"currentcolor\"></path>\n<path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M16.0743 10.0314C15.7446 9.7699 15.4317 9.53599 15.1312 9.33057C14.0589 8.59774 13.0898 8.18945 12 8.18945C10.9102 8.18945 9.94113 8.59774 8.86885 9.33057C7.81445 10.0512 6.60925 11.1225 5.05149 12.5072L5.02418 12.5314L2.66782 14.626C2.46143 14.8094 2.44284 15.1255 2.6263 15.3319C2.80976 15.5383 3.1258 15.5568 3.33219 15.3734L5.68855 13.2788C7.27931 11.8648 8.43752 10.8366 9.4331 10.1562C10.4169 9.48378 11.1888 9.18945 12 9.18945C12.8112 9.18945 13.5831 9.48378 14.5669 10.1562C14.8037 10.318 15.0497 10.4995 15.3086 10.7012C15.547 10.4952 15.8013 10.2724 16.0743 10.0314ZM19.883 13.3378C19.6256 13.5664 19.3742 13.7891 19.1284 14.005L20.6678 15.3734C20.8742 15.5568 21.1903 15.5383 21.3737 15.3319C21.5572 15.1255 21.5386 14.8094 21.3322 14.626L19.883 13.3378Z\" fill=\"currentcolor\"></path>\n</svg>",
+            "label": "Forschung / Entwicklung",
+            "url": ""
+          }
+        },
+        "item_YMTaRy": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M5.5 7C5.5 6.17157 6.17157 5.5 7 5.5H15C16.933 5.5 18.5 7.067 18.5 9V17C18.5 17.8284 17.8284 18.5 17 18.5H7C6.17157 18.5 5.5 17.8284 5.5 17V7Z\" stroke=\"currentcolor\"></path>\n<path d=\"M9 6V2\" stroke=\"currentcolor\"></path>\n<path d=\"M9 22V18\" stroke=\"currentcolor\"></path>\n<path d=\"M15 22V18\" stroke=\"currentcolor\"></path>\n<path d=\"M22 15L18 15\" stroke=\"currentcolor\"></path>\n<path d=\"M6 15L2 15\" stroke=\"currentcolor2\"></path>\n<path d=\"M6 9L2 9\" stroke=\"currentcolor\"></path>\n<path d=\"M15 3V3C16.8638 3 17.7956 3 18.5307 3.30448C19.5108 3.71046 20.2895 4.48915 20.6955 5.46927C21 6.20435 21 7.13623 21 9V9\" stroke=\"currentcolor\"></path>\n</svg>",
+            "label": "Elektronik",
+            "url": ""
+          }
+        },
+        "item_fUJXNP": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 21H15\" stroke=\"currentcolor\" stroke-linecap=\"round\"></path>\n<path d=\"M12 21V17\" stroke=\"currentcolor\" stroke-linecap=\"round\"></path>\n<path d=\"M5.5 9.28571C5.5 8.99265 5.50316 8.92982 5.51254 8.88874C5.55527 8.70149 5.70149 8.55527 5.88874 8.51254C5.92982 8.50316 5.99265 8.5 6.28571 8.5H17.7143C18.0073 8.5 18.0702 8.50316 18.1113 8.51254C18.2985 8.55527 18.4447 8.70149 18.4875 8.88874C18.4968 8.92982 18.5 8.99265 18.5 9.28571V10C18.5 10.9447 18.4989 11.3687 18.4529 11.7179C18.128 14.1859 16.1859 16.128 13.7179 16.4529C13.3687 16.4989 12.9447 16.5 12 16.5C11.0553 16.5 10.6313 16.4989 10.2821 16.4529C7.81407 16.128 5.87198 14.1859 5.54705 11.7179C5.50108 11.3687 5.5 10.9447 5.5 10V9.28571Z\" stroke=\"currentcolor\" stroke-linecap=\"round\"></path>\n<path d=\"M11.5192 11.8626C11.4434 12.1282 11.5971 12.4049 11.8626 12.4808C12.1282 12.5566 12.4049 12.4029 12.4808 12.1374L11.5192 11.8626ZM13.7305 5.9432L14.2113 6.08056L13.7305 5.9432ZM14.9108 4.63569L14.7251 4.17145V4.17145L14.9108 4.63569ZM14.0845 5.07626L14.4556 5.41129L14.0845 5.07626ZM12.4808 12.1374L14.2113 6.08056L13.2498 5.80584L11.5192 11.8626L12.4808 12.1374ZM15.0965 5.09993L19.1857 3.46424L18.8143 2.53576L14.7251 4.17145L15.0965 5.09993ZM14.2113 6.08056C14.3571 5.57018 14.3961 5.4772 14.4556 5.41129L13.7133 4.74122C13.4619 5.01979 13.3686 5.38994 13.2498 5.80584L14.2113 6.08056ZM14.7251 4.17145C14.3235 4.33209 13.9648 4.46266 13.7133 4.74122L14.4556 5.41129C14.5151 5.34538 14.6036 5.29706 15.0965 5.09993L14.7251 4.17145Z\" fill=\"currentcolor\"></path>\n</svg>",
+            "label": "Gastro / Hotel",
+            "url": ""
+          }
+        },
+        "item_LE6LLV": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M8.4 17.1429H15.6M8.4 17.1429C8.4 18.1686 7.59411 19 6.6 19C5.60589 19 4.8 18.1686 4.8 17.1429M8.4 17.1429C8.4 16.1172 7.59411 15.2857 6.6 15.2857C5.60589 15.2857 4.8 16.1172 4.8 17.1429M15.6 17.1429C15.6 18.1686 16.4059 19 17.4 19C18.3941 19 19.2 18.1686 19.2 17.1429M15.6 17.1429C15.6 16.1172 16.4059 15.2857 17.4 15.2857C18.3941 15.2857 19.2 16.1172 19.2 17.1429M4.8 17.1429H4.44C3.93595 17.1429 3.68393 17.1429 3.49141 17.0416C3.32207 16.9526 3.18438 16.8106 3.09809 16.6359C3 16.4372 3 16.1772 3 15.6571V14.5429C3 13.5028 3 12.9827 3.19619 12.5854C3.36876 12.236 3.64412 11.9519 3.98282 11.7739C4.36786 11.5714 4.87191 11.5714 5.88 11.5714H16.68C17.3489 11.5714 17.6833 11.5714 17.9631 11.6171C19.5036 11.8688 20.7117 13.1154 20.9557 14.7047C21 14.9934 21 15.3385 21 16.0286C21 16.2011 21 16.2874 20.9889 16.3595C20.9279 16.7569 20.6259 17.0685 20.2408 17.1314C20.1708 17.1429 20.0872 17.1429 19.92 17.1429H19.2M10.2 6V11.5714M4.8 11.5714L5.09837 9.72439C5.31211 8.40122 5.41898 7.73963 5.73897 7.24317C6.02104 6.80554 6.41734 6.45915 6.88211 6.24404C7.40937 6 8.05944 6 9.35959 6H12.388C13.2333 6 13.6559 6 14.0396 6.1202C14.3792 6.22663 14.6951 6.40109 14.9694 6.63362C15.2791 6.89629 15.5136 7.25912 15.9825 7.98477L18.3 11.5714\" stroke=\"currentcolor\" stroke-width=\"1\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "label": "Automobilindustrie",
+            "url": ""
+          }
+        },
+        "item_DpJfDY": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M19.8661 7.42621C19.5248 6.06841 18.5305 5.07346 16.9876 4.54618C15.9598 4.19586 13.4567 3.87533 12.3547 5.07076C8.80199 3.12793 6.92865 4.18625 5.66888 5.43501C2.88836 8.19143 4.16053 10.9682 5.34941 12.1738C6.20887 13.0469 6.45745 13.5517 6.59666 14.1283C6.62801 14.2552 6.6989 14.6299 6.70241 14.7101C6.9221 19.5117 8.69612 19.9231 9.1203 19.9521C9.24394 19.985 9.36572 20 9.48352 20C9.6997 20 9.90454 19.9468 10.0904 19.8416C10.9715 19.3433 11.243 17.7919 11.4817 16.4258C11.5685 15.9315 11.6494 15.4647 11.7441 15.1932C11.9082 14.7232 12.0439 14.616 12.0426 14.5997C12.1609 14.6482 12.3603 15 12.3823 15.1386C12.4151 15.3457 12.4386 15.6138 12.4649 15.9144C12.601 17.4566 12.8039 19.7824 14.5812 19.9508C14.7073 19.9757 15.0073 20.0014 15.3755 19.7963C16.2132 19.3269 16.8336 17.9825 17.2175 15.8L17.2752 15.4509C17.4134 14.576 17.6049 13.3769 18.3879 12.617C19.2926 11.7452 20.3845 9.49071 19.8661 7.42621ZM17.863 12.1541C16.9199 13.0692 16.7004 14.4444 16.5567 15.3555L16.5011 15.6934C16.0587 18.204 15.4005 18.9619 15.0487 19.1907C14.8627 19.3117 14.7466 19.2946 14.7594 19.2992L14.6768 19.284C13.4858 19.188 13.3106 17.1877 13.1952 15.8617C13.1667 15.5436 13.1418 15.2603 13.1076 15.0413C13.0726 14.8203 12.7336 13.9776 12.1103 13.9297C11.4401 13.8882 11.1491 14.7126 11.0536 14.9873C10.9418 15.3089 10.8596 15.7762 10.7648 16.3192C10.5824 17.3592 10.3075 18.9316 9.71128 19.2695C9.63103 19.3156 9.51078 19.3628 9.29425 19.2985L9.18417 19.2827H9.17457C9.15644 19.2827 7.63639 19.1131 7.43331 14.6824C7.42617 14.5279 7.33797 14.092 7.31153 13.9816C7.11992 13.1916 6.73563 12.5788 5.8922 11.7229C5.60981 11.4375 3.22784 8.84782 6.20606 5.89611C7.57439 4.53971 9.59337 3.6213 14.1782 7.09618C14.3343 7.21353 14.5628 7.19378 14.6919 7.04976C14.8201 6.90585 14.7973 6.69511 14.6419 6.57582C14.0543 6.13178 13.503 5.75414 12.9858 5.43814C13.8307 4.65522 15.8245 4.86823 16.7368 5.18044C18.0582 5.63139 18.8724 6.43828 19.158 7.58027C19.5933 9.32165 18.6864 11.3567 17.863 12.1541Z\" fill=\"currentcolor\"></path>\n</svg>",
+            "label": "Medizin / Zahnmedizin",
+            "url": ""
+          }
+        },
+        "item_rRxGRC": {
+          "type": "item",
+          "settings": {
+            "svg_code": "<svg width=\"75\" height=\"75\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n<path d=\"M9 3H8C7.07003 3 6.60504 3 6.22354 3.10222C5.18827 3.37962 4.37962 4.18827 4.10222 5.22354C4 5.60504 4 6.07003 4 7\" stroke=\"currentcolor\" stroke-linejoin=\"round\"></path>\n<path d=\"M15 3H16C16.93 3 17.395 3 17.7765 3.10222C18.8117 3.37962 19.6204 4.18827 19.8978 5.22354C20 5.60504 20 6.07003 20 7\" stroke=\"currentcolor\" stroke-linejoin=\"round\"></path>\n<path d=\"M20 15V16C20 17.8692 20 18.8038 19.5981 19.5C19.3348 19.9561 18.9561 20.3348 18.5 20.5981C17.8038 21 16.8692 21 15 21\" stroke=\"currentcolor\" stroke-linejoin=\"round\"></path>\n<path d=\"M4 15V16C4 17.8692 4 18.8038 4.40192 19.5C4.66523 19.9561 5.04394 20.3348 5.5 20.5981C6.19615 21 7.13077 21 9 21\" stroke=\"currentcolor\" stroke-linejoin=\"round\"></path>\n<path d=\"M3 15L21 15\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n<path d=\"M7 11L7 15L17 15L17 11C17 10.0572 17 9.58579 16.7071 9.29289C16.4142 9 15.9428 9 15 9L9 9C8.05719 9 7.58579 9 7.29289 9.29289C7 9.58579 7 10.0572 7 11Z\" stroke=\"currentcolor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n</svg>",
+            "label": "Robotik / Maschinenbau",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_8VhUcn",
+        "item_XnMtmm",
+        "item_6ckLRP",
+        "item_YMTaRy",
+        "item_fUJXNP",
+        "item_LE6LLV",
+        "item_DpJfDY",
+        "item_rRxGRC"
+      ],
+      "name": "Industry Icons Grid",
+      "settings": {
+        "heading": "Fertigungen für jede Branche",
+        "icon_size": 76,
+        "icon_color": "#ffa000",
+        "bottom_note": ""
+      }
+    },
+    "experience_split_mYaAd7": {
+      "type": "experience-split",
+      "name": "Experience split",
+      "settings": {
+        "left_heading": "Erfahrungen",
+        "middle_big": "10+",
+        "middle_small": "Jahre",
+        "right_richtext": "<p>Seit den Anfängen des 3D-Drucks bis zu den heutigen, hochmodernen Technologien sind wir stolz darauf, Teil dieser faszinierenden Entwicklung gewesen zu sein. Angefangen bei frühesten privaten 3D-Druckern über maßgeschneiderte Lösungen für Unternehmen bis hin zu den heutigen benutzerfreundlichen Geräten und sogar Metall-3D-Druck. Wir haben diese Entwicklung aktiv mitgestaltet und unsere Expertise kontinuierlich ausgebaut. <br/><br/>Unser Erfahrungsschatz basiert hierbei auf dem Betrieb zahlreicher eigener Drucker sowie der direkten Reparatur durch unsere hausinternen Techniker. Dies ermöglicht uns die Unabhängigkeit von externen Kundendiensten und Lieferketten, wodurch wir stets flexibel und effizient agieren können. <br/><br/>Auf diese Flexibilität können Sie jedoch nicht nur bei anfallenden Reparaturen vertrauen. Dank unserer beachtlichen 3D-Drucker-Farm, steht unser Team von Druckertechnikern auch für kurzfristige oder umfangreiche Projekte bereit, ohne Abstriche bei der Qualität zu machen.<br/><br/>Profitieren auch Sie von unserem langjährigen Know-how und lassen sich von uns bei allen Anliegen der additiven Fertigung beraten. Auch wenn Sie keine Erfahrung im Bereich des 3D-Drucks haben, finden wir die für Sie am besten geeignete Umsetzung Ihres Projekts und begleiten Sie professionell auf dem Weg zum Erfolg dieses.<br/><br/></p>",
+        "use_page_width": true,
+        "max_width": 1500,
+        "pt": 60,
+        "pb": 60,
+        "bg_color": "#f6f7f8",
+        "text_color": "#0f182b"
+      }
+    },
+    "customer_reviews_JMdUW8": {
+      "type": "customer-reviews",
+      "blocks": {
+        "review_jNMMGC": {
+          "type": "review",
+          "settings": {
+            "subtitle": "Perfekter Service und top Qualität!",
+            "text": "Perfekter Service und top Qualität!\n\nWir brauchten für unsere antike Kaffeemaschine einen speziellen Dichtungsring, den es so nicht mehr zu kaufen gibt. Die 3D-Druckerei hat das Problem schnell und professionell gelöst! Der Ring passt perfekt, die Qualität ist hervorragend, und der gesamte Ablauf von der Beratung bis zur Lieferungwar absolut unkompliziert.\n\nPreisleistungsverhältis Tip Top\n\nSuper freundlicher Service, schnelle Bearbeitung und ein tolles Ergebnis. Vielen Dank! Wir kommen gerne wieder!",
+            "author": "Melina Witchen"
+          }
+        },
+        "review_4KqpJw": {
+          "type": "review",
+          "settings": {
+            "subtitle": "Die Qualität war erstklassig",
+            "text": "Wir haben mit Prinjekt für einen Spielzeug-Prototypen zusammengearbeitet und sind absolut begeistert! Die Qualität war erstklassig, die Bearbeitung unglaublich schnell, und das Preis-Leistungs-Verhältnis einfach unschlagbar. Der gesamte Ablauf war professionell und reibungslos.\n\nWir freuen uns darauf, auch in Zukunft mit Prinjekt zusammenzuarbeiten!",
+            "author": "Toy Heroes"
+          }
+        },
+        "review_4M4Lce": {
+          "type": "review",
+          "settings": {
+            "subtitle": "Absolut perfekt!",
+            "text": "Absolut perfekt! Datei hochgeladen, sehr guter Druck, prima verpackt, super Preis und schneller Versand... was will man mehr :-) Vielen Dank und gerne wieder.",
+            "author": "Ralf"
+          }
+        }
+      },
+      "block_order": [
+        "review_jNMMGC",
+        "review_4KqpJw",
+        "review_4M4Lce"
+      ],
+      "name": "Customer reviews",
+      "settings": {
+        "heading": "Das sagen unsere Kunden",
+        "show_stars": true,
+        "rating_text": "4.9 (24 Bewertungen)",
+        "button_label": "Alle Rezensionen ansehen",
+        "button_link": "https://www.google.com/search?sca_esv=4fc95be2d6bdf9cb&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E6V8n_w9cUn5NfJig8x7S4UTERdqMy1kwKDssUyNctJwzeqRL0qdcdhNawPFRN5m-K0ZsS4uOrDCPai7K8ukuBfZib9-GKyaKKPFYKqtUOS5hjb6C_eoeZAFQCm7GRqX0rs0Xno%3D&q=Prinjekt+%E2%80%93+3D-Druck+Hannover+Rezensionen&sa=X&ved=2ahUKEwib8tSDvPGQAxVkygIHHaetDC0Q0bkNegQIOxAE&biw=2694&bih=1266"
+      }
+    },
+    "3d_print_order_Bpd86T": {
+      "type": "3d-print-order",
+      "blocks": {
+        "feature_kHQkVm": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"></path><path d=\"M2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>",
+            "feature_text": "Hochwertige Lösungen",
+            "image": "shopify://shop_images/66684c44bbc46366bd681626_Prinjekt_Arbeit_4.webp"
+          }
+        },
+        "feature_899f8L": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>",
+            "feature_text": "Schnelles Prototyping",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2440_Prinjekt_Arbeit_2.webp"
+          }
+        },
+        "feature_AmgVUq": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect></svg>",
+            "feature_text": "Viele Modelle",
+            "image": "shopify://shop_images/665f98d6886b3692e133fcb6_Prinjekt_Arbeit_3.webp"
+          }
+        },
+        "feature_VxnBbA": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path></svg>",
+            "feature_text": "Individuelle Reparatur",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2427_Prinjekt_Arbeit_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "feature_kHQkVm",
+        "feature_899f8L",
+        "feature_AmgVUq",
+        "feature_VxnBbA"
+      ],
+      "custom_css": [],
+      "name": "3D Print Order",
+      "settings": {
+        "heading": "BESTELLEN SIE JETZT IHREN DRUCK!",
+        "description": "Bestellen Sie jetzt Ihren 3D-Druck bei uns und erleben Sie den Unterschied! Wir fertigen Ihr Produkt vor Ort mit modernsten, hochwertigen Druckern und senden es schnellstmöglich an Sie. Unsere 3D-Drucker sind auf dem neuesten Stand der Technik und gewährleisten höchste Präzision und Detailtreue. Wir verwenden ausschließlich hochwertiges Material, um sicherzustellen, dass Ihr Produkt nicht nur gut aussieht, sondern auch langlebig und funktional ist.",
+        "button_text": "JETZT KONFIGURIEREN",
+        "button_link": "shopify://pages/uploadtool"
+      }
+    },
+    "gallery_showcase_HMGPNM": {
+      "type": "gallery-showcase",
+      "name": "Dynamic image gallery",
+      "settings": {
+        "heading": "",
+        "subheading": "",
+        "gap": 10,
+        "corner_radius": 10,
+        "a_image": "shopify://shop_images/66587b115beacc832203bad8_Prinjekt_Work_3.webp",
+        "a_link": "",
+        "a_alt": "",
+        "b_image": "shopify://shop_images/66587b11776e94d24aa707e9_Prinjekt_Work_4.webp",
+        "b_link": "",
+        "b_alt": "",
+        "e_image": "shopify://shop_images/66681a52f0dab60ea1cb98c5_Prinjekt_Work_Hannover.webp",
+        "e_link": "",
+        "e_alt": "",
+        "c_image": "shopify://shop_images/66587b11698dbdf8618a7ec4_Prinjekt_Work_6.webp",
+        "c_link": "",
+        "c_alt": "",
+        "h_image": "shopify://shop_images/6668170ea4e35e4ca7ab1a8f_Prinjekt_Work_3D.webp",
+        "h_link": "",
+        "h_alt": "",
+        "d_image": "shopify://shop_images/66681b498e6f93b2de54da73_Prinjekt_Work_3D-Druck.webp",
+        "d_link": "",
+        "d_alt": "",
+        "f_image": "shopify://shop_images/66681ad9f778ea90ce2b1291_Prinjekt_Work_Serienfertigung.webp",
+        "f_link": "",
+        "f_alt": "",
+        "button_label": "Mehr Beispiele ansehen",
+        "button_link": "shopify://pages/gallerie",
+        "button_style": "primary"
+      }
+    },
+    "faq_accordion_6DB4Ji": {
+      "type": "faq-accordion",
+      "blocks": {
+        "faq_item_CLCjfP": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Was ist Prinkjet?",
+            "answer": "<p>Prinjekt – Meister und Pionier im 3D-Druck und Serienfertigung seit 2015. Unser Unternehmen hat sich in der Fertigungsbranche fest etabliert und gilt als Wegbereiter auf seinem Gebiet. Mit einem breiten Spektrum an Kunden, sowohl aus dem privaten als auch geschäftlichen Bereich, bieten wir maßgeschneiderte Lösungen, die individuellen Anforderungen gerecht werden. Unser Name, eine geschickte Fusion von 'printing' und 'injection-molding', spiegelt perfekt die Expertise unseres Unternehmens wider. Erfahren Sie mehr über unsere einzigartigen Umsetzungen und Leidenschaft für Innovation!</p>",
+            "show_button": true,
+            "button_label": "Mehr erfahren",
+            "button_url": "shopify://pages/about",
+            "button_style": "primary",
+            "new_tab": false
+          }
+        },
+        "faq_item_9LfbEq": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Welches Material benutzt Ihr?",
+            "answer": "<p>Entdecken Sie die Vielfalt unseres 3D-Druckmaterialangebots! Von hochwertigem Epoxidharz für Stereolithographie-Drucker (SLA) bis hin zu einer breiten Palette von Filamenten für Schmelzschichtungs-Drucker (FDM) sowie spezialisierter Metallfilamente für die Herstellung von Metallbauteilen – bei uns bleiben keine Wünsche offen. Hierbei bieten wir sowohl Standardmaterialien unseres Lagers, als auch maßgeschneiderte Optionen für Ihr Projekt an. Kontaktieren Sie uns noch heute mit Ihren Anforderungen, und wir erstellen Ihnen ein individuell auf Ihre Bedürfnisse abgestimmtes Angebot.<br/><br/></p>",
+            "show_button": true,
+            "button_label": "Materialübersicht",
+            "button_url": "shopify://pages/materialubersicht",
+            "button_style": "primary",
+            "new_tab": false
+          }
+        },
+        "faq_item_wNpRtN": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wie kann ich meinen Auftrag aufgeben?",
+            "answer": "<p>Sofern Sie bereits genau wissen, was Sie benötigen, Ihr 3D-Modell vorliegt und Sie nur eine geringe Anzahl an Drucken benötigen, gelangen Sie &lt;hier&gt; direkt zum Bestellvorgang. <br/><br/>Sind Sie ein Geschäftskunde auf der Suche nach einem Partner für Ihr Projekt, angefangen beim Prototyping bis hin zur Serienreife? Oder benötigen Sie eine besonders hohe Stückzahl an Drucken bis zu umfassenden Großserienfertigung? Auch in diesem Fall, bieten wir Ihnen maßgeschneiderte Lösungen für Ihre Anforderungen! Kontaktieren Sie uns einfach &lt;hier&gt;, um gemeinsam Ihre Vorstellungen in die Realität umzusetzen.</p>",
+            "show_button": false,
+            "button_label": "Mehr erfahren",
+            "button_url": "",
+            "button_style": "primary",
+            "new_tab": false
+          }
+        },
+        "faq_item_TfaxY7": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wo habt Ihr Euren Sitzt?",
+            "answer": "<p>Unser Unternehmenssitz befindet sich in Hemmingen, in der Nähe von Hannover, Deutschland. Hannover stellt hierbei nicht nur eine dynamische Wirtschaftsmetropole, sondern auch einen zentralen Standort in Europa dar.<br/><br/>Dank der zentralen Lage innerhalb Deutschlands, verfügen wir über eine ausgezeichnete Anbindung an nationale und internationale Märkte. Die Nähe zum Flughafen sowie zu wichtigen Autobahnen erleichtert hierbei nicht nur den Zugang zu unseren Kunden, sondern ermöglicht auch einen reibungslosen Transport von Rohstoffen und fertigen Produkten.<br/><br/>Darüber hinaus ist Hannover ein bedeutendes Zentrum für Forschung und Entwicklung. Diese Lage versetzt uns in die einzigartige Position, von einem pulsierenden Netzwerk aus Unternehmen, Universitäten und Forschungseinrichtungen zu profitieren.<br/><br/>Insgesamt ist unser Standort in Hannover ein entscheidender Faktor für unseren Erfolg, der unser Unternehmen dabei unterstützt, national und international zu wachsen und zu florieren.<br/><br/></p>",
+            "show_button": true,
+            "button_label": "Mehr erfahren",
+            "button_url": "shopify://pages/about",
+            "button_style": "primary",
+            "new_tab": false
+          }
+        },
+        "faq_item_LJhTb6": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Wohin versendet Ihr alles?",
+            "answer": "<p>Mit unserem weltweiten Versandservice bringen wir Ihre Bestellungen sicher und zuverlässig zu Ihnen, egal ob Sie sich in Nordamerika, Europa, Asien oder anderen Teilen der Welt befinden. Unser Ziel hierbei ist es, Ihre Erwartungen zu übertreffen und Ihnen ein nahtloses Einkaufserlebnis zu bieten – ganz gleich, wo Sie sich befinden. Verlassen Sie sich auf uns, um Ihre Produkte pünktlich und in bestem Zustand zu erhalten, egal an welchem Ort Sie sie benötigen. Ihr Komfort und Ihre Zufriedenheit stehen bei uns an erster Stelle.</p>",
+            "show_button": true,
+            "button_label": "Mehr erfahren",
+            "button_url": "shopify://policies/shipping-policy",
+            "button_style": "primary",
+            "new_tab": false
+          }
+        },
+        "faq_item_GHwBUh": {
+          "type": "faq_item",
+          "settings": {
+            "title": "Achtet Ihr auf die Nachhaltigkeit?",
+            "answer": "<p>Seit unserer Gründung setzen wir auf Nachhaltigkeit. Unsere 3D-Drucker minimieren Materialverschwendung und nutzen umweltfreundliche Materialien. Wir produzieren lokal, um CO2-Emissionen zu reduzieren, und versenden alle Produkte CO2-neutral durch klimafreundliche Versanddienstleister und Umweltprojekte.<br/><br/>Unsere Produktion vermeidet Überproduktion und senkt den Energieverbrauch. Im Büro fördern wir Recycling und nutzen energieeffiziente Geräte. So zeigen wir unser Engagement für eine umweltfreundliche Zukunft.<br/><br/></p>",
+            "show_button": false,
+            "button_label": "Mehr erfahren",
+            "button_url": "",
+            "button_style": "primary",
+            "new_tab": false
+          }
+        }
+      },
+      "block_order": [
+        "faq_item_CLCjfP",
+        "faq_item_9LfbEq",
+        "faq_item_wNpRtN",
+        "faq_item_TfaxY7",
+        "faq_item_LJhTb6",
+        "faq_item_GHwBUh"
+      ],
+      "name": "FAQ Accordion",
+      "settings": {
+        "heading": "FAQ",
+        "full_width": false,
+        "open_first": true,
+        "accent_color": "#f4a261",
+        "item_bg": "#ffffff",
+        "radius": 12,
+        "gap": 12,
+        "shadow": true
+      }
+    },
+    "map_locations_kkXGBV": {
+      "type": "map-locations",
+      "blocks": {
+        "location_F8kLVm": {
+          "type": "location",
+          "settings": {
+            "title": "Prinjekt – 3D-Druck Hannover",
+            "address": "Max-von-Laue-Straße 19, 30966 Hemmingen",
+            "lat": "52.319",
+            "lng": "9.722",
+            "popup_html": "",
+            "link_label": "Directions",
+            "link_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "location_F8kLVm"
+      ],
+      "name": "Map – Locations",
+      "settings": {
+        "google_api_key": "AIzaSyC3Qw__GEec3U5qAGIx86XdojB36j3_FB0",
+        "center_lat": "52.3190",
+        "center_lng": "9.7220",
+        "zoom": 14,
+        "height_desktop": 480,
+        "height_mobile": 320,
+        "grayscale": false,
+        "show_card": true,
+        "card_title": "Prinjekt – 3D-Druck Hannover",
+        "card_subtitle": "Max-von-Laue-Straße 19, 30966 Hemmingen",
+        "rating_value": "",
+        "rating_count": "",
+        "cta_label": "Routenplaner",
+        "cta_link": "",
+        "cta_target": "_blank",
+        "card_bg": "#ffffff",
+        "card_text": "#111111",
+        "cta_bg": "#e4d7d7",
+        "cta_text": "#ffffff"
+      }
+    }
+  },
+  "order": [
+    "3d_hero_section_bm6hJA",
+    "how_it_works_gpFjGi",
+    "services_mosaic_X4nB8U",
+    "trusted_logos_KnAUdB",
+    "stats_cards_riBe9G",
+    "industry_icons_mfWCkw",
+    "experience_split_mYaAd7",
+    "customer_reviews_JMdUW8",
+    "3d_print_order_Bpd86T",
+    "gallery_showcase_HMGPNM",
+    "faq_accordion_6DB4Ji",
+    "map_locations_kkXGBV"
+  ]
+}

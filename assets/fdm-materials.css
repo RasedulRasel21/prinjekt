@@ -1,0 +1,203 @@
+/* FDM Materials Section Styles */
+.fdm-materials-section {
+  width: 100%;
+  background-color: #ebebeb !important;
+  padding: 100px 0px;
+}
+
+.fdm-container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Header Styles */
+.fdm-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.fdm-header-content {
+  flex: 1;
+  max-width: 850px;
+}
+
+.fdm-title {
+  font-size: 48px !important;
+  font-weight: 700;
+  color: #111111;
+  margin: 0 0 16px 0;
+  line-height: 1.2;
+  font-family: "Stara", sans-serif !important;
+}
+
+.fdm-description {
+  font-size: 16px;
+  font-weight: 300;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-button:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+/* Materials Grid */
+.fdm-materials-grid {
+  display: grid;
+  width: 100%;
+}
+
+/* Material Card Styles */
+.fdm-material-card {
+  background: linear-gradient(to right, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  padding: 32px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid #c7c7c7;
+}
+
+.fdm-material-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  z-index: 0;
+}
+
+.fdm-material-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
+}
+
+.fdm-material-card:hover::before {
+  opacity: 1;
+}
+
+.material-title {
+  font-size: 32px !important;
+  font-weight: 700;
+  color: #FF9900;
+  margin: 0 0 16px 0;
+  position: relative;
+  z-index: 1;
+  transition: color 0.3s ease;
+  font-family: "Stara", sans-serif !important;
+}
+
+.material-description {
+  font-size: 16px !important;
+  font-weight: 300;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0;
+  position: relative;
+  z-index: 1;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .fdm-container {
+    padding: 0 20px;
+  }
+
+  .fdm-materials-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .fdm-material-card {
+    padding: 28px;
+  }
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+  .fdm-container {
+    padding: 0 16px;
+  }
+
+  .fdm-header {
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 32px;
+    gap: 20px;
+  }
+
+  .fdm-title {
+    font-size: 28px !important;
+    margin-bottom: 12px;
+  }
+
+  .fdm-description {
+    font-size: 15px;
+  }
+
+  .fdm-button {
+    width: 100%;
+    text-align: center;
+    padding: 14px 24px;
+  }
+
+  .fdm-materials-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .fdm-material-card {
+    padding: 24px;
+  }
+
+  .material-title {
+    font-size: 20px !important;
+    margin-bottom: 12px;
+  }
+
+  .material-description {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile Styles */
+@media screen and (max-width: 480px) {
+  .fdm-title {
+    font-size: 24px !important;
+  }
+
+  .fdm-material-card {
+    padding: 20px;
+  }
+
+  .material-title {
+    font-size: 18px !important;
+  }
+}

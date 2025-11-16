@@ -1,0 +1,316 @@
+.fdm-materials-section {
+  background: linear-gradient(135deg, #ece4d8 0%, #ebebeb 100%);
+  padding: var(--fdm-pad-y, 60px) 20px;
+  min-height: 400px;
+}
+
+.fdm-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.fdm-header {
+  margin-bottom: 10px;
+}
+
+.fdm-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 8px;
+  font-family: "Stara", sans-serif !important;
+}
+
+.fdm-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  color: #111111;
+  max-width: 1400px;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-materials-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.fdm-material-item {
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s ease;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.fdm-material-name {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  font-family: "Stara", sans-serif !important;
+}
+
+.fdm-mehr-btn {
+  padding: 10px 20px;
+  border: 2px solid #ff9500;
+  background: transparent;
+  color: #ff9500;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 300;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-mehr-btn:hover {
+  background: #ff9500;
+  color: white;
+}
+
+/* Modal Styles */
+.fdm-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 9999;
+  padding: 20px;
+  overflow-y: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.fdm-modal.active {
+  display: flex;
+}
+
+.fdm-modal-content {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+  border-radius: 10px;
+  max-width: 900px;
+  width: 100%;
+  padding: 35px;
+  position: relative;
+  max-height: 75vh;
+  overflow-y: auto;
+}
+
+.fdm-modal-close {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #666;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fdm-modal-close:hover {
+  color: #000;
+}
+
+.fdm-modal-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+  align-items: flex-start;
+  font-family: "Stara", sans-serif !important;
+}
+
+.fdm-modal-text {
+  flex: 1;
+}
+
+.fdm-modal-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 5px;
+  font-family: "Stara", sans-serif !important;
+}
+
+.fdm-modal-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.1;
+  color: #111111;
+  margin-bottom: 5px;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-modal-applications {
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+}
+
+.fdm-modal-image {
+  flex-shrink: 0;
+}
+
+.fdm-modal-image img {
+  width: 280px;
+  height: 208px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.fdm-modal-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.fdm-technical-details h3,
+.fdm-color-section h3,
+.fdm-vorteile-section h3,
+.fdm-nachteile-section h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #111111;
+  margin-bottom: 3px;
+  font-family: "Stara", sans-serif !important;
+}
+
+.fdm-tech-table {
+  width: 100%;
+}
+
+.fdm-tech-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 4px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.fdm-tech-label {
+  font-weight: 600;
+  color: #111111;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-tech-value {
+  color: #111111;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-color-swatch {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+}
+
+.fdm-vorteile-section ul,
+.fdm-nachteile-section ul {
+  list-style: none;
+  padding: 0 !important;
+}
+
+.fdm-vorteile-section li,
+.fdm-nachteile-section li {
+  padding: 4px 0;
+  padding-left: 35px;
+  position: relative;
+  color: #4a4a4a;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-vorteile-section li:before,
+.fdm-nachteile-section li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #4a4a4a;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.fdm-datasheet-btn {
+  margin-top: 18px;
+  display: inline-block;
+  padding: 6px 12px;
+  border: 2px solid #ff9500;
+  background: transparent;
+  color: #ff9500;
+  border-radius: 10px;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 400;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.fdm-datasheet-btn:hover {
+  background: #ff9500;
+  color: white;
+}
+
+@media (max-width: 968px) {
+  .fdm-modal-header {
+    flex-direction: column;
+  }
+
+  .fdm-modal-image img {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .fdm-modal-body {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .fdm-modal-content {
+    padding: 40px 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .fdm-title {
+    font-size: 2rem;
+  }
+
+  .fdm-material-item {
+    gap: 15px;
+  }
+
+  .fdm-material-name {
+    font-size: 1.25rem;
+  }
+
+  .fdm-mehr-btn {
+    width: 40%;
+    padding: 10px 12px;
+    text-align: center;
+  }
+
+  .fdm-modal-content {
+    padding: 30px 20px;
+  }
+
+  .fdm-modal-title {
+    font-size: 2rem;
+  }
+
+  .fdm-modal-close {
+    width: 35px;
+    height: 35px;
+    font-size: 1.5rem;
+  }
+}

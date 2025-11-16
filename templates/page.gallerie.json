@@ -1,0 +1,245 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "info_cta_banner_CncqVR": {
+      "type": "info-cta-banner",
+      "custom_css": [
+        ".icb__desc {max-width: 190ch !important;}"
+      ],
+      "name": "Info CTA Banner",
+      "settings": {
+        "title": "Überzeugen Sie sich selbst!",
+        "desc": "<p>Wir sind eine 3D-Druck-Firma, die höchste Präzision und Qualität liefert. Unser Fokus liegt darauf, dass jedes Teil perfekt gedruckt wird. Durch modernste Technologie und sorgfältig ausgewählte Materialien gewährleisten wir eine unvergleichliche Detailtreue und Genauigkeit. Unser erfahrenes Team arbeitet eng mit Kunden zusammen, um maßgeschneiderte Lösungen zu entwickeln. Strenge Qualitätskontrollen stellen sicher, dass jedes Produkt unsere hohen Standards erfüllt. Vertrauen Sie auf unsere Expertise für perfekte 3D-Druckteile.</p>",
+        "btn_label": "Materialübersicht",
+        "btn_link": "",
+        "bg_color": "#ebebeb",
+        "text_color": "#111111",
+        "max_width": 1460,
+        "padding_y": 28
+      }
+    },
+    "mosaic_gallery_maXWBf": {
+      "type": "mosaic-gallery",
+      "blocks": {
+        "image_r6etCA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b115beacc832203bad8_Prinjekt_Work_3_bde27167-4813-47f1-af4f-5ebed933e285.webp"
+          }
+        },
+        "image_ixJQLM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b11776e94d24aa707e9_Prinjekt_Work_4_d8f35991-7ea7-4d13-983a-f4390a490b58.webp"
+          }
+        },
+        "image_E8fXbV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b11698dbdf8618a7ec4_Prinjekt_Work_6_4e76e08b-dfa0-4cc0-a0d0-06be397d008a.webp"
+          }
+        },
+        "image_84HVAf": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6668170ea4e35e4ca7ab1a8f_Prinjekt_Work_3D.webp"
+          }
+        },
+        "image_QiQhdt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66685b5b5aed4a2f605eea4b_3D-Druck_in_Hannover.jpg"
+          }
+        },
+        "image_NhpdQ6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66685cb88dd9f1079856d5b7_Prinjekt_aus_Hannover.jpg"
+          }
+        },
+        "image_p9WEwr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66685cc37e15a4860b5bc0a6_3D-Druck_Hannover.jpg"
+          }
+        },
+        "image_WjAdAK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d776e95649b74b40e0f2d_3D_Druck_Prinjekt_Hannover.jpg"
+          }
+        },
+        "image_NPQAE3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66566d400f11d6ed2e992b7c_Prinjekt_3D_Druck.webp"
+          }
+        },
+        "image_CYUx9V": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6658794269e38ae544980eaa_Prinjekt_Work_1-p-500.webp"
+          }
+        },
+        "image_HBWzqV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66681ad9f778ea90ce2b1291_Prinjekt_Work_Serienfertigung_9d79cbe2-5ebb-4af0-afda-4608be031620.webp"
+          }
+        },
+        "image_yHBVEr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d7877f5a5723967e886e5_Wir_liefern_gute_arbeit.jpg"
+          }
+        },
+        "image_6zwmcM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66681b498e6f93b2de54da73_Prinjekt_Work_3D-Druck.jpg"
+          }
+        },
+        "image_HL7pkq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d7882bc34b5bf9773f0ce_Prinjekt_3D_Druck_Hannover.jpg"
+          }
+        },
+        "image_DNUKek": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d7762ce5ab2a1e846344b_Prinjekt_Arbeit.jpg"
+          }
+        },
+        "image_JEMw4M": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66681a52f0dab60ea1cb98c5_Prinjekt_Work_Hannover_5420be57-31ce-49e0-a5fd-6f3c5d06eb8a.webp"
+          }
+        },
+        "image_WKATrC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d777816a6a4fb69972ef5_3D_Druck_in_Hannover.jpg"
+          }
+        },
+        "image_zWmJYQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66566e3bcdc9ffcafb3e4d73_Prinjekt_Work.webp"
+          }
+        },
+        "image_JMBdFx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d7783f5a5723967e7dc8a_Prinjekt_bei_der_arbeit.jpg"
+          }
+        },
+        "image_EQePTG": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/666d775309f6b0b57e834631_3D-Druck_aus_Hannover.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_r6etCA",
+        "image_ixJQLM",
+        "image_E8fXbV",
+        "image_84HVAf",
+        "image_QiQhdt",
+        "image_NhpdQ6",
+        "image_p9WEwr",
+        "image_WjAdAK",
+        "image_NPQAE3",
+        "image_CYUx9V",
+        "image_HBWzqV",
+        "image_yHBVEr",
+        "image_6zwmcM",
+        "image_HL7pkq",
+        "image_DNUKek",
+        "image_JEMw4M",
+        "image_WKATrC",
+        "image_zWmJYQ",
+        "image_JMBdFx",
+        "image_EQePTG"
+      ],
+      "name": "Mosaic Gallery",
+      "settings": {
+        "heading": ""
+      }
+    },
+    "3d_print_order_yxVaU7": {
+      "type": "3d-print-order",
+      "blocks": {
+        "feature_byXBAR": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"></path><path d=\"M2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>",
+            "feature_text": "Hochwertige Lösungen",
+            "image": "shopify://shop_images/66684c44bbc46366bd681626_Prinjekt_Arbeit_4.webp"
+          }
+        },
+        "feature_nGaMDU": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>",
+            "feature_text": "Schnelles Prototyping",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2440_Prinjekt_Arbeit_2.webp"
+          }
+        },
+        "feature_yQpnLT": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect></svg>",
+            "feature_text": "Viele Modelle",
+            "image": "shopify://shop_images/665f98d6886b3692e133fcb6_Prinjekt_Arbeit_3.webp"
+          }
+        },
+        "feature_hx8M6D": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path></svg>",
+            "feature_text": "Individuelle Reparatur",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2427_Prinjekt_Arbeit_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "feature_byXBAR",
+        "feature_nGaMDU",
+        "feature_yQpnLT",
+        "feature_hx8M6D"
+      ],
+      "name": "3D Print Order",
+      "settings": {
+        "heading": "BESTELLEN SIE JETZT IHREN DRUCK!",
+        "description": "Bestellen Sie jetzt Ihren 3D-Druck bei uns und erleben Sie den Unterschied! Wir fertigen Ihr Produkt vor Ort mit modernsten, hochwertigen Druckern und senden es schnellstmöglich an Sie. Unsere 3D-Drucker sind auf dem neuesten Stand der Technik und gewährleisten höchste Präzision und Detailtreue. Wir verwenden ausschließlich hochwertiges Material, um sicherzustellen, dass Ihr Produkt nicht nur gut aussieht, sondern auch langlebig und funktional ist.",
+        "button_text": "JETZT KONFIGURIEREN",
+        "button_link": "shopify://pages/uploadtool"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "info_cta_banner_CncqVR",
+    "mosaic_gallery_maXWBf",
+    "3d_print_order_yxVaU7"
+  ]
+}

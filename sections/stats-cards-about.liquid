@@ -1,0 +1,106 @@
+{% comment %}
+  Stats Cards Section
+  - Minimal controls: number (+ optional), two-line label
+  - Responsive grid: 1 / 2 / 4 columns
+  - Loads its own CSS asset
+{% endcomment %}
+
+{{ 'section-stats-cards.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="stats-cards"
+  id="stats-cards-{{ section.id }}"
+  style="--stats-pad-y: {{ section.settings.padding_y | default: 100 }}px;"
+>
+  <div class="stats-cards__inner">
+    <div class="stats-cards__grid">
+      {% for block in section.blocks %}
+        {% assign num = block.settings.number %}
+        {% assign plus = block.settings.show_plus %}
+        {% assign l1 = block.settings.label_line1 %}
+        {% assign l2 = block.settings.label_line2 %}
+
+        <article class="stats-card" {{ block.shopify_attributes }}>
+          <div class="stats-card__number">
+            <span class="stats-card__num">{{ num }}{% if plus %}+{% endif %}</span>
+          </div>
+          <div class="stats-card__labels">
+            {% if l1 != blank %}<div class="stats-card__label stats-card__label--bold">{{ l1 }}</div>{% endif %}
+            {% if l2 != blank %}<div class="stats-card__label">{{ l2 }}</div>{% endif %}
+          </div>
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stats cards about",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_y",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "unit": "px",
+      "label": "Vertical padding",
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Card",
+      "limit": 4,
+      "settings": [
+        { "type": "text", "id": "number", "label": "Number", "default": "300" },
+        { "type": "checkbox", "id": "show_plus", "label": "Show +", "default": true },
+        { "type": "text", "id": "label_line1", "label": "Label line 1", "default": "Umgesetzte" },
+        { "type": "text", "id": "label_line2", "label": "Label line 2", "default": "Projekte" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Stats cards about",
+      "blocks": [
+        { "type": "stat", "settings": { "number": "300", "show_plus": true, "label_line1": "Umgesetzte", "label_line2": "Projekte" } },
+        { "type": "stat", "settings": { "number": "20", "show_plus": true, "label_line1": "Glückliche", "label_line2": "Kunden" } },
+        { "type": "stat", "settings": { "number": "1743", "show_plus": true, "label_line1": "Produzierte", "label_line2": "Einzelteile" } },
+        { "type": "stat", "settings": { "number": "500", "show_plus": true, "label_line1": "Gedruckte", "label_line2": "Teile" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+  (() => {
+    const root = document.getElementById('stats-cards-{{ section.id }}');
+    if (!root) return;
+
+    // Respect user preference
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    const start = () => {
+      // Add the class that enables animation
+      root.classList.add('start-anim');
+    };
+
+    // Trigger when section is in view
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          start();
+          io.disconnect();
+        }
+      });
+    }, { threshold: 0.2 });
+
+    io.observe(root);
+  })();
+</script>

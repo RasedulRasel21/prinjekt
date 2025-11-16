@@ -1,0 +1,80 @@
+/* Experience Split – layout and typography */
+.xp-section { 
+    width: 100%;
+    padding: 100px 0;
+    background: #ebebeb;
+}
+.xp-container { margin: 0 auto; }
+
+.xp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr; /* left / middle / right */
+  gap: 32px;
+  align-items: start;
+}
+
+.xp-left-heading {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 14px;
+  font-weight: 700;
+  font-family: "Stara", sans-serif !important;
+}
+
+.xp-middle {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.xp-number-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.xp-number {
+  font-size: 112px;
+  font-weight: 800;
+  letter-spacing: -1px;
+  font-family: "Stara", sans-serif !important;
+}
+
+.xp-small {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: "Stara", sans-serif !important;
+}
+
+.xp-right {
+  font-size: 16px;
+  font-weight: 300;
+  color: #111111;
+  line-height: 1.7;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .xp-grid {
+    grid-template-columns: 1fr 1fr; /* left+middle on first row, right on second */
+  }
+  .xp-right {
+    grid-column: 1 / -1; /* span both columns */
+  }
+  .xp-number { font-size: 88px; }
+  .xp-small { font-size: 32px; }
+}
+
+@media (max-width: 640px) {
+  .xp-grid {
+    grid-template-columns: 1fr; /* stack all */
+    gap: 20px;
+  }
+  .xp-middle { justify-content: flex-start; }
+  .xp-number { font-size: 72px; }
+  .xp-small { font-size: 28px; }
+  .xp-left-heading { font-size: 22px; }
+  .xp-right { font-size: 15px; }
+}

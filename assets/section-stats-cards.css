@@ -1,0 +1,110 @@
+/* Stats Cards Section */
+:root {
+  --stats-accent: #f9b74a;  /* warm yellow/orange for numbers */
+  --stats-text: #0b0b0c;    /* near-black for labels */
+  --stats-card-bg: #f6f2ec; /* soft cream base */
+}
+
+.stats-cards {
+  padding: var(--stats-pad-y, 100px) 0;
+  background-color: #ebebeb;
+}
+
+.stats-cards__inner {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+.stats-cards__grid {
+  display: grid;
+  gap: 10px;
+}
+
+/* Cards */
+.stats-card {
+  background: radial-gradient(120% 100% at 0% 0%, #f8f3ed 0%, #f2eee8 45%, var(--stats-card-bg) 100%);
+  border-radius: 10px;
+  padding: 24px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02), 0 6px 18px rgba(0,0,0,0.04);
+  width: 320px;
+  height: 242px;
+}
+
+.stats-card__number {
+  line-height: 1;
+  margin-bottom: 8px;
+}
+.stats-card__num {
+  font-size: 72px !important;
+  font-weight: 800;
+  color: var(--stats-accent);
+  /* letter-spacing: 0.5px; */
+  display: inline-block;
+  font-family: "Stara", sans-serif !important;
+}
+
+/* Labels */
+.stats-card__labels {
+  display: grid;
+  gap: 2px;
+}
+.stats-card__label {
+  color: var(--stats-text);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.25;
+  font-family: "Stara", sans-serif !important;
+}
+.stats-card__label--bold {
+  /* font-weight: 800; */
+}
+
+/* Type scale and layout */
+@media (min-width: 0px) {
+  .stats-cards__grid { grid-template-columns: 1fr; }
+  .stats-card__num { font-size: 42px; }
+}
+@media (min-width: 600px) {
+  .stats-cards__grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-card__num { font-size: 52px; }
+}
+@media (min-width: 990px) {
+  .stats-cards__grid { grid-template-columns: repeat(4, 1fr); }
+  .stats-card__num { font-size: 64px; }
+}
+
+
+/* ===== Staggered reveal animation ===== */
+@keyframes statsFadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Only animate when JS adds .start-anim on the section root */
+#shopify-section-stats-cards,
+.stats-cards { /* nothing here; keep cards visible by default */ }
+
+/* When animation starts, cards begin hidden, then reveal in sequence */
+.start-anim .stats-card {
+  /* timing variables (tweak if you want) */
+  --dur: 600ms;   /* single card animation duration */
+  --step: 220ms;  /* delay between cards */
+
+  opacity: 0;
+  transform: translateY(10px);
+  animation: statsFadeUp var(--dur) ease both;
+  animation-delay: calc(var(--i) * var(--step));
+}
+
+/* Small polish on hover (optional) */
+@media (hover:hover) {
+  .stats-card:hover {
+    transform: translateY(-2px);
+    transition: transform 180ms ease;
+  }
+}

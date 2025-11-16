@@ -1,0 +1,112 @@
+{% comment %}
+  Industry Icons Grid
+  - Add blocks with SVG code + label (+ optional link)
+  - Mobile: 2 per row; Tablet: 3; Desktop: 4
+{% endcomment %}
+
+{{ 'industry-icons.css' | asset_url | stylesheet_tag }}
+
+<section class="industry-icons" id="industry-icons-{{ section.id }}">
+  <div class="industry-icons__inner"
+       style="--icon-size: {{ section.settings.icon_size }}px; --icon-color: {{ section.settings.icon_color }};">
+    {%- if section.settings.heading != blank -%}
+      <h2 class="industry-icons__heading">{{ section.settings.heading }}</h2>
+    {%- endif -%}
+
+    <ul class="industry-icons__grid" role="list">
+      {%- for block in section.blocks -%}
+        {%- assign label = block.settings.label -%}
+        {%- assign svg   = block.settings.svg_code -%}
+        {%- assign url   = block.settings.url -%}
+
+        <li class="industry-icons__item" {{ block.shopify_attributes }}>
+          {%- if url != blank -%}<a class="industry-icons__link" href="{{ url | escape }}">{%- endif -%}
+
+            <div class="industry-icons__icon">
+              {{ svg }}
+            </div>
+
+            {%- if label != blank -%}
+              <div class="industry-icons__label">{{ label }}</div>
+            {%- endif -%}
+
+          {%- if url != blank -%}</a>{%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+  </div>
+
+  {% if section.settings.bottom_note != blank %}
+    <div class="industry-icons__note">{{ section.settings.bottom_note }}</div>
+  {% endif %}
+</section>
+
+{% schema %}
+{
+  "name": "Industry Icons Grid",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Fertigungen für jede Branche"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 24,
+      "max": 120,
+      "step": 2,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 56
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon color",
+      "default": "#ffa000"
+    },
+    {
+      "type": "text",
+      "id": "bottom_note",
+      "label": "Small note (optional)",
+      "default": "Wite here"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "item",
+      "name": "Icon card",
+      "settings": [
+        {
+          "type": "textarea",
+          "id": "svg_code",
+          "label": "SVG code",
+          "info": "Paste full <svg>…</svg>. For theme color control, prefer using fill=\"currentColor\" or no fill."
+        },
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label",
+          "default": "Automobilindustrie"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Optional link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 24,
+  "presets": [
+    {
+      "name": "Industry Icons Grid",
+      "category": "Image"
+    }
+  ]
+}
+{% endschema %}

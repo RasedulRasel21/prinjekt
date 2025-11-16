@@ -1,0 +1,63 @@
+{% comment %}
+  Experience Split Section
+  Layout: [Left heading] [Middle big number + small label] [Right description]
+{% endcomment %}
+
+{{ 'section-experience-split.css' | asset_url | stylesheet_tag }}
+
+<section class="xp-section" style="">
+  <div class="xp-container{% if section.settings.use_page_width %} page-width{% endif %}" style="max-width: {{ section.settings.max_width }}px; padding-top: {{ section.settings.pt }}px; padding-bottom: {{ section.settings.pb }}px;">
+    <div class="xp-grid">
+      <!-- Left -->
+      <div class="xp-left">
+        {% if section.settings.left_heading != blank %}
+          <h3 class="xp-left-heading" style="color: {{ section.settings.text_color }};">
+            {{ section.settings.left_heading }}
+          </h3>
+        {% endif %}
+      </div>
+
+      <!-- Middle -->
+      <div class="xp-middle">
+        <div class="xp-number-wrap" style="color: {{ section.settings.text_color }};">
+          {% if section.settings.middle_big != blank %}
+            <span class="xp-number">{{ section.settings.middle_big }}</span>
+          {% endif %}
+          {% if section.settings.middle_small != blank %}
+            <span class="xp-small">{{ section.settings.middle_small }}</span>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="xp-right" style="color: {{ section.settings.text_color }};">
+        {{ section.settings.right_richtext }}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Experience split",
+  "settings": [
+    { "type": "text", "id": "left_heading", "label": "Left heading", "default": "Erfahrungen" },
+
+    { "type": "text", "id": "middle_big", "label": "Middle big text", "default": "10+" },
+    { "type": "text", "id": "middle_small", "label": "Middle small text", "default": "Jahre" },
+
+    { "type": "richtext", "id": "right_richtext", "label": "Right description", "default": "<p>Seit den Anfängen des 3D-Drucks bis zu den heutigen, hochmodernen Technologien ...</p>" },
+
+    { "type": "checkbox", "id": "use_page_width", "label": "Use theme page width class", "default": true },
+    { "type": "range", "id": "max_width", "label": "Max width (px)", "min": 800, "max": 1600, "step": 10, "default": 1200 },
+    { "type": "range", "id": "pt", "label": "Padding top (px)", "min": 0, "max": 160, "step": 4, "default": 60 },
+    { "type": "range", "id": "pb", "label": "Padding bottom (px)", "min": 0, "max": 160, "step": 4, "default": 60 },
+
+    { "type": "color", "id": "bg_color", "label": "Background color", "default": "#f6f7f8" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#0f182b" }
+  ],
+  "presets": [
+    { "name": "Experience split" }
+  ]
+}
+{% endschema %}

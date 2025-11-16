@@ -1,0 +1,189 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "materialubersicht_materials_ww98z7": {
+      "type": "materialubersicht-materials",
+      "blocks": {
+        "material_VgK6fn": {
+          "type": "material",
+          "settings": {
+            "material_name": "ABS",
+            "button_text": "Mehr erfahren",
+            "description": "<p>ABS Filament für 3D Drucker (Acrylnitril-Butadien-Styrol) ist ein synthetisches Terpolymer und gehört zu den amorphen Thermoplasten. Im FDM-Verfahren des 3D Drucks ist ABS gleichbedeutend wichtig wie PLA, unterscheidet sich aber in gewissen Punkten.</p><p>ABS Filament überzeugt durch eine hohe Hitzebeständigkeit und eine harte, kratzfeste Oberfläche. Auf Grund der vielen guten Eigenschaften, kommt ABS Plastik außerhalb des 3D Druckers in vielen Haushalts- und Konsumprodukten zum Einsatz.</p>",
+            "popup_image": "shopify://shop_images/66527616490837f5472ac765_abs_cover.webp",
+            "applications": "Automobilteile, Elektronikgehäuse, Spielzeug",
+            "weight": "1,06g",
+            "elongation": "30%",
+            "tensile_strength": "40 MPa",
+            "flexural_modulus": "1203 MPa",
+            "heat_distortion": "73°C",
+            "color_swatch": "#000000",
+            "advantage_1": "Hohe Festigkeit",
+            "advantage_2": "gute Temperaturbeständigkeit",
+            "disadvantage_1": "Hohe Festigkeit",
+            "disadvantage_2": "gute Temperaturbeständigkeit",
+            "datasheet_url": "https://cdn.shopify.com/s/files/1/0669/2146/4105/files/abs.pdf?v=1761980473"
+          }
+        },
+        "material_HK4Gmm": {
+          "type": "material",
+          "settings": {
+            "material_name": "ASA",
+            "button_text": "Mehr erfahren",
+            "description": "<p>ABS Filament für 3D Drucker (Acrylnitril-Butadien-Styrol) ist ein synthetisches Terpolymer und gehört zu den amorphen Thermoplasten.</p>",
+            "popup_image": "shopify://shop_images/66528478d8885493413c7796_ASA-1.jpg",
+            "applications": "Automobilteile, Elektronikgehäuse, Spielzeug",
+            "weight": "1,06g",
+            "elongation": "30%",
+            "tensile_strength": "40 MPa",
+            "flexural_modulus": "1203 MPa",
+            "heat_distortion": "73°C",
+            "color_swatch": "#000000",
+            "advantage_1": "Hohe Festigkeit",
+            "advantage_2": "gute Temperaturbeständigkeit",
+            "disadvantage_1": "Hohe Festigkeit",
+            "disadvantage_2": "gute Temperaturbeständigkeit",
+            "datasheet_url": "https://cdn.shopify.com/s/files/1/0669/2146/4105/files/abs.pdf?v=1761980473"
+          }
+        },
+        "material_aqbcQd": {
+          "type": "material",
+          "settings": {
+            "material_name": "Green-TEC",
+            "button_text": "Mehr erfahren",
+            "description": "<p>ABS Filament für 3D Drucker (Acrylnitril-Butadien-Styrol) ist ein synthetisches Terpolymer und gehört zu den amorphen Thermoplasten.</p>",
+            "popup_image": "shopify://shop_images/6653b9aeb8bac5766c2106f8_Green-Tec-p-1600.jpg",
+            "applications": "Automobilteile, Elektronikgehäuse, Spielzeug",
+            "weight": "1,06g",
+            "elongation": "30%",
+            "tensile_strength": "40 MPa",
+            "flexural_modulus": "1203 MPa",
+            "heat_distortion": "73°C",
+            "color_swatch": "#000000",
+            "advantage_1": "Hohe Festigkeit",
+            "advantage_2": "gute Temperaturbeständigkeit",
+            "disadvantage_1": "Hohe Festigkeit",
+            "disadvantage_2": "gute Temperaturbeständigkeit",
+            "datasheet_url": "https://cdn.shopify.com/s/files/1/0669/2146/4105/files/abs.pdf?v=1761980473"
+          }
+        }
+      },
+      "block_order": [
+        "material_VgK6fn",
+        "material_HK4Gmm",
+        "material_aqbcQd"
+      ],
+      "name": "3D-Druck Materialien",
+      "settings": {
+        "section_title": "3D-Druck Materialien für FDM",
+        "section_description": "<p>FDM steht für „Fused Deposition Modeling und ist ein Verfahren zum 3D-Drucken von Objekten. Dabei wird ein thermoplastischer Faden durch eine Düse geleitet, die ihn erhitzt und schichtweise auf eine Bauplattform aufbringt. Der Faden wird dabei Schicht für Schicht aufgetragen und erstarrt, wodurch das gewünschte Objekt entsteht. FDM ist ein sehr verbreitetes und kosteneffizientes Verfahren, das sowohl in der industriellen Produktion als auch im privaten Bereich verwendet wird.</p>"
+      }
+    },
+    "materialubersicht_materials_7CiE4z": {
+      "type": "materialubersicht-materials",
+      "blocks": {
+        "material_Wt8Fnk": {
+          "type": "material",
+          "settings": {
+            "material_name": "Standard resin",
+            "button_text": "Mehr erfahren",
+            "description": "<p>The Eco Resin/synthetic resin enables remarkably detailed production without sacrificing durability and hardness. This results in top-quality models.</p>",
+            "popup_image": "shopify://shop_images/6653c29fa9b1ab199e43a885_detailgenaues-Resin.webp",
+            "applications": "Automobilteile, Elektronikgehäuse, Spielzeug",
+            "weight": "1,06g",
+            "elongation": "30%",
+            "tensile_strength": "40 MPa",
+            "flexural_modulus": "1203 MPa",
+            "heat_distortion": "73°C",
+            "color_swatch": "#000000",
+            "advantage_1": "Hohe Festigkeit",
+            "advantage_2": "gute Temperaturbeständigkeit",
+            "disadvantage_1": "Hohe Festigkeit",
+            "disadvantage_2": "gute Temperaturbeständigkeit",
+            "datasheet_url": "https://cdn.shopify.com/s/files/1/0669/2146/4105/files/abs.pdf?v=1761980473"
+          }
+        }
+      },
+      "block_order": [
+        "material_Wt8Fnk"
+      ],
+      "name": "3D-Druck Materialien",
+      "settings": {
+        "section_title": "3D-Druck Materialien für SLA (Stereolithographie)",
+        "section_description": "<p>Stereolithographie (SLA) ist ein Verfahren des 3D-Drucks, bei dem Schicht für Schicht ein Objekt aufgebaut wird, indem ein flüssiger Photopolymer durch einen Laserstrahl aushärtet. Der Laser zeichnet dabei eine Schicht des 3D-Modells in den Photopolymer und härtet diese aus. Anschließend wird die nächste Schicht aufgebracht, bis das gesamte Modell aufgebaut ist. SLA ist ein präzises Verfahren, das sehr detaillierte und hochwertige Teile erzeugen kann. Es eignet sich besonders für Anwendungen in der Medizintechnik, Dentaltechnik und der Produktentwicklung.</p>"
+      }
+    },
+    "3d_print_order_yxVaU7": {
+      "type": "3d-print-order",
+      "blocks": {
+        "feature_byXBAR": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"></path><path d=\"M2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>",
+            "feature_text": "Hochwertige Lösungen",
+            "image": "shopify://shop_images/66684c44bbc46366bd681626_Prinjekt_Arbeit_4.webp"
+          }
+        },
+        "feature_nGaMDU": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>",
+            "feature_text": "Schnelles Prototyping",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2440_Prinjekt_Arbeit_2.webp"
+          }
+        },
+        "feature_yQpnLT": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect></svg>",
+            "feature_text": "Viele Modelle",
+            "image": "shopify://shop_images/665f98d6886b3692e133fcb6_Prinjekt_Arbeit_3.webp"
+          }
+        },
+        "feature_hx8M6D": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path></svg>",
+            "feature_text": "Individuelle Reparatur",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2427_Prinjekt_Arbeit_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "feature_byXBAR",
+        "feature_nGaMDU",
+        "feature_yQpnLT",
+        "feature_hx8M6D"
+      ],
+      "name": "3D Print Order",
+      "settings": {
+        "heading": "BESTELLEN SIE JETZT IHREN DRUCK!",
+        "description": "Bestellen Sie jetzt Ihren 3D-Druck bei uns und erleben Sie den Unterschied! Wir fertigen Ihr Produkt vor Ort mit modernsten, hochwertigen Druckern und senden es schnellstmöglich an Sie. Unsere 3D-Drucker sind auf dem neuesten Stand der Technik und gewährleisten höchste Präzision und Detailtreue. Wir verwenden ausschließlich hochwertiges Material, um sicherzustellen, dass Ihr Produkt nicht nur gut aussieht, sondern auch langlebig und funktional ist.",
+        "button_text": "JETZT KONFIGURIEREN",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "materialubersicht_materials_ww98z7",
+    "materialubersicht_materials_7CiE4z",
+    "3d_print_order_yxVaU7"
+  ]
+}

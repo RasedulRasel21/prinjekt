@@ -1,0 +1,271 @@
+{{ 'druckervermietung.css' | asset_url | stylesheet_tag }}
+
+<div class="drucker-section">
+  <div class="drucker-container">
+    <div class="drucker-header">
+      <div class="drucker-header-left">
+        <h2 class="drucker-title">{{ section.settings.title }}</h2>
+        <p class="drucker-description">{{ section.settings.description }}</p>
+      </div>
+      <div class="drucker-header-right">
+        {% if section.settings.button_text != blank %}
+          <a href="{{ section.settings.button_link }}" class="drucker-button-primary">
+            {{ section.settings.button_text }}
+          </a>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="drucker-tabs">
+      <button class="drucker-tab-btn active" data-tab="ablauf">{{ section.settings.tab1_text }}</button>
+      <button class="drucker-tab-btn" data-tab="kosten">{{ section.settings.tab2_text }}</button>
+    </div>
+
+    <div class="drucker-tab-content active" id="ablauf">
+      <div class="drucker-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'ablauf_item' %}
+            <div class="drucker-item">
+              <h3 class="drucker-item-number">{{ block.settings.number }}.</h3>
+              <div class="drucker-item-content">
+                <h4 class="drucker-item-title">{{ block.settings.title }}</h4>
+                <p class="drucker-item-description">{{ block.settings.description }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+
+    <div class="drucker-tab-content" id="kosten">
+      <div class="drucker-grid">
+        {% for block in section.blocks %}
+          {% if block.type == 'kosten_item' %}
+            <div class="drucker-item">
+              <h3 class="drucker-item-number">{{ block.settings.number }}.</h3>
+              <div class="drucker-item-content">
+                <h4 class="drucker-item-title">{{ block.settings.title }}</h4>
+                <p class="drucker-item-description">{{ block.settings.description }}</p>
+              </div>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabBtns = document.querySelectorAll('.drucker-tab-btn');
+    const tabContents = document.querySelectorAll('.drucker-tab-content');
+
+    tabBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        const tabName = this.getAttribute('data-tab');
+        
+        tabBtns.forEach(b => b.classList.remove('active'));
+        tabContents.forEach(c => c.classList.remove('active'));
+        
+        this.classList.add('active');
+        document.getElementById(tabName).classList.add('active');
+      });
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Druckervermietung",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Druckervermietung"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Bei uns können Sie nicht nur Ihre Objekte drucken lassen sondern auch ganz schnell & einfach einen unserer Drucker mieten."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Nutzungsvereinbarung"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "tab1_text",
+      "label": "Tab 1 Text",
+      "default": "Ablauf"
+    },
+    {
+      "type": "text",
+      "id": "tab2_text",
+      "label": "Tab 2 Text",
+      "default": "Kosten"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "ablauf_item",
+      "name": "Ablauf Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description text"
+        }
+      ]
+    },
+    {
+      "type": "kosten_item",
+      "name": "Kosten Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Number",
+          "default": "1"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Description text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Druckervermietung",
+      "blocks": [
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "1",
+            "title": "Kennenlernen und Einweisung",
+            "description": "Bei unserem Kennenlernen erhalten Sie eine umfassende Einweisung in die Nutzung unserer Produkte."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "2",
+            "title": "Ausweiskopie",
+            "description": "Wir fertigen daraufhin eine Kopie Ihres Ausweises an, um Ihre Identität und Adressdaten überprüfen zu können."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "3",
+            "title": "Unterzeichnung des Mietvertrags",
+            "description": "Die Unterzeichnung des Mietvertrags erfolgt nach Abschluss der Verhandlungen und der Klärung aller Details."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "4",
+            "title": "Abholung des Druckers bei Prinjekt",
+            "description": "Die Abholung des Druckers bei Prinjekt kann nach Terminabsprache direkt bei uns vor Ort in Hannover erzeugen."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "5",
+            "title": "Vereinbarte Mietdauer",
+            "description": "Sie erhalten Ihren Drucker über die vereinbarte Mietdauer und können diesen mit zu Ihnen nach Hause negmen."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "6",
+            "title": "Telefonische Reparaturhilfe",
+            "description": "Bei Problemen bieten wir telefonische Reparaturhilfe an, um Ihnen schnellstmöglich Unterstützung zu bieten."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "7",
+            "title": "Abgabe der Drucker oder Kauf",
+            "description": "Die Abgabe der Drucker erfolgt nach Ablauf der Mietdauer oder bei Kaufentscheidung durch den Kunden."
+          }
+        },
+        {
+          "type": "ablauf_item",
+          "settings": {
+            "number": "8",
+            "title": "Rückgabe der Mietkaution",
+            "description": "Die Rückgabe der Mietkaution erfolgt innerhalb von 7 Werktagen nach Rückgabe des Druckers und Überprüfung des Zustands."
+          }
+        },
+        {
+          "type": "kosten_item",
+          "settings": {
+            "number": "1",
+            "title": "Kosten Item 1",
+            "description": "Description for kosten item 1"
+          }
+        },
+        {
+          "type": "kosten_item",
+          "settings": {
+            "number": "2",
+            "title": "Kosten Item 2",
+            "description": "Description for kosten item 2"
+          }
+        },
+        {
+          "type": "kosten_item",
+          "settings": {
+            "number": "3",
+            "title": "Kosten Item 3",
+            "description": "Description for kosten item 3"
+          }
+        },
+        {
+          "type": "kosten_item",
+          "settings": {
+            "number": "4",
+            "title": "Kosten Item 4",
+            "description": "Description for kosten item 4"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

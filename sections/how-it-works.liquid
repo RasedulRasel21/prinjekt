@@ -1,0 +1,82 @@
+{% comment %}
+  How It Works – 3 Cards (schema controlled)
+  Usage: add this section to any template from the theme editor.
+{% endcomment %}
+
+{{ 'section-how-it-works.css' | asset_url | stylesheet_tag }}
+
+<section class="howitworks" id="howitworks-{{ section.id }}">
+  <div class="howitworks__inner page-width">
+    {% if section.settings.heading != blank %}
+      <h2 class="howitworks__heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="howitworks__grid">
+      <!-- Card 1 -->
+      <article class="howitworks__card">
+        <div class="howitworks__num" aria-hidden="true">
+          {{ section.settings.card1_number | default: '1' }}
+        </div>
+        <div class="howitworks__content">
+          <h3 class="howitworks__title">{{ section.settings.card1_title }}</h3>
+          <p class="howitworks__text">{{ section.settings.card1_text }}</p>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="howitworks__card">
+        <div class="howitworks__num" aria-hidden="true">
+          {{ section.settings.card2_number | default: '2' }}
+        </div>
+        <div class="howitworks__content">
+          <h3 class="howitworks__title">{{ section.settings.card2_title }}</h3>
+          <p class="howitworks__text">{{ section.settings.card2_text }}</p>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="howitworks__card">
+        <div class="howitworks__num" aria-hidden="true">
+          {{ section.settings.card3_number | default: '3' }}
+        </div>
+        <div class="howitworks__content">
+          <h3 class="howitworks__title">{{ section.settings.card3_title }}</h3>
+          <p class="howitworks__text">{{ section.settings.card3_text }}</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "How it works (3 cards)",
+  "class": "section-howitworks",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Section heading",
+      "default": "So funktioniert es:"
+    },
+
+    { "type": "header", "content": "Card 1" },
+    { "type": "text", "id": "card1_number", "label": "Number", "default": "1" },
+    { "type": "text", "id": "card1_title", "label": "Title", "default": "3D-Model hochladen" },
+    { "type": "textarea", "id": "card1_text", "label": "Description", "default": "Folgende Dateiformate sind möglich: STL, OBJ, STEP, 3MF" },
+
+    { "type": "header", "content": "Card 2" },
+    { "type": "text", "id": "card2_number", "label": "Number", "default": "2" },
+    { "type": "text", "id": "card2_title", "label": "Title", "default": "Material auswählen" },
+    { "type": "textarea", "id": "card2_text", "label": "Description", "default": "Wählen Sie aus einer großen Vielzahl von Materialien und Farben." },
+
+    { "type": "header", "content": "Card 3" },
+    { "type": "text", "id": "card3_number", "label": "Number", "default": "3" },
+    { "type": "text", "id": "card3_title", "label": "Title", "default": "Bestellung bestätigen" },
+    { "type": "textarea", "id": "card3_text", "label": "Description", "default": "Wir fertigen schnell und zuverlässig und versenden termingerecht." }
+  ],
+  "presets": [
+    { "name": "How it works (3 cards)" }
+  ]
+}
+{% endschema %}

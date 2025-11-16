@@ -1,0 +1,67 @@
+/* Experiences (Text Columns) — section-experiences.css */
+#shopify-section-templates,
+#shopify-section {
+  /* avoid theme collisions */
+}
+
+.xp-section {
+  padding-top: var(--xp-vpad-top, 60px);
+  padding-bottom: var(--xp-vpad-bottom, 60px);
+  background: #ebebeb;
+  color: var(--xp-text);
+}
+
+.xp-section .xp-wrap {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-left: var(--xp-pad);
+  padding-right: var(--xp-pad);
+  padding-top: clamp(36px, 6vw, 88px);
+  padding-bottom: clamp(36px, 6vw, 88px);
+}
+
+.xp-grid {
+  display: grid;
+  grid-template-columns: minmax(180px, 320px) 1fr; /* Left narrow, right wide */
+  gap: var(--xp-gap);
+  align-items: start;
+}
+
+.xp-title {
+  color: var(--xp-heading);
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: clamp(28px, 5vw, 40px); /* similar to screenshot */
+  margin: 0;
+  font-family: "Stara", sans-serif !important;
+}
+
+.xp-right {
+  display: grid;
+  gap: 1rem;
+}
+
+.xp-paragraph p {
+  margin: 0 0 0.75rem 0;
+  line-height: 1.4;
+  font-size: clamp(14px, 1.35vw, 16px);
+  font-weight: 300;
+  color: var(--xp-text);
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.xp-paragraph p:last-child { margin-bottom: 0; }
+
+/* Optional: nicer paragraph spacing where a block has multiple <p> */
+.xp-paragraph p + p { margin-top: 0.5rem; }
+
+/* Mobile */
+@media (max-width: 767px) {
+  .xp-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .xp-title {
+    margin-bottom: 0.25rem;
+  }
+}

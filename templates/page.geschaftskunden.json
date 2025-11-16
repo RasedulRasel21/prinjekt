@@ -1,0 +1,465 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "hero_animated_gallery_bCiiiW": {
+      "type": "hero-animated-gallery",
+      "name": "Hero Animated Gallery",
+      "settings": {
+        "heading": "Der passende Druck für Ihre Firma!",
+        "description": "Bei uns steht der Kunde im Mittelpunkt – wir fertigen für jeden den passenden Druck an. Ob Sie ein Unternehmen sind, das präzise Bauteile benötigt, oder ein Privatkunde, der ein individuelles Design verwirklichen möchte – wir bieten maßgeschneiderte Lösungen für Ihre spezifischen Anforderungen.",
+        "button_text": "Jetzt einen 3D-Druck bestellen",
+        "button_link": "shopify://pages/uploadtool",
+        "hero_image": "shopify://shop_images/6658b45902159c3b2c2d5c19_Bild_header.webp",
+        "horizontal_speed": 3,
+        "vertical_speed": 2,
+        "rotation_speed": 1,
+        "scale_speed": 1,
+        "max_horizontal_offset": 10,
+        "max_vertical_offset": 10,
+        "max_rotation": 0,
+        "min_scale": 95,
+        "max_scale": 105
+      }
+    },
+    "experiences_txMger": {
+      "type": "experiences",
+      "blocks": {
+        "rich_4UxTga": {
+          "type": "rich",
+          "settings": {
+            "text": "<p>Seit den Anfängen des 3D-Drucks bis zu den heutigen, hochmodernen Technologien sind wir stolz darauf, Teil dieser faszinierenden Entwicklung gewesen zu sein. Angefangen bei frühesten privaten 3D-Druckern über maßgeschneiderte Lösungen für Unternehmen bis hin zu den heutigen benutzerfreundlichen Geräten und sogar Metall-3D-Druckern – wir haben diese Entwicklung aktiv mitgestaltet und unsere Expertise kontinuierlich ausgebaut.</p>"
+          }
+        },
+        "rich_hGEmHb": {
+          "type": "rich",
+          "settings": {
+            "text": "<p>Unser Erfahrungsschatz basiert hierbei auf dem Betrieb zahlreicher eigener Drucker sowie der direkten Reparatur durch unsere hausinternen Techniker. Dies ermöglicht uns die Unabhängigkeit von externen Kundendiensten und Lieferketten, wodurch wir stets flexibel und effizient agieren können. </p>"
+          }
+        },
+        "rich_Jp7UAq": {
+          "type": "rich",
+          "settings": {
+            "text": "<p>Auf diese Flexibilität können Sie jedoch nicht nur bei anfallenden Reparaturen vertrauen. Dank unserer beachtlichen 3D-Drucker-Farm, steht unser Team von Designern auch für kurzfristige sowie umfangreiche Projekte bereit, ohne Abstriche bei der Qualität zu machen.</p>"
+          }
+        },
+        "rich_NF4xN4": {
+          "type": "rich",
+          "settings": {
+            "text": "<p><strong>‍</strong>Profitieren auch Sie von unserem langjährigen Know-how und lassen Sie sich von uns bei allen Anliegen der additiven Fertigung beraten. Auch wenn Sie keine Erfahrung im Bereich des 3D-Drucks haben, finden wir die für Sie am besten geeignete Umsetzung Ihres Projektes und begleiten Sie professionell auf dem Weg zum Erfolg dieses.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "rich_4UxTga",
+        "rich_hGEmHb",
+        "rich_Jp7UAq",
+        "rich_NF4xN4"
+      ],
+      "name": "Experiences",
+      "settings": {
+        "heading": "Erfahrungen",
+        "heading_tag": "h1",
+        "max_width": 1200,
+        "side_padding": 24,
+        "col_gap": 3,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "bg_color": "#eeeeee",
+        "text_color": "#333333",
+        "heading_color": "#0a0a0a"
+      }
+    },
+    "info_cta_banner_U7Qetb": {
+      "type": "info-cta-banner",
+      "name": "Info CTA Banner",
+      "settings": {
+        "title": "Wie drucken wir eigentlich?",
+        "desc": "<p>Es gibt eine Mehrzahl an möglichen 3D-Druckverfahren. Wichtig ist, dass man sich für die Variante entscheidet, die am besten für Ihr Projekt geeignet ist oder lassen Sie sich von uns beraten.</p>",
+        "btn_label": "Materialübersicht",
+        "btn_link": "shopify://pages/materialubersicht",
+        "bg_color": "#ebebeb",
+        "text_color": "#111111",
+        "max_width": 1460,
+        "padding_y": 20
+      }
+    },
+    "fdm_materials_YwU3xG": {
+      "type": "fdm-materials",
+      "blocks": {
+        "material_PGghQK": {
+          "type": "material",
+          "settings": {
+            "material_name": "Polylactide (PLA)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        },
+        "material_MYDHcL": {
+          "type": "material",
+          "settings": {
+            "material_name": "Acrylnitril-Butadien-Styrol (ABS)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        },
+        "material_AQna9g": {
+          "type": "material",
+          "settings": {
+            "material_name": "Polymethylmethacrylat (PMMA)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        },
+        "material_6dMte9": {
+          "type": "material",
+          "settings": {
+            "material_name": "Acrylester-Styrol-Acrylnitril (ASA)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "material_PGghQK",
+        "material_MYDHcL",
+        "material_AQna9g",
+        "material_6dMte9"
+      ],
+      "name": "FDM Materials",
+      "settings": {
+        "background_color": "#e8e8e8",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "container_width": 1500,
+        "title": "Fused Deposition Modeling (FDM)",
+        "title_size": 42,
+        "title_color": "#1a1a1a",
+        "description": "Es gibt verschiedene Materialien, mit denen Sie Ihre Teile produzieren lassen können. Hier präsentieren wir Ihnen eine kleine Auswahl, welche wir im FDM-Bereich anbieten können:",
+        "description_color": "#4a4a4a",
+        "button_text": "",
+        "button_link": "",
+        "button_text_color": "#f5a623",
+        "button_border_color": "#f5a623",
+        "button_hover_text_color": "#ffffff",
+        "columns_desktop": 2,
+        "card_gap": 24,
+        "card_border_radius": 16,
+        "card_title_hover_color": "#e69515"
+      }
+    },
+    "fdm_materials_6idGNt": {
+      "type": "fdm-materials",
+      "blocks": {
+        "material_gVezWm": {
+          "type": "material",
+          "settings": {
+            "material_name": "Polylactide (PLA)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        },
+        "material_4eUPw8": {
+          "type": "material",
+          "settings": {
+            "material_name": "Acrylnitril-Butadien-Styrol (ABS)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        },
+        "material_yEBNFb": {
+          "type": "material",
+          "settings": {
+            "material_name": "Polymethylmethacrylat (PMMA)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        },
+        "material_ENz8X7": {
+          "type": "material",
+          "settings": {
+            "material_name": "Acrylester-Styrol-Acrylnitril (ASA)",
+            "title_size": 24,
+            "title_color": "#f5a623",
+            "material_description": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben.",
+            "description_color": "#4a4a4a",
+            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "material_gVezWm",
+        "material_4eUPw8",
+        "material_yEBNFb",
+        "material_ENz8X7"
+      ],
+      "name": "FDM Materials",
+      "settings": {
+        "background_color": "#e8e8e8",
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "container_width": 1500,
+        "title": "Fused Deposition Modeling (FDM)",
+        "title_size": 42,
+        "title_color": "#1a1a1a",
+        "description": "Es gibt verschiedene Materialien, mit denen Sie Ihre Teile produzieren lassen können. Hier präsentieren wir Ihnen eine kleine Auswahl, welche wir im FDM-Bereich anbieten können:",
+        "description_color": "#4a4a4a",
+        "button_text": "",
+        "button_link": "",
+        "button_text_color": "#f5a623",
+        "button_border_color": "#f5a623",
+        "button_hover_text_color": "#ffffff",
+        "columns_desktop": 2,
+        "card_gap": 24,
+        "card_border_radius": 16,
+        "card_title_hover_color": "#e69515"
+      }
+    },
+    "image_slider_pRHEAP": {
+      "type": "image-slider",
+      "blocks": {
+        "image_JgcpFJ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6658794269e38ae544980eaa_Prinjekt_Work_1-p-500.webp"
+          }
+        },
+        "image_VqQgH3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b114b340c00df1816f6_Prinjekt_Work_5-p-500_e75b946a-7188-470c-b47b-6bec0746c181.webp"
+          }
+        },
+        "image_EQVeAr": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b1143cd2eaa01af55d4_Prinjekt_Work_2-p-500.webp"
+          }
+        },
+        "image_LHewNb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66566e3bcdc9ffcafb3e4d73_Prinjekt_Work.webp"
+          }
+        },
+        "image_UNdw8f": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b11776e94d24aa707e9_Prinjekt_Work_4.webp"
+          }
+        },
+        "image_FJhYK6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b115beacc832203bad8_Prinjekt_Work_3.webp"
+          }
+        },
+        "image_tJy4ff": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/6668170ea4e35e4ca7ab1a8f_Prinjekt_Work_3D.webp"
+          }
+        },
+        "image_Xm3wNj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/66587b11698dbdf8618a7ec4_Prinjekt_Work_6.webp"
+          }
+        }
+      },
+      "block_order": [
+        "image_JgcpFJ",
+        "image_VqQgH3",
+        "image_EQVeAr",
+        "image_LHewNb",
+        "image_UNdw8f",
+        "image_FJhYK6",
+        "image_tJy4ff",
+        "image_Xm3wNj"
+      ],
+      "name": "Image Slider",
+      "settings": {
+        "padding_y": 60
+      }
+    },
+    "mass_production_accordion_HnkTjR": {
+      "type": "mass-production-accordion",
+      "blocks": {
+        "accordion_item_AJNAr6": {
+          "type": "accordion_item",
+          "settings": {
+            "accordion_title": "Kleine Teile",
+            "spec_1_label": "Bestellmenge:",
+            "spec_1_value": "10.000 Stk.",
+            "spec_2_label": "Material:",
+            "spec_2_value": "PETG Gold",
+            "spec_3_label": "3D Druck:",
+            "spec_3_value": "0,8€",
+            "spec_4_label": "Zusammenbau:",
+            "spec_4_value": "1,5€/Stk.",
+            "spec_5_label": "Druckgewicht:",
+            "spec_5_value": "8g.",
+            "spec_6_label": "Gesamte Druckzeit:",
+            "spec_6_value": "3000 Stunden / 125 Tage",
+            "spec_7_label": "Preis Pro Gramm:",
+            "spec_7_value": "0,1€",
+            "spec_8_label": "Lieferzeit:",
+            "spec_8_value": "7 Tage",
+            "button_text": "Jetzt 3D-Druck bestellen",
+            "button_link": "shopify://pages/materialubersicht",
+            "image": "shopify://shop_images/665a0a4702247b0115c2f28a_Prinjekt_Work.webp"
+          }
+        },
+        "accordion_item_hy36HQ": {
+          "type": "accordion_item",
+          "settings": {
+            "accordion_title": "Große Teile",
+            "spec_1_label": "Bestellmenge:",
+            "spec_1_value": "1.500 Stk.",
+            "spec_2_label": "Material:",
+            "spec_2_value": "PLA Weiß (Polyterra)",
+            "spec_3_label": "3D Druck:",
+            "spec_3_value": "8€/Stk.",
+            "spec_4_label": "",
+            "spec_4_value": "",
+            "spec_5_label": "Druckgewicht:",
+            "spec_5_value": "150g",
+            "spec_6_label": "Gesamte Druckzeit:",
+            "spec_6_value": "11250 Stunden / 468 Tage",
+            "spec_7_label": "Preis Pro Gramm:",
+            "spec_7_value": "0,053€",
+            "spec_8_label": "Lieferzeit:",
+            "spec_8_value": "2 Wochen",
+            "button_text": "Jetzt 3D-Druck bestellen",
+            "button_link": "shopify://pages/uploadtool",
+            "image": "shopify://shop_images/66566d400f11d6ed2e992b7c_Prinjekt_3D_Druck_e2fc229e-9eba-4a02-8d21-f7232722c965.webp"
+          }
+        }
+      },
+      "block_order": [
+        "accordion_item_AJNAr6",
+        "accordion_item_hy36HQ"
+      ],
+      "custom_css": [],
+      "name": "Mass Production Accordion",
+      "settings": {
+        "title": "Individuelle Angebote für die Massenfertigung",
+        "description": "Wir sind Ihre Anlaufstelle für alles rund um das faszinierende Thema 3D-Druck. Egal, ob Sie ein Unternehmen sind, das maßgeschneiderte Prototypen benötigt, ein Künstler, der seine Ideen zum Leben erwecken möchte, oder ein Hobbybastler auf der Suche nach neuen Möglichkeiten - bei uns sind Sie genau richtig. In den nachfolgenden Beispielen haben wir zwei verschiedenen Rechnungen, die zeigen sollen, wie solch eine Bestellung aussehen könnte. Dies sind keine Mindestbestellmengen sondern lediglich Beispielrechnungen zur Veranschaulichung."
+      }
+    },
+    "how_it_works_4JCDXC": {
+      "type": "how-it-works",
+      "name": "How it works (3 cards)",
+      "settings": {
+        "heading": "Das bieten wir unseren Geschäftskunden zusätzlich an",
+        "card1_number": "1",
+        "card1_title": "Feuerfeste Funktionsteile",
+        "card1_text": "Zu den hohen Anforderungen, denen 3D-gedruckte Bauteile in einigen Bereichen gerecht werden müssen, gehört eine zertifizierte Feuerfestigkeit. Diese nennt sich UL94-Norm. Ein paar unserer Materialien erfüllen die Anforderungen in brandgefährdeten Bereichen.",
+        "card2_number": "2",
+        "card2_title": "Amazon FBA",
+        "card2_text": "Amazon FBA ist mittlerweile ein fester Bestandteil vieler Händler, auch Ihre Bestellungen über uns können direkt mit Amazon FBA verknüpft werden. Damit sparen Sie sehr viel Zeit.",
+        "card3_number": "3",
+        "card3_title": "Versand an Warenlager",
+        "card3_text": "Wenn Sie ein Produkt verkaufen wollen, aber ein externes Warenlager nutzen, stellt das für uns kein Problem dar. Je nach Auftrag produzieren wir die Teile für Sie und im Nachgang können wir das Produkt direkt an Ihr Warenlager schicken, sodass Sie sich nicht mehr darum kümmern müssen."
+      }
+    },
+    "3d_print_order_yxVaU7": {
+      "type": "3d-print-order",
+      "blocks": {
+        "feature_byXBAR": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"></path><path d=\"M2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>",
+            "feature_text": "Hochwertige Lösungen",
+            "image": "shopify://shop_images/66684c44bbc46366bd681626_Prinjekt_Arbeit_4.webp"
+          }
+        },
+        "feature_nGaMDU": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>",
+            "feature_text": "Schnelles Prototyping",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2440_Prinjekt_Arbeit_2.webp"
+          }
+        },
+        "feature_yQpnLT": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect></svg>",
+            "feature_text": "Viele Modelle",
+            "image": "shopify://shop_images/665f98d6886b3692e133fcb6_Prinjekt_Arbeit_3.webp"
+          }
+        },
+        "feature_hx8M6D": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path></svg>",
+            "feature_text": "Individuelle Reparatur",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2427_Prinjekt_Arbeit_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "feature_byXBAR",
+        "feature_nGaMDU",
+        "feature_yQpnLT",
+        "feature_hx8M6D"
+      ],
+      "name": "3D Print Order",
+      "settings": {
+        "heading": "BESTELLEN SIE JETZT IHREN DRUCK!",
+        "description": "Bestellen Sie jetzt Ihren 3D-Druck bei uns und erleben Sie den Unterschied! Wir fertigen Ihr Produkt vor Ort mit modernsten, hochwertigen Druckern und senden es schnellstmöglich an Sie. Unsere 3D-Drucker sind auf dem neuesten Stand der Technik und gewährleisten höchste Präzision und Detailtreue. Wir verwenden ausschließlich hochwertiges Material, um sicherzustellen, dass Ihr Produkt nicht nur gut aussieht, sondern auch langlebig und funktional ist.",
+        "button_text": "JETZT KONFIGURIEREN",
+        "button_link": "shopify://pages/uploadtool"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_animated_gallery_bCiiiW",
+    "experiences_txMger",
+    "info_cta_banner_U7Qetb",
+    "fdm_materials_YwU3xG",
+    "fdm_materials_6idGNt",
+    "image_slider_pRHEAP",
+    "mass_production_accordion_HnkTjR",
+    "how_it_works_4JCDXC",
+    "3d_print_order_yxVaU7"
+  ]
+}

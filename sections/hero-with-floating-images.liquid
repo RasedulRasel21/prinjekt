@@ -1,0 +1,180 @@
+{{ 'hero-floating-images.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="hero-floating-section"
+  id="hero-{{ section.id }}"
+  style="
+    --bg-color: {{ section.settings.background_color }};
+    --text-color: {{ section.settings.text_color }};
+    --button-bg-color: {{ section.settings.button_bg_color }};
+    --button-text-color: {{ section.settings.button_text_color }};
+    --hero-pad-top: {{ section.settings.padding_top }}px;
+    --hero-pad-bottom: {{ section.settings.padding_bottom }}px;
+    --hero-content-gap: {{ section.settings.content_gap }}px;
+  "
+>
+  <div class="hero-floating-container">
+    {%- if section.blocks.size > 0 -%}
+      <div class="floating-images-wrapper">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'floating_image' -%}
+            <div class="floating-image floating-image-{{ forloop.index }}" {{ block.shopify_attributes }}>
+              {%- if block.settings.image != blank -%}
+                {{- block.settings.image | image_url: width: 600 | image_tag: loading: 'lazy', class: 'floating-img' -}}
+              {%- else -%}
+                <div class="floating-img-placeholder">{{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}</div>
+              {%- endif -%}
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+    
+    <div class="hero-content-wrapper">
+      <div class="hero-content">
+        {%- if section.settings.heading != blank -%}
+          <h1 class="hero-heading">{{ section.settings.heading }}</h1>
+        {%- endif -%}
+        {%- if section.settings.description != blank -%}
+          <div class="hero-description">
+            {{ section.settings.description }}
+          </div>
+        {%- endif -%}
+        {%- if section.settings.button_label != blank -%}
+          <div class="hero-button-wrapper">
+            <a href="{{ section.settings.button_link }}" class="hero-button">
+              {{ section.settings.button_label }}
+            </a>
+          </div>
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+  
+  {%- if section.settings.bottom_text != blank -%}
+    <div class="hero-bottom-text">
+      <h2>{{ section.settings.bottom_text }}</h2>
+    </div>
+  {%- endif -%}
+
+  {% comment %} <hr class="hr-tag-hero" /> {% endcomment %}
+</section>
+
+{% schema %}
+{
+  "name": "Hero with Floating Images",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Wir liefern Arbeit, die begeistert"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description",
+      "default": "<p>Der 3D-Druck ist revolutionär! Mit dieser Technologie können wir nicht nur Objekte herstellen, sondern auch unsere kreativen Visionen zum Leben erwecken.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "JETZT 3D-DRUCK ERSTELLEN"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "textarea",
+      "id": "bottom_text",
+      "label": "Bottom Text",
+      "default": "WIR DRUCKEN IHREN WUNSCH IN BESTER QUALITÄT"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#f5f5f5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_bg_color",
+      "label": "Button Background Color",
+      "default": "#ffb800"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Section top padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Section bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "content_gap",
+      "label": "Gap between hero text and bottom text",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "default": 60
+    }
+  ],
+  "blocks": [
+    {
+      "type": "floating_image",
+      "name": "Floating Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Hero with Floating Images",
+      "blocks": [
+        { "type": "floating_image" },
+        { "type": "floating_image" },
+        { "type": "floating_image" },
+        { "type": "floating_image" },
+        { "type": "floating_image" },
+        { "type": "floating_image" },
+        { "type": "floating_image" },
+        { "type": "floating_image" }
+      ]
+    }
+  ]
+}
+{% endschema %}

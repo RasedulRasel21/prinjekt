@@ -1,0 +1,253 @@
+/* 
+  Stylesheet: Hero Animated Gallery Section
+  File: assets/hero-animated-gallery.css
+*/
+
+.hero-animated-section {
+  width: 100%;
+  background-color: #ebebeb;
+  padding-top: 0;
+  padding-bottom: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Side - Text Content */
+.hero-text {
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.hero-heading {
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin: 0 0 30px 0;
+  color: #000;
+  letter-spacing: -0.02em;
+  font-family: "Stara", sans-serif !important;
+}
+
+.hero-description {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #111111;
+  margin: 0 0 40px 0;
+  max-width: 800px;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.hero-button:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+/* Right Side - Animated Image */
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  padding: 60px;
+}
+
+.animated-image-wrapper {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+  transform-origin: center center;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #3a3a3a;
+  border-radius: 10px;
+}
+
+.image-placeholder svg {
+  width: 100px;
+  height: 100px;
+  fill: #666;
+}
+
+/* Cookie Icon (bottom left) */
+/* .hero-animated-section::before {
+  content: '';
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
+  width: 40px;
+  height: 40px;
+  background-color: #ff9800;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.4);
+  z-index: 10;
+} */
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .hero-heading {
+    font-size: 3rem;
+  }
+  
+  .hero-image-container {
+    height: 80vh;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .hero-text {
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .hero-heading {
+    font-size: 2.5rem;
+  }
+  
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-image-container {
+    height: 60vh;
+    padding: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-animated-section {
+    padding: 40px 0;
+  }
+  
+  .hero-text {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .hero-heading {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+  }
+  
+  .hero-button {
+    padding: 14px 28px;
+    font-size: 0.95rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero-image-container {
+    height: 50vh;
+    padding: 20px;
+  }
+  
+  .hero-animated-section::before {
+    bottom: 20px;
+    left: 20px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-animated-section {
+    padding: 30px 0;
+  }
+  
+  .hero-container {
+    padding: 0;
+  }
+  
+  .hero-text {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+  .hero-heading {
+    font-size: 1.75rem;
+  }
+  
+  .hero-description {
+    font-size: 0.9rem;
+  }
+  
+  .hero-image-container {
+    height: 40vh;
+    padding: 15px;
+  }
+}
+
+/* Animation Performance */
+@media (prefers-reduced-motion: reduce) {
+  .animated-image-wrapper {
+    transition: none;
+    transform: none !important;
+  }
+  
+  .hero-button {
+    transition: none;
+  }
+}

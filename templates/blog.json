@@ -1,0 +1,82 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-blog",
+      "custom_css": [
+        ".title--primary {display: none;}"
+      ],
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": true,
+        "show_author": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "3d_print_order_UcXNnj": {
+      "type": "3d-print-order",
+      "blocks": {
+        "feature_wzi6te": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M12 2L2 7l10 5 10-5-10-5z\"></path><path d=\"M2 17l10 5 10-5M2 12l10 5 10-5\"></path></svg>",
+            "feature_text": "Hochwertige Lösungen",
+            "image": "shopify://shop_images/66684c44bbc46366bd681626_Prinjekt_Arbeit_4.webp"
+          }
+        },
+        "feature_fgkxBc": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg>",
+            "feature_text": "Schnelles Prototyping",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2440_Prinjekt_Arbeit_2.webp"
+          }
+        },
+        "feature_DDp6Er": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><rect x=\"3\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"3\" width=\"7\" height=\"7\"></rect><rect x=\"14\" y=\"14\" width=\"7\" height=\"7\"></rect><rect x=\"3\" y=\"14\" width=\"7\" height=\"7\"></rect></svg>",
+            "feature_text": "Viele Modelle",
+            "image": "shopify://shop_images/665f98d6886b3692e133fcb6_Prinjekt_Arbeit_3.webp"
+          }
+        },
+        "feature_tyFpFb": {
+          "type": "feature",
+          "settings": {
+            "icon": "<svg width=\"20\" height=\"20\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z\"></path></svg>",
+            "feature_text": "Individuelle Reparatur",
+            "image": "shopify://shop_images/665f98d6dd31304ded2f2427_Prinjekt_Arbeit_1.webp"
+          }
+        }
+      },
+      "block_order": [
+        "feature_wzi6te",
+        "feature_fgkxBc",
+        "feature_DDp6Er",
+        "feature_tyFpFb"
+      ],
+      "name": "3D Print Order",
+      "settings": {
+        "heading": "BESTELLEN SIE JETZT IHREN DRUCK!",
+        "description": "Bestellen Sie jetzt Ihren 3D-Druck bei uns und erleben Sie den Unterschied! Wir fertigen Ihr Produkt vor Ort mit modernsten, hochwertigen Druckern und senden es schnellstmöglich an Sie. Unsere 3D-Drucker sind auf dem neuesten Stand der Technik und gewährleisten höchste Präzision und Detailtreue. Wir verwenden ausschließlich hochwertiges Material, um sicherzustellen, dass Ihr Produkt nicht nur gut aussieht, sondern auch langlebig und funktional ist.",
+        "button_text": "JETZT KONFIGURIEREN",
+        "button_link": "shopify://pages/uploadtool"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "3d_print_order_UcXNnj"
+  ]
+}

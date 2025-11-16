@@ -1,0 +1,78 @@
+/* Info CTA Banner */
+.info-cta-banner {
+  --icb-bg: #ebebeb;
+  --icb-text: #111;
+  --icb-max: 1500px;
+
+  background: var(--icb-bg);
+  color: var(--icb-text);
+}
+
+.info-cta-banner .icb__container {
+  max-width: var(--icb-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  align-items: start;
+  /* use dynamic vertical padding from theme setting */
+  padding: var(--icb-pad-y, 20px) 0;
+}
+
+.icb__title {
+  margin: 0 0 8px;
+  font-size: clamp(24px, 3.2vw, 48px);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  font-family: "Stara", sans-serif !important;
+}
+
+.icb__desc {
+  max-width: 90ch;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.3;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Right column */
+.icb__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.icb__button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: transparent;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+.icb__button:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+/* Desktop: left text, right button */
+@media (min-width: 768px) {
+  .info-cta-banner .icb__container {
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 24px;
+  }
+  .icb__right {
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,259 @@
+/* Druckervermietung Section Styles */
+.drucker-section {
+  background-color: #ebebeb;
+  padding: 60px 20px;
+  width: 100%;
+}
+
+.drucker-container {
+  max-width: 1500px;
+  margin: 0 auto;
+  background: linear-gradient(to right, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  border-radius: 10px;
+  padding: 50px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Section */
+.drucker-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  gap: 30px;
+  font-family: "Stara", sans-serif !important;
+}
+
+.drucker-header-left {
+  flex: 1;
+}
+
+.drucker-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #FF9900;
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+  font-family: "Stara", sans-serif !important;
+}
+
+.drucker-description {
+  font-size: 16px;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.drucker-header-right {
+  flex-shrink: 0;
+}
+
+.drucker-button-primary {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #ff9800;
+  border: 2px solid #ff9800;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.drucker-button-primary:hover {
+  background-color: #ff9800;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+}
+
+/* Tabs */
+.drucker-tabs {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.drucker-tab-btn {
+  padding: 12px 30px;
+  background-color: transparent;
+  color: #666;
+  border: 2px solid #FF9900;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+.drucker-tab-btn.active {
+  background-color: #FF9900;
+  color: #fff;
+}
+
+.drucker-tab-btn:hover {
+  background-color: #FF9900;
+  color: #fff;
+}
+
+/* Tab Content */
+.drucker-tab-content {
+  display: none;
+}
+
+.drucker-tab-content.active {
+  display: block;
+}
+
+/* Grid */
+.drucker-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+/* Items */
+.drucker-item {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.drucker-item-number {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  flex-shrink: 0;
+  min-width: 30px;
+  font-family: "Stara", sans-serif !important;
+
+}
+
+.drucker-item-content {
+  flex: 1;
+}
+
+.drucker-item-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #111111;
+  margin: 0 0 8px 0;
+  line-height: 1.4;
+  font-family: "Stara", sans-serif !important;
+}
+
+.drucker-item-description {
+  font-size: 16px;
+  font-weight: 300;
+  color: #111111;
+  line-height: 1.6;
+  margin: 0;
+  font-family: "Myriad Pro", sans-serif !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .drucker-container {
+    padding: 40px;
+  }
+  
+  .drucker-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 992px) {
+  .drucker-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .drucker-header-right {
+    width: 100%;
+  }
+  
+  .drucker-button-primary {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .drucker-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .drucker-section {
+    padding: 40px 15px;
+  }
+  
+  .drucker-container {
+    padding: 30px 20px;
+    border-radius: 10px;
+  }
+  
+  .drucker-title {
+    font-size: 36px;
+  }
+  
+  .drucker-description {
+    font-size: 15px;
+  }
+  
+  .drucker-tabs {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .drucker-tab-btn {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .drucker-item {
+    gap: 15px;
+  }
+  
+  .drucker-item-title {
+    font-size: 16px;
+  }
+  
+  .drucker-item-description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .drucker-title {
+    font-size: 28px;
+  }
+  
+  .drucker-description {
+    font-size: 14px;
+  }
+  
+  .drucker-button-primary {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+  
+  .drucker-tab-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
+  .drucker-item-number {
+    font-size: 20px;
+  }
+  
+  .drucker-item-title {
+    font-size: 15px;
+  }
+}

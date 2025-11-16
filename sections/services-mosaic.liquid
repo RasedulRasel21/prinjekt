@@ -1,0 +1,148 @@
+{{ 'services-mosaic.css' | asset_url | stylesheet_tag }}
+
+<section class="services-mosaic">
+  <div class="services-container">
+    {% if section.settings.heading != blank %}
+      <h2 class="services-heading">{{ section.settings.heading }}</h2>
+    {% endif %}
+    
+    {% if section.settings.description != blank %}
+      <p class="services-description">{{ section.settings.description }}</p>
+    {% endif %}
+
+    <div class="mosaic-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'text_card' %}
+          <div class="mosaic-card mosaic-card-text" {{ block.shopify_attributes }}>
+            <div class="card-content">
+              {% if block.settings.title != blank %}
+                <h3 class="card-title">{{ block.settings.title }}</h3>
+              {% endif %}
+              {% if block.settings.description != blank %}
+                <p class="card-description">{{ block.settings.description }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% elsif block.type == 'image_card' %}
+          <div class="mosaic-card mosaic-card-image" {{ block.shopify_attributes }}>
+            {% if block.settings.image != blank %}
+              <img 
+                src="{{ block.settings.image | img_url: 'master' }}" 
+                alt="{{ block.settings.image.alt | escape }}"
+                loading="lazy"
+                class="card-image"
+              >
+            {% else %}
+              <div class="card-image-placeholder">
+                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Services Mosaic",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Unsere Leistungen im Überblick"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Wir sind Ihre Anlaufstelle für alles rund um das Thema 3D Druck."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "text_card",
+      "name": "Text Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Card Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Card description text goes here."
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Background Color",
+          "default": "#FFF5E6"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title Color",
+          "default": "#FFB84D"
+        }
+      ]
+    },
+    {
+      "type": "image_card",
+      "name": "Image Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Services Mosaic",
+      "blocks": [
+        {
+          "type": "text_card",
+          "settings": {
+            "title": "Einzelaufträge",
+            "description": "Senden Sie Ihre Druckdatei einfach über unser Upload-Tool."
+          }
+        },
+        {
+          "type": "image_card"
+        },
+        {
+          "type": "image_card"
+        },
+        {
+          "type": "text_card",
+          "settings": {
+            "title": "Serienfertigung",
+            "description": "Mit unseren 3D-Druckverfahren ist oftmals eine schnellere Produktion möglich."
+          }
+        },
+        {
+          "type": "image_card"
+        },
+        {
+          "type": "text_card",
+          "settings": {
+            "title": "Prototypen",
+            "description": "Wichtig dabei ist, Zeit und Kosten während der Entwicklung zu sparen."
+          }
+        },
+        {
+          "type": "image_card"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

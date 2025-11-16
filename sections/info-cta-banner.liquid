@@ -1,0 +1,65 @@
+{% comment %}
+  Info CTA Banner
+  Left: Title + Description
+  Right: Single Button
+{% endcomment %}
+
+{{ 'info-cta-banner.css' | asset_url | stylesheet_tag }}
+
+<section class="info-cta-banner"
+  style="
+    {% if section.settings.bg_color != blank %}--icb-bg: {{ section.settings.bg_color }};{% endif %}
+    {% if section.settings.text_color != blank %}--icb-text: {{ section.settings.text_color }};{% endif %}
+    --icb-max: {{ section.settings.max_width }}px;
+    --icb-pad-y: {{ section.settings.padding_y }}px;
+  "
+>
+  <div class="icb__container">
+    <div class="icb__left">
+      {% if section.settings.title != blank %}
+        <h2 class="icb__title">{{ section.settings.title }}</h2>
+      {% endif %}
+
+      {% if section.settings.desc != blank %}
+        <div class="icb__desc rte">{{ section.settings.desc }}</div>
+      {% endif %}
+    </div>
+
+    <div class="icb__right">
+      {% if section.settings.btn_label != blank and section.settings.btn_link != blank %}
+        <a
+          class="icb__button"
+          href="{{ section.settings.btn_link }}"
+          aria-label="{{ section.settings.btn_label | escape }}"
+        >
+          {{ section.settings.btn_label }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Info CTA Banner",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    { "type": "text", "id": "title", "label": "Title", "default": "Wie drucken wir eigentlich?" },
+    { "type": "richtext", "id": "desc", "label": "Description", "default": "<p>Es gibt eine Mehrzahl an möglichen 3D-Druckverfahren. Wichtig ist, dass man sich für die Variante entscheidet, die am besten für Ihr Projekt geeignet ist oder lassen Sie sich von uns beraten.</p>" },
+
+    { "type": "text", "id": "btn_label", "label": "Button label", "default": "Materialübersicht" },
+    { "type": "url", "id": "btn_link", "label": "Button link" },
+
+    { "type": "color", "id": "bg_color", "label": "Background color", "default": "#f1f1f1" },
+    { "type": "color", "id": "text_color", "label": "Text color", "default": "#111111" },
+
+    { "type": "range", "id": "max_width", "min": 800, "max": 1600, "step": 10, "unit": "px", "label": "Content max width", "default": 1280 },
+    { "type": "range", "id": "padding_y", "min": 12, "max": 80, "step": 4, "unit": "px", "label": "Vertical padding", "default": 28 }
+  ],
+  "blocks": [],
+  "presets": [
+    { "name": "Info CTA Banner" }
+  ]
+}
+{% endschema %}

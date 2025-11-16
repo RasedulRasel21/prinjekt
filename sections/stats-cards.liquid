@@ -1,0 +1,167 @@
+{% comment %}
+  Section: Stats Cards (2x2 on desktop, 1x per row on mobile)
+  - Add multiple “Card” blocks. Each block = one stat card.
+  - Left: big number + subheading. Right: transparent image overlay.
+  - Styles loaded from assets/stats-cards.css
+{% endcomment %}
+
+{{ 'stats-cards.css' | asset_url | stylesheet_tag }}
+
+<section
+  class="stats-cards"
+  id="stats-cards-{{ section.id }}"
+  style="
+    --stats-pad-top: {{ section.settings.padding_top | default: 100 }}px;
+    --stats-pad-bottom: {{ section.settings.padding_bottom | default: 100 }}px;
+  "
+>
+  <div class="stats-cards__inner page-width">
+    {% if section.settings.section_heading != blank %}
+      <h2 class="stats-cards__heading">{{ section.settings.section_heading }}</h2>
+    {% endif %}
+    {% if section.settings.section_subheading != blank %}
+      <p class="stats-cards__subheading">{{ section.settings.section_subheading }}</p>
+    {% endif %}
+
+    <div class="stats-cards__grid stats-cards__grid--cols-{{ section.settings.desktop_columns }}">
+      {% for block in section.blocks %}
+        {% assign number = block.settings.number_text %}
+        {% assign label  = block.settings.label_text %}
+        {% assign accent = block.settings.accent_color %}
+        {% assign text   = block.settings.text_color %}
+        {% assign bg     = block.settings.bg_color %}
+        {% assign image  = block.settings.right_image %}
+
+        <article
+          class="stats-card"
+          style="--card-bg: {{ bg }}; --card-text: {{ text }}; --card-accent: {{ accent }};"
+          {{ block.shopify_attributes }}
+        >
+          <div class="stats-card__content">
+            {% if number != blank %}
+              <div class="stats-card__number">{{ number }}</div>
+            {% endif %}
+            {% if label != blank %}
+              <div class="stats-card__label">{{ label }}</div>
+            {% endif %}
+          </div>
+
+          {% if image != blank %}
+            <div class="stats-card__art" aria-hidden="true">
+              <img
+                src="{{ image | image_url: width: 800 }}"
+                srcset="
+                  {{ image | image_url: width: 400 }} 400w,
+                  {{ image | image_url: width: 600 }} 600w,
+                  {{ image | image_url: width: 800 }} 800w
+                "
+                sizes="(max-width: 749px) 100vw, (min-width: 750px) 50vw"
+                alt=""
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+        </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Stats cards",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "section_heading",
+      "label": "Section heading",
+      "default": "7000+"
+    },
+    {
+      "type": "text",
+      "id": "section_subheading",
+      "label": "Section subheading",
+      "default": "Umgesetzte Projekte"
+    },
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "label": "Desktop columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 200,
+      "step": 4,
+      "default": 100
+    }
+  ],
+  "blocks": [
+    {
+      "type": "card",
+      "name": "Card",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number_text",
+          "label": "Big number",
+          "default": "7000+"
+        },
+        {
+          "type": "text",
+          "id": "label_text",
+          "label": "Subheading",
+          "default": "Umgesetzte Projekte"
+        },
+        {
+          "type": "image_picker",
+          "id": "right_image",
+          "label": "Right-side image (transparent PNG/SVG recommended)"
+        },
+        {
+          "type": "color",
+          "id": "accent_color",
+          "label": "Accent color (number)",
+          "default": "#FFB24A"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text color",
+          "default": "#0F0F0F"
+        },
+        {
+          "type": "color",
+          "id": "bg_color",
+          "label": "Card background",
+          "default": "#FFF9F0"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [
+    {
+      "name": "Stats cards",
+      "category": "Text"
+    }
+  ]
+}
+{% endschema %}

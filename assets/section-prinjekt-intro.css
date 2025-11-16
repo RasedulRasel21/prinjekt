@@ -1,0 +1,77 @@
+/* Prinjekt – Big centered paragraph (simple) */
+
+.prinjekt-hero-section{
+  background-color: #ebebeb;
+  padding-block: clamp(40px, 8vw, 80px);
+}
+
+.prinjekt-hero-text {
+  /* responsive ellipse size */
+  --halo-w: min(50vw, 700px);
+  --halo-h: calc(var(--halo-w) * 0.6);
+
+  /* colors */
+  --c1: #fff3e0;
+  --c2: #fff5e8;
+  --c3: #ebebeb;
+
+  /* centered, sized ellipse; rest is transparent so gray shows */
+  background:
+    radial-gradient(ellipse var(--halo-w) var(--halo-h) at center,
+      var(--c1) 0%,
+      var(--c2) 25%,
+      var(--c3) 60%,
+      transparent 61%) center / var(--halo-w) var(--halo-h) no-repeat;
+
+  /* Centering text and adjusting padding */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-block: clamp(48px, 10vw, 100px);
+  width: 100%;
+  gap: clamp(24px, 3vw, 40px);
+}
+
+.prinjekt-hero-text .pht-inner {
+  max-width: 1100px;
+  margin-inline: auto;
+  padding-inline: clamp(16px, 4vw, 32px);
+  text-align: center;
+}
+
+.prinjekt-hero-text .pht-content {
+  font-size: clamp(24px, 3.2vw, 40px);
+  line-height: 48px;
+  letter-spacing: 0;
+  color: #0b0b0b;
+  font-weight: 500;
+  word-break: normal;
+  overflow-wrap: anywhere;
+  hyphens: auto;
+}
+
+/* remove default RTE margins so it reads as one block */
+.prinjekt-hero-text .pht-content p { margin: 0; font-family: "Stara", sans-serif !important; }
+
+/* Circle element below text */
+.prinjekt-circle {
+  width: clamp(40px, 5vw, 60px);
+  height: clamp(40px, 5vw, 60px);
+  border-radius: 50%;
+  background-color: #8b7355;
+  flex-shrink: 0;
+}
+
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
+  .prinjekt-hero-section {
+    padding-block: clamp(30px, 6vw, 50px);
+  }
+  
+  .prinjekt-hero-text {
+    padding-block: clamp(40px, 8vw, 70px);
+    gap: clamp(20px, 2.5vw, 30px);
+  }
+}

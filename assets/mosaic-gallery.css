@@ -1,0 +1,280 @@
+/* Mosaic Gallery Section */
+.mosaic-gallery-section {
+  padding: 60px 0;
+  background-color: #ebebeb;
+}
+
+.mosaic-gallery-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.mosaic-gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 180px;
+  gap: 8px;
+}
+
+.mosaic-item {
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #1a1a1a;
+}
+
+.mosaic-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.mosaic-item:hover img {
+  transform: scale(1.05);
+}
+
+.mosaic-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2a2a2a;
+}
+
+.placeholder-svg {
+  width: 50%;
+  height: 50%;
+  opacity: 0.3;
+}
+
+/* Mosaic Layout Pattern - Matching Your Image */
+.mosaic-item-1 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-2 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-3 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.mosaic-item-4 {
+  grid-column: span 3;
+  grid-row: span 5;
+}
+
+.mosaic-item-5 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.mosaic-item-6 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-7 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-8 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-9 {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
+.mosaic-item-10 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.mosaic-item-11 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-12 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.mosaic-item-13 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-14 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-15 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-16 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-17 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.mosaic-item-18 {
+  grid-column: span 3;
+  grid-row: span 3;
+}
+
+.mosaic-item-19 {
+  grid-column: span 6;
+  grid-row: span 2;
+}
+
+.mosaic-item-20 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+/* Tablet Responsive */
+@media screen and (max-width: 989px) {
+  .mosaic-gallery-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-auto-rows: 150px;
+    gap: 6px;
+  }
+
+  .mosaic-item-1,
+  .mosaic-item-2,
+  .mosaic-item-6,
+  .mosaic-item-7,
+  .mosaic-item-8 {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-3,
+  .mosaic-item-4,
+  .mosaic-item-10 {
+    grid-column: span 4;
+    grid-row: span 3;
+  }
+
+  .mosaic-item-5,
+  .mosaic-item-9 {
+    grid-column: span 8;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-11,
+  .mosaic-item-12,
+  .mosaic-item-13,
+  .mosaic-item-14,
+  .mosaic-item-15,
+  .mosaic-item-16,
+  .mosaic-item-17,
+  .mosaic-item-18,
+  .mosaic-item-19,
+  .mosaic-item-20 {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 749px) {
+  .mosaic-gallery-section {
+    padding: 40px 0;
+  }
+
+  .mosaic-gallery-heading {
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+  }
+
+  .mosaic-gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 120px;
+    gap: 4px;
+  }
+
+  .mosaic-item-1,
+  .mosaic-item-2 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-3 {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .mosaic-item-4 {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .mosaic-item-5 {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-6,
+  .mosaic-item-7 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-8 {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-9 {
+    grid-column: span 4;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-10 {
+    grid-column: span 2;
+    grid-row: span 3;
+  }
+
+  .mosaic-item-11,
+  .mosaic-item-12,
+  .mosaic-item-13,
+  .mosaic-item-14,
+  .mosaic-item-15,
+  .mosaic-item-16,
+  .mosaic-item-17,
+  .mosaic-item-18 {
+    grid-column: span 2;
+    grid-row: span 2;
+  }
+
+  .mosaic-item-19,
+  .mosaic-item-20 {
+    grid-column: span 5;
+    grid-row: span 2;
+  }
+
+  .mosaic-item {
+    border-radius: 10px;
+  }
+}

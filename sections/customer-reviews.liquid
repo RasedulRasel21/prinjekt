@@ -1,0 +1,101 @@
+{% comment %}
+Matches screenshot:
+Left: title, rating line, small button
+Right: 3 stacked full-width review cards (subtitle, description, author)
+{% endcomment %}
+
+{{ 'customer-reviews.css' | asset_url | stylesheet_tag }}
+
+<section id="reviews-{{ section.id }}" class="rs22">
+  <div class="rs22__container">
+    <!-- TOP-LEFT: title + rating + button -->
+    <div class="rs22__left">
+      {% if section.settings.heading != blank %}
+        <h2 class="rs22__title">{{ section.settings.heading }}</h2>
+      {% endif %}
+
+      <div class="rs22__rating">
+        {% if section.settings.show_stars %}
+          <div class="rs22__stars" aria-hidden="true">
+            {% for i in (1..5) %}
+              <svg class="star" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.88L18.18 22 12 18.56 5.82 22 7 14.15l-5-4.88 6.91-1.01L12 2z"/>
+              </svg>
+            {% endfor %}
+          </div>
+        {% endif %}
+        {% if section.settings.rating_text != blank %}
+          <span class="rs22__rating-text">{{ section.settings.rating_text }}</span>
+        {% endif %}
+      </div>
+
+      {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+        <a href="{{ section.settings.button_link }}" class="rs22__btn">
+          {{ section.settings.button_label }}
+        </a>
+      {% endif %}
+    </div>
+
+    {% assign reviews = section.blocks | slice: 0, 3 %}
+    {% assign top = reviews | first %}
+    {% assign bottom = reviews | slice: 1, 2 %}
+
+    <!-- TOP-RIGHT: Review #1 -->
+    {% if top %}
+      <article class="rs22-card rs22-card--top" {{ top.shopify_attributes }}>
+        <div class="rs22-card__quote" aria-hidden="true">“</div>
+        {% if top.settings.subtitle != blank %}
+          <h3 class="rs22-card__subtitle">{{ top.settings.subtitle }}</h3>
+        {% endif %}
+        {% if top.settings.text != blank %}
+          <div class="rs22-card__text">{{ top.settings.text }}</div>
+        {% endif %}
+        {% if top.settings.author != blank %}
+          <div class="rs22-card__author">{{ top.settings.author }}</div>
+        {% endif %}
+      </article>
+    {% endif %}
+
+    <!-- BOTTOM: Review #2 and #3 (50% | 50%) -->
+    {% for block in bottom %}
+      <article class="rs22-card {% if forloop.index == 1 %}rs22-card--bl{% else %}rs22-card--br{% endif %}" {{ block.shopify_attributes }}>
+        <div class="rs22-card__quote" aria-hidden="true">“</div>
+        {% if block.settings.subtitle != blank %}
+          <h3 class="rs22-card__subtitle">{{ block.settings.subtitle }}</h3>
+        {% endif %}
+        {% if block.settings.text != blank %}
+          <div class="rs22-card__text">{{ block.settings.text }}</div>
+        {% endif %}
+        {% if block.settings.author != blank %}
+          <div class="rs22-card__author">{{ block.settings.author }}</div>
+        {% endif %}
+      </article>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Reviews",
+  "settings": [
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Das sagen unsere Kunden" },
+    { "type": "checkbox", "id": "show_stars", "label": "Show stars", "default": true },
+    { "type": "text", "id": "rating_text", "label": "Rating text", "default": "5.0 (19 Bewertungen)" },
+    { "type": "text", "id": "button_label", "label": "Button label", "default": "Alle Rezensionen ansehen" },
+    { "type": "url",  "id": "button_link",  "label": "Button link" }
+  ],
+  "blocks": [
+    {
+      "type": "review",
+      "name": "Review",
+      "settings": [
+        { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Perfekter Service und top Qualität!" },
+        { "type": "textarea", "id": "text", "label": "Description", "default": "Wir brauchten für unsere antike Kaffeemaschine einen speziellen Dichtring..." },
+        { "type": "text", "id": "author", "label": "Author", "default": "Melina Witchen" }
+      ]
+    }
+  ],
+  "max_blocks": 12,
+  "presets": [{ "name": "Reviews", "category": "Testimonials" }]
+}
+{% endschema %}
