@@ -292,3 +292,12 @@
     padding: 1rem;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .hero-3d-section {
+  background-color: #000 !important;
+}
+
+body.dark-mode .hero-3d-video-overlay {
+  background: #000 !important;
+}

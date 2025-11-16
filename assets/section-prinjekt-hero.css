@@ -122,3 +122,8 @@
   .prinjekt-hero .ph-grid { min-height: 0; }
   .prinjekt-hero .ph-media img { aspect-ratio: 16/10; }
 }
+
+/* Dark Mode */
+body.dark-mode .prinjekt-hero {
+  background-color: #000 !important;
+}

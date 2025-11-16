@@ -3723,3 +3723,12 @@ body {
 body:has(.page-loader.is-visible) {
   overflow: hidden;
 }
+
+/* Dark Mode */
+body.dark-mode .page-loader {
+  background: #000 !important;
+}
+
+body.dark-mode .page-loader__inner {
+  background: #000 !important;
+}

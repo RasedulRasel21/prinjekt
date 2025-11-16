@@ -257,6 +257,36 @@
           font-size: 1.6rem;
         }
       }
+
+      /* Dark Mode Styles */
+      body.dark-mode {
+        background-color: #000 !important;
+        color: #fff !important;
+      }
+
+      body.dark-mode * {
+        color: #fff !important;
+      }
+
+      body.dark-mode .color-background-1,
+      body.dark-mode .color-scheme-1,
+      body.dark-mode .gradient {
+        background-color: #000 !important;
+      }
+
+      body.dark-mode h1,
+      body.dark-mode h2,
+      body.dark-mode h3,
+      body.dark-mode h4,
+      body.dark-mode h5,
+      body.dark-mode h6,
+      body.dark-mode p,
+      body.dark-mode span,
+      body.dark-mode a,
+      body.dark-mode li,
+      body.dark-mode div {
+        color: #fff !important;
+      }
     {% endstyle %}
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
@@ -305,7 +335,7 @@
     </script>
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if settings.enable_dark_mode %} dark-mode{% endif %}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>

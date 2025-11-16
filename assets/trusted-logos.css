@@ -139,3 +139,8 @@
     );
   }
 }
+
+/* Dark Mode */
+body.dark-mode .trusted-logos {
+  background: #000 !important;
+}

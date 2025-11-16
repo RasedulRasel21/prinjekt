@@ -143,3 +143,8 @@
   backface-visibility: hidden;
   perspective: 1000px;
 }
+
+/* Dark Mode */
+body.dark-mode .image-slider-section {
+  background-color: #000 !important;
+}

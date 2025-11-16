@@ -79,3 +79,8 @@
   font-size: 14px;
   color: rgba(0,0,0,.6);
 }
+
+/* Dark Mode */
+body.dark-mode .industry-icons {
+  background: #000 !important;
+}

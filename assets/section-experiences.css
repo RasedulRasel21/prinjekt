@@ -65,3 +65,8 @@
     margin-bottom: 0.25rem;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .experiences {
+  background: #000 !important;
+}

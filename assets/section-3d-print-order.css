@@ -291,3 +291,8 @@
     font-size: 14px;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .print-order-section {
+  background: #000 !important;
+}

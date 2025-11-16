@@ -221,3 +221,8 @@
     max-width: 300px;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .main-mos {
+  background: #000 !important;
+}

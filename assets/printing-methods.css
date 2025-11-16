@@ -191,3 +191,19 @@
     transform: translateY(-5px);
   }
 }
+
+/* Dark Mode */
+body.dark-mode .printing-methods-section {
+  background-color: #000 !important;
+}
+
+body.dark-mode .printing-method-card {
+  border: .5px solid var(--grau) !important;
+  background-image: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+body.dark-mode .printing-method-card::after {
+  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+}

@@ -191,3 +191,9 @@
   height: 1px;
   background: #ddd;     /* or your color */
 }
+
+/* Dark Mode */
+body.dark-mode .leistungen-text-stacks-section {
+  background-color: #000 !important;
+  background: linear-gradient(to right, #000 0%, #000 50%, #000 100%) !important;
+}

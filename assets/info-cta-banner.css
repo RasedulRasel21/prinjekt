@@ -76,3 +76,8 @@
     justify-content: flex-end;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .info-cta-banner {
+  --icb-bg: #000 !important;
+}

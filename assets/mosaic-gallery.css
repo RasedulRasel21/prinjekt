@@ -278,3 +278,8 @@
     border-radius: 10px;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .mosaic-gallery {
+  background-color: #000 !important;
+}

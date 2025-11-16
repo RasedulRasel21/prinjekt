@@ -386,6 +386,10 @@
   }
 }
 
+/* Dark Mode */
+body.dark-mode .hero-floating-section {
+  background-color: #000 !important;
+}
 
 /* FINAL MOBILE HEIGHT FIX */
 @media screen and (max-width: 768px) {

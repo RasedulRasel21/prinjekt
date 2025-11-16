@@ -251,3 +251,8 @@
     transition: none;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .hero-section {
+  background-color: #000 !important;
+}

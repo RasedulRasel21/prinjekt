@@ -108,3 +108,8 @@
     transition: transform 180ms ease;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .stats-cards {
+  background-color: #000 !important;
+}

@@ -78,3 +78,8 @@
   .xp-left-heading { font-size: 22px; }
   .xp-right { font-size: 15px; }
 }
+
+/* Dark Mode */
+body.dark-mode .xp-split {
+  background: #000 !important;
+}

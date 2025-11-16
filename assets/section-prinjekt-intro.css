@@ -75,3 +75,8 @@
     gap: clamp(20px, 2.5vw, 30px);
   }
 }
+
+/* Dark Mode */
+body.dark-mode .prinjekt-intro-section {
+  background-color: #000 !important;
+}

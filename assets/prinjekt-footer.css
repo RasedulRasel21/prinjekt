@@ -252,3 +252,8 @@
 .prinjekt-footer.dark-theme .footer-copyright p {
   color: #999;
 }
+
+/* Dark Mode */
+body.dark-mode .prinjekt-footer {
+  background-color: #000 !important;
+}

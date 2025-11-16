@@ -314,3 +314,8 @@
     font-size: 1.5rem;
   }
 }
+
+/* Dark Mode */
+body.dark-mode .materialubersicht-section {
+  background: linear-gradient(135deg, #000 0%, #000 100%) !important;
+}
