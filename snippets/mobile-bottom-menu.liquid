@@ -1,0 +1,124 @@
+{% comment %}
+  Mobile Bottom Menu with sticky buttons
+  Shows only on mobile devices
+{% endcomment %}
+
+<mobile-bottom-menu class="mobile-bottom-menu">
+  {%- comment -%} Sticky Bottom Bar {%- endcomment -%}
+  <div class="mobile-bottom-menu__bar">
+    <button
+      type="button"
+      class="mobile-bottom-menu__button"
+      aria-controls="MobileBottomDrawer"
+      aria-expanded="false"
+    >
+      <span>Menü</span>
+    </button>
+
+    <a
+      href="{{ section.settings.mobile_button_url | default: '/pages/3d-druck' }}"
+      class="mobile-bottom-menu__button mobile-bottom-menu__button--cta"
+    >
+      <span>{{ section.settings.mobile_button_text | default: 'Druck starten' }}</span>
+    </a>
+  </div>
+
+  {%- comment -%} Menu Drawer {%- endcomment -%}
+  <div
+    id="MobileBottomDrawer"
+    class="mobile-bottom-menu__drawer"
+    aria-hidden="true"
+  >
+    <div class="mobile-bottom-menu__overlay"></div>
+
+    <div class="mobile-bottom-menu__content">
+      <div class="mobile-bottom-menu__header">
+        <h2 class="mobile-bottom-menu__title">Menu</h2>
+        <button
+          type="button"
+          class="mobile-bottom-menu__close"
+          aria-label="Close menu"
+        >
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M15 5L5 15M5 5L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </button>
+      </div>
+
+      <nav class="mobile-bottom-menu__nav">
+        <ul class="mobile-bottom-menu__list" role="list">
+          <li class="mobile-bottom-menu__item">
+            <a href="/" class="mobile-bottom-menu__link">Home</a>
+          </li>
+          <li class="mobile-bottom-menu__item">
+            <a href="/pages/about" class="mobile-bottom-menu__link">About</a>
+          </li>
+          <li class="mobile-bottom-menu__item">
+            <a href="/pages/leistungen" class="mobile-bottom-menu__link">Leistungen</a>
+          </li>
+          <li class="mobile-bottom-menu__item">
+            <a href="/blogs/news" class="mobile-bottom-menu__link">Blog</a>
+          </li>
+          <li class="mobile-bottom-menu__item">
+            <a href="/pages/geschaftskunden" class="mobile-bottom-menu__link">Geschäftskunden</a>
+          </li>
+          <li class="mobile-bottom-menu__item">
+            <a href="/pages/galerie" class="mobile-bottom-menu__link">Galerie</a>
+          </li>
+          <li class="mobile-bottom-menu__item">
+            <a href="/pages/kontakt" class="mobile-bottom-menu__link">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</mobile-bottom-menu>
+
+<script>
+  if (!customElements.get('mobile-bottom-menu')) {
+    class MobileBottomMenu extends HTMLElement {
+      constructor() {
+        super();
+      }
+
+      connectedCallback() {
+        this.button = this.querySelector('.mobile-bottom-menu__button[aria-controls]');
+        this.drawer = this.querySelector('#MobileBottomDrawer');
+        this.closeButton = this.querySelector('.mobile-bottom-menu__close');
+        this.overlay = this.querySelector('.mobile-bottom-menu__overlay');
+
+        if (this.button && this.drawer) {
+          this.button.addEventListener('click', this.openDrawer.bind(this));
+          if (this.closeButton) {
+            this.closeButton.addEventListener('click', this.closeDrawer.bind(this));
+          }
+          if (this.overlay) {
+            this.overlay.addEventListener('click', this.closeDrawer.bind(this));
+          }
+        }
+      }
+
+      openDrawer(e) {
+        e.preventDefault();
+        if (this.drawer) {
+          this.drawer.classList.add('is-open');
+          this.button.setAttribute('aria-expanded', 'true');
+          this.drawer.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+
+      closeDrawer(e) {
+        e.preventDefault();
+        if (this.drawer) {
+          this.drawer.classList.remove('is-open');
+          this.button.setAttribute('aria-expanded', 'false');
+          this.drawer.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      }
+    }
+
+    customElements.define('mobile-bottom-menu', MobileBottomMenu);
+  }
+</script>

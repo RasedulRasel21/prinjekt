@@ -93,3 +93,11 @@ body.dark-mode .rs22-card {
   background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
+
+@media (max-width: 767px){
+  .rs22-card__quote {
+    top: 4px;
+    left: 6px;
+  }
+}
+

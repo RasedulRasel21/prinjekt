@@ -466,6 +466,8 @@
   </script>
 {%- endif -%}
 
+{%- render 'mobile-bottom-menu', section: section -%}
+
 {% schema %}
 {
   "name": "t:sections.header.name",
@@ -647,6 +649,24 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Mobile Bottom Menu"
+    },
+    {
+      "type": "text",
+      "id": "mobile_button_text",
+      "label": "Button Text",
+      "default": "Druck starten",
+      "info": "Text shown on the mobile bottom CTA button"
+    },
+    {
+      "type": "text",
+      "id": "mobile_button_url",
+      "label": "Button URL",
+      "default": "/pages/3d-druck",
+      "info": "URL for the mobile bottom CTA button (e.g., /pages/3d-druck)"
     }
   ],
   "blocks": [
