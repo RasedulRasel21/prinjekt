@@ -387,7 +387,7 @@
       "name": "Industry Icons Grid",
       "settings": {
         "heading": "Fertigungen für jede Branche",
-        "icon_size": 76,
+        "icon_size": 72,
         "icon_color": "#ffa000",
         "bottom_note": ""
       }
@@ -402,8 +402,8 @@
         "right_richtext": "<p>Seit den Anfängen des 3D-Drucks bis zu den heutigen, hochmodernen Technologien sind wir stolz darauf, Teil dieser faszinierenden Entwicklung gewesen zu sein. Angefangen bei frühesten privaten 3D-Druckern über maßgeschneiderte Lösungen für Unternehmen bis hin zu den heutigen benutzerfreundlichen Geräten und sogar Metall-3D-Druck. Wir haben diese Entwicklung aktiv mitgestaltet und unsere Expertise kontinuierlich ausgebaut. <br/><br/>Unser Erfahrungsschatz basiert hierbei auf dem Betrieb zahlreicher eigener Drucker sowie der direkten Reparatur durch unsere hausinternen Techniker. Dies ermöglicht uns die Unabhängigkeit von externen Kundendiensten und Lieferketten, wodurch wir stets flexibel und effizient agieren können. <br/><br/>Auf diese Flexibilität können Sie jedoch nicht nur bei anfallenden Reparaturen vertrauen. Dank unserer beachtlichen 3D-Drucker-Farm, steht unser Team von Druckertechnikern auch für kurzfristige oder umfangreiche Projekte bereit, ohne Abstriche bei der Qualität zu machen.<br/><br/>Profitieren auch Sie von unserem langjährigen Know-how und lassen sich von uns bei allen Anliegen der additiven Fertigung beraten. Auch wenn Sie keine Erfahrung im Bereich des 3D-Drucks haben, finden wir die für Sie am besten geeignete Umsetzung Ihres Projekts und begleiten Sie professionell auf dem Weg zum Erfolg dieses.<br/><br/></p>",
         "use_page_width": true,
         "max_width": 1500,
-        "pt": 60,
-        "pb": 60,
+        "pt": 40,
+        "pb": 40,
         "bg_color": "#f6f7f8",
         "text_color": "#0f182b"
       }
@@ -667,9 +667,9 @@
         "cta_label": "Routenplaner",
         "cta_link": "",
         "cta_target": "_blank",
-        "card_bg": "#ffffff",
+        "card_bg": "#191919",
         "card_text": "#111111",
-        "cta_bg": "#e4d7d7",
+        "cta_bg": "#2b2828",
         "cta_text": "#ffffff"
       }
     }

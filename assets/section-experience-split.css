@@ -4,13 +4,20 @@
     padding: 100px 0;
     background: #ebebeb;
 }
-.xp-container { margin: 0 auto; }
+.xp-container { margin: 0 auto; padding: 0 10px; }
+
+/* .xp-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr;
+  gap: 32px;
+  align-items: start;
+} */
 
 .xp-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 4fr; /* left / middle / right */
-  gap: 32px;
-  align-items: start;
+  grid-template-columns: 1fr auto 2fr;
+  column-gap: 40px;
+  align-items: center;
 }
 
 .xp-left-heading {
@@ -67,11 +74,55 @@
   .xp-small { font-size: 32px; }
 }
 
-@media (max-width: 640px) {
+
+/* MOBILE: "Erfahrungen   10+ / Jahre" in one row */
+@media (max-width: 768px) {
   .xp-grid {
-    grid-template-columns: 1fr; /* stack all */
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
+
+  /* left + middle = first row */
+  .xp-left {
+    flex: 0 0 auto;
+    margin-right: 16px;
+  }
+
+  .xp-left-heading {
+    margin: 0;
+  }
+
+  .xp-middle {
+    flex: 1 1 auto;
+    text-align: right;
+  }
+
+  .xp-number-wrap {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    line-height: 1.05;
+  }
+
+  .xp-number {
+    display: block;
+    font-size: clamp(2.6rem, 9vw, 3.4rem);
+  }
+
+  .xp-small {
+    display: block;
+    font-size: 1.1rem;
+  }
+
+  /* right text = full row below */
+  .xp-right {
+    flex: 0 0 100%;
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 640px) {
   .xp-middle { justify-content: flex-start; }
   .xp-number { font-size: 72px; }
   .xp-small { font-size: 28px; }
@@ -80,6 +131,6 @@
 }
 
 /* Dark Mode */
-body.dark-mode .xp-split {
+body.dark-mode .xp-section {
   background: #000 !important;
 }

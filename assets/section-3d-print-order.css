@@ -296,3 +296,14 @@
 body.dark-mode .print-order-section {
   background: #000 !important;
 }
+
+body.dark-mode .feature-item:hover {
+  background-color: #ff9800;
+  transform: translateX(5px);
+}
+
+body.dark-mode .feature-item.active {
+  background-color: #ff9800;
+  color: #000;
+  border-color: #000;
+}

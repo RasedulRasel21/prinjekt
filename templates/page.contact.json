@@ -65,6 +65,7 @@
       ],
       "name": "Map – Locations",
       "settings": {
+        "google_api_key": "AIzaSyC3Qw__GEec3U5qAGIx86XdojB36j3_FB0",
         "center_lat": "52.3190",
         "center_lng": "9.7220",
         "zoom": 14,
@@ -79,10 +80,10 @@
         "cta_label": "Routenplaner",
         "cta_link": "",
         "cta_target": "_blank",
-        "card_bg": "#ffffff",
+        "card_bg": "#2b2828",
         "card_text": "#111111",
         "cta_bg": "#111111",
-        "cta_text": "#ffffff"
+        "cta_text": "#2b2828"
       }
     }
   },

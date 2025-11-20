@@ -16,7 +16,7 @@
   gap: 16px;
   align-items: start;
   /* use dynamic vertical padding from theme setting */
-  padding: var(--icb-pad-y, 20px) 0;
+  padding: var(--icb-pad-y, 20px) 10px;
 }
 
 .icb__title {

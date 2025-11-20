@@ -59,7 +59,7 @@
 .industry-icons__icon {
   line-height: 0;
   margin-bottom: 8px;
-  color: var(--icon-color, #ffa000);
+  color: #ffa000;
 }
 
 /* Make pasted SVGs respect theme color & size */
@@ -83,4 +83,11 @@
 /* Dark Mode */
 body.dark-mode .industry-icons {
   background: #000 !important;
+}
+
+body.dark-mode .industry-icons__item .industry-icons__icon svg,
+body.dark-mode .industry-icons__item .industry-icons__icon svg * {
+  color: #ffa000 !important;
+  fill: #ffa000 !important;   /* useful if the icon uses fill */
+  stroke: #ffa000 !important; /* useful if the icon uses stroke */
 }

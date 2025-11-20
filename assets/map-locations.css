@@ -111,3 +111,13 @@
   border-radius: 10px;
   text-decoration: none;
 }
+
+
+/* dark mode */
+body.dark-mode .map-locations {
+  background: #000 !important;
+}
+
+body.dark-mode .map-locations .leaflet-container {
+  background:rgb(120, 138, 156);
+}

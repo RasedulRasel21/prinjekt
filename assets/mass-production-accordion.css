@@ -219,18 +219,18 @@
   }
   
   .section-title {
-    font-size: 1.75rem;
+    font-size: 24px;
     margin-bottom: 15px;
   }
   
   .section-description {
-    font-size: 0.95rem;
+    font-size: 14px;
     margin-bottom: 30px;
   }
   
   .accordion-header {
     padding: 20px;
-    font-size: 1.25rem;
+    font-size: 22px;
     gap: 12px;
   }
   
@@ -271,16 +271,16 @@
 
 @media screen and (max-width: 480px) {
   .section-title {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
   
   .section-description {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
   
   .accordion-header {
     padding: 15px;
-    font-size: 1.1rem;
+    font-size: 22px;
   }
   
   .accordion-inner {
@@ -302,7 +302,7 @@
   
   .cta-button {
     padding: 12px 20px;
-    font-size: 0.95rem;
+    font-size: 14px;
   }
 }
 
@@ -312,9 +312,9 @@ body.dark-mode .mass-production-section {
 }
 
 body.dark-mode .accordion-header,
-body.dark-mode .accordion-content {
-  border: .5px solid var(--grau) !important;
-  background-image: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
-  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+body.dark-mode .accordion-inner {
+  border: 1px solid #3a3a3a !important;
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b 80%);
+  background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }

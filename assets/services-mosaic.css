@@ -179,17 +179,20 @@
 }
 
 @media screen and (max-width: 768px) {
+  .services-container {
+    padding: 0 10px;
+  }
   .services-mosaic {
     padding: 40px 15px;
   }
 
   .services-heading {
-    font-size: 1.8rem;
+    font-size: 36px;
     margin-bottom: 15px;
   }
 
   .services-description {
-    font-size: 0.95rem;
+    font-size: 14px;
     margin-bottom: 30px;
   }
 
@@ -211,11 +214,11 @@
   }
 
   .card-title {
-    font-size: 1.5rem;
+    font-size: 24px;
   }
 
   .card-description {
-    font-size: 0.9rem;
+    font-size: 12px;
   }
 
   .mosaic-card-text {
@@ -234,11 +237,11 @@
   }
 
   .services-heading {
-    font-size: 1.5rem;
+    font-size: 36px;
   }
 
   .card-title {
-    font-size: 1.3rem;
+    font-size: 24px;
   }
 }
 
@@ -247,11 +250,16 @@ body.dark-mode .services-mosaic {
   background-color: #000 !important;
 }
 
-body.dark-mode .card-1,
-body.dark-mode .card-2,
-body.dark-mode .card-3 {
-  border: .5px solid var(--grau) !important;
-  background-image: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
-  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+body.dark-mode .mosaic-card {
+  border: 1px solid #3a3a3a !important;  
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+}
+
+body.dark-mode .mosaic-card:nth-child(1), .mosaic-card:nth-child(5), .mosaic-card:nth-child(6) {
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b);
+  background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
+}
+
+body.dark-mode .card-title {
+  color: #FFB84D !important;
 }

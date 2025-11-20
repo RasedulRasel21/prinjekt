@@ -315,7 +315,70 @@
   }
 }
 
-/* Dark Mode */
-body.dark-mode .materialubersicht-section {
-  background: linear-gradient(135deg, #000 0%, #000 100%) !important;
+
+
+/* Dark Mode – FDM Materials Section */
+body.dark-mode .fdm-materials-section {
+  border-top: 1px solid #3a3a3a;
+  border-bottom: 1px solid #3a3a3a;
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b 80%);
+  background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
+}
+
+/* Text colors */
+body.dark-mode .fdm-title,
+body.dark-mode .fdm-material-name,
+body.dark-mode .fdm-technical-details h3,
+body.dark-mode .fdm-color-section h3,
+body.dark-mode .fdm-vorteile-section h3,
+body.dark-mode .fdm-nachteile-section h3,
+body.dark-mode .fdm-modal-title {
+  color: #ffffff;
+}
+
+body.dark-mode .fdm-description,
+body.dark-mode .fdm-modal-description,
+body.dark-mode .fdm-modal-applications,
+body.dark-mode .fdm-tech-label,
+body.dark-mode .fdm-tech-value,
+body.dark-mode .fdm-vorteile-section li,
+body.dark-mode .fdm-nachteile-section li {
+  color: #e0e0e0;
+}
+
+/* List bullets */
+body.dark-mode .fdm-vorteile-section li:before,
+body.dark-mode .fdm-nachteile-section li:before {
+  color: #e0e0e0;
+}
+
+/* Rows / borders */
+body.dark-mode .fdm-material-item {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+body.dark-mode .fdm-tech-row {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Color swatch border */
+body.dark-mode .fdm-color-swatch {
+  border-color: #666666;
+}
+
+/* Modal background in dark mode */
+body.dark-mode .fdm-modal-content {
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b 80%);
+  background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
+  border: 1px solid #3a3a3a;
+}
+
+/* Modal close button */
+body.dark-mode .fdm-modal-close {
+  border-color: #666666;
+  color: #dddddd;
+}
+
+body.dark-mode .fdm-modal-close:hover {
+  color: #ffffff;
 }

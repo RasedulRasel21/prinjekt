@@ -197,13 +197,46 @@ body.dark-mode .printing-methods-section {
   background-color: #000 !important;
 }
 
-body.dark-mode .printing-method-card {
-  border: .5px solid var(--grau) !important;
-  background-image: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
-  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+/* Left side text */
+body.dark-mode .printing-methods-title {
+  color: #ffffff;
 }
 
-body.dark-mode .printing-method-card::after {
-  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+body.dark-mode .printing-methods-description {
+  color: #d9d9d9;
+}
+
+/* Cards */
+body.dark-mode .printing-method-card {
+  border: 1px solid #3a3a3a !important;
+  background: radial-gradient(circle at 0% 50%, #1f150a 0%, #101010 70%) !important;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.6);
+}
+
+/* Use ::before (same element as light mode), but with a DARK glow */
+body.dark-mode .printing-method-card::before {
+  background: radial-gradient(
+    circle at 0% 50%,
+    rgba(255, 153, 0, 0.18) 0%,
+    transparent 60%
+  ) !important;
+  opacity: 0;                /* default, no glow */
+}
+
+/* Hover – subtle warm highlight, not white */
+body.dark-mode .printing-method-card:hover::before {
+  opacity: 1;
+}
+
+/* Card text colors */
+body.dark-mode .card-title {
+  color: #ffd28a;
+}
+
+body.dark-mode .printing-method-card:hover .card-title {
+  color: #ffb24a;
+}
+
+body.dark-mode .card-description {
+  color: #f5f5f5;
 }

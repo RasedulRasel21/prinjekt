@@ -7,7 +7,7 @@
   --tl-head-gap: 12px;   /* space between heading and slider */
 
   /* Section spacing + bg (adjust as you like) */
-  padding: 100px 0;
+  padding: 100px 10px;
   background: #ebebeb;
 }
 
@@ -141,6 +141,6 @@
 }
 
 /* Dark Mode */
-body.dark-mode .trusted-logos {
+body.dark-mode .trusted-logos-section {
   background: #000 !important;
 }

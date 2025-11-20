@@ -1,6 +1,5 @@
 /* Prinjekt – Big centered paragraph (simple) */
-
-.prinjekt-hero-section{
+.prinjekt-hero-section {
   background-color: #ebebeb;
   padding-block: clamp(40px, 8vw, 80px);
 }
@@ -10,18 +9,21 @@
   --halo-w: min(50vw, 700px);
   --halo-h: calc(var(--halo-w) * 0.6);
 
-  /* colors */
+  /* light-mode colors (ellipse) */
   --c1: #fff3e0;
   --c2: #fff5e8;
   --c3: #ebebeb;
 
   /* centered, sized ellipse; rest is transparent so gray shows */
   background:
-    radial-gradient(ellipse var(--halo-w) var(--halo-h) at center,
+    radial-gradient(
+      ellipse var(--halo-w) var(--halo-h) at center,
       var(--c1) 0%,
       var(--c2) 25%,
       var(--c3) 60%,
-      transparent 61%) center / var(--halo-w) var(--halo-h) no-repeat;
+      transparent 61%
+    )
+    center / var(--halo-w) var(--halo-h) no-repeat;
 
   /* Centering text and adjusting padding */
   display: flex;
@@ -43,7 +45,7 @@
 
 .prinjekt-hero-text .pht-content {
   font-size: clamp(24px, 3.2vw, 40px);
-  line-height: 48px;
+  line-height: 1.4;
   letter-spacing: 0;
   color: #0b0b0b;
   font-weight: 500;
@@ -53,7 +55,10 @@
 }
 
 /* remove default RTE margins so it reads as one block */
-.prinjekt-hero-text .pht-content p { margin: 0; font-family: "Stara", sans-serif !important; }
+.prinjekt-hero-text .pht-content p {
+  margin: 0;
+  font-family: "Stara", sans-serif !important;
+}
 
 /* Circle element below text */
 .prinjekt-circle {
@@ -69,14 +74,35 @@
   .prinjekt-hero-section {
     padding-block: clamp(30px, 6vw, 50px);
   }
-  
+
   .prinjekt-hero-text {
     padding-block: clamp(40px, 8vw, 70px);
     gap: clamp(20px, 2.5vw, 30px);
   }
 }
 
-/* Dark Mode */
-body.dark-mode .prinjekt-intro-section {
-  background-color: #000 !important;
+/* -------------------------------------------------------- */
+/* Dark Mode                                                */
+/* -------------------------------------------------------- */
+
+body.dark-mode .prinjekt-hero-section {
+  background-color: #000000 !important;
+}
+
+body.dark-mode .prinjekt-hero-text {
+  /* darker, warm ellipse for dark background */
+  --c1: #2c2418;  /* center */
+  --c2: #1f1912;  /* mid */
+  --c3: #050505;  /* edge, close to background */
+
+  color: #f5f5f5;
+}
+
+body.dark-mode .prinjekt-hero-text .pht-content {
+  color: inherit;
+}
+
+body.dark-mode .prinjekt-circle {
+  /* a bit brighter so it pops on black */
+  background-color: #e3b06a;
 }

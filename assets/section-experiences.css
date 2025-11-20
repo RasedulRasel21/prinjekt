@@ -67,6 +67,6 @@
 }
 
 /* Dark Mode */
-body.dark-mode .experiences {
+body.dark-mode .xp-section {
   background: #000 !important;
 }

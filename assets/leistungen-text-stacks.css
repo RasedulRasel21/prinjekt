@@ -140,18 +140,18 @@
   }
 
   .services-main-title {
-    font-size: 1.75rem;
+    font-size: 24px;
     margin-bottom: 25px;
     padding-bottom: 20px;
   }
 
   .service-title {
-    font-size: 1.5rem;
+    font-size: 18px;
     margin-bottom: 15px;
   }
 
   .service-description {
-    font-size: 0.9rem;
+    font-size: 14px;
     line-height: 1.6;
     text-align: left;
   }
@@ -168,16 +168,16 @@
   }
 
   .services-main-title {
-    font-size: 1.5rem;
+    font-size: 24px;
     margin-bottom: 20px;
   }
 
   .service-title {
-    font-size: 1.35rem;
+    font-size: 20px;
   }
 
   .service-description {
-    font-size: 0.85rem;
+    font-size: 14px;
   }
 
   .service-item {
@@ -193,7 +193,11 @@
 }
 
 /* Dark Mode */
-body.dark-mode .leistungen-text-stacks-section {
+body.dark-mode .services-section {
   background-color: #000 !important;
   background: linear-gradient(to right, #000 0%, #000 50%, #000 100%) !important;
+}
+
+body.dark-mode .service-title {
+  color: #ff9800 !important;
 }

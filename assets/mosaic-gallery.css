@@ -280,6 +280,6 @@
 }
 
 /* Dark Mode */
-body.dark-mode .mosaic-gallery {
+body.dark-mode .mosaic-gallery-section {
   background-color: #000 !important;
 }

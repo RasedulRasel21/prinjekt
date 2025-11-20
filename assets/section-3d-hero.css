@@ -232,10 +232,10 @@
     flex-wrap: wrap;
     max-width: 100%;
     max-height: none;
-    gap: 8px;
-    padding: 12px;
-    margin-top: 1rem;
-    margin-bottom: 3rem;
+    gap: 5px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-bottom: 10px;
   }
 
   .hero-3d-feature {
@@ -263,11 +263,13 @@
   }
 
   .hero-3d-cta-text {
-    font-size: 1rem;
+    /* font-size: 1.3rem; */
     margin-bottom: 1.25rem;
   }
 
   .hero-3d-button {
+    background-color:rgb(224, 195, 150);
+    width: 60%;
     padding: 0.875rem 2rem;
     font-size: 0.95rem;
   }
@@ -288,7 +290,9 @@
   }
 
   .hero-3d-button {
-    width: 100%;
+    background-color:rgb(224, 195, 150);
+    width: 60%;
+    font-size: 18px;
     padding: 1rem;
   }
 }
@@ -300,4 +304,9 @@ body.dark-mode .hero-3d-section {
 
 body.dark-mode .hero-3d-video-overlay {
   background: #000 !important;
+}
+
+body.dark-mode .hero-3d-features {
+  background: linear-gradient(105deg, #ff99001a, #1b1b1b 70%);
+  border: 1px solid #3a3a3a;
 }

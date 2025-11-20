@@ -259,13 +259,13 @@
 }
 
 /* Dark Mode */
-body.dark-mode .druckervermietung-section {
+body.dark-mode .drucker-section {
   background-color: #000 !important;
 }
 
 body.dark-mode .drucker-container {
-  border: .5px solid var(--grau) !important;
-  background-image: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
-  background: radial-gradient(circle at 0%, #ff990014, #fff0) !important;
+  border: 1px solid #3a3a3a !important;
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b 80%);
+  background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }

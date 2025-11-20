@@ -183,18 +183,18 @@
   }
   
   .hero-heading {
-    font-size: 2rem;
+    font-size: 24px;
     margin-bottom: 20px;
   }
   
   .hero-description {
-    font-size: 0.95rem;
+    font-size: 14px;
     margin-bottom: 30px;
   }
   
   .hero-button {
     padding: 14px 28px;
-    font-size: 0.95rem;
+    font-size: 14px;
     width: 100%;
     text-align: center;
   }
@@ -227,11 +227,11 @@
   }
   
   .hero-heading {
-    font-size: 1.75rem;
+    font-size: 24px;
   }
   
   .hero-description {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
   
   .hero-image-container {
@@ -253,6 +253,6 @@
 }
 
 /* Dark Mode */
-body.dark-mode .hero-section {
+body.dark-mode .hero-animated-section {
   background-color: #000 !important;
 }
