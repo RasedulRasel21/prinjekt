@@ -1,0 +1,375 @@
+
+      <div class="gallery_heading_up">
+        <h1 class="heading_h2">{{ section.settings.heading }}</h1>
+        <div class="text_normal">{{ section.settings.subtext | newline_to_br }}</div>
+        <div class="gallery_sorting">
+          <a href="#" class="dropdown w-button">{{ 't23e2f949' | t }}</a>
+          <a href="#" class="dropdown w-button">{{ 't1153110' | t }}</a>
+          <a href="#" class="dropdown w-button">{{ 't6884293f' | t }}</a>
+        </div>
+      </div>
+      <div class="gallery_site_inhalt">
+        {%- if section.settings.image1 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902533-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image1big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_13.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck aus Hannover" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image1big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image1big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image1big | img_url: '1920x' }} 1920w,{{ section.settings.image1big | img_url: '1600x' }} 1600w,{{ section.settings.image1big | img_url: '1366x' }} 1366w,{{ section.settings.image1big | img_url: '1024x' }} 1024w,{{ section.settings.image1big | img_url: '768x' }} 768w,{{ section.settings.image1big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66587b115beacc832203bad8","origFileName":"Prinjekt_Work_3.jpg","fileName":"Prinjekt_Work_3.jpg","fileSize":287980,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66587b115beacc832203bad8_Prinjekt_Work_3.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902533-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image1.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_13.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck aus Hannover" option:image="Image1Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66587b115beacc832203bad8","origFileName":"Prinjekt_Work_3.jpg","fileName":"Prinjekt_Work_3.jpg","fileSize":287980,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66587b115beacc832203bad8_Prinjekt_Work_3.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image2 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902535-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image2big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_9.webp' | asset_url }}" width="Auto" height="Auto" alt="Wir drucken alles für Sie in bester Qualität" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image2big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image2big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image2big | img_url: '1920x' }} 1920w,{{ section.settings.image2big | img_url: '1600x' }} 1600w,{{ section.settings.image2big | img_url: '1366x' }} 1366w,{{ section.settings.image2big | img_url: '1024x' }} 1024w,{{ section.settings.image2big | img_url: '768x' }} 768w,{{ section.settings.image2big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66587b11776e94d24aa707e9","origFileName":"Prinjekt_Work_4.jpg","fileName":"Prinjekt_Work_4.jpg","fileSize":143984,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66587b11776e94d24aa707e9_Prinjekt_Work_4.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902535-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image2.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_9.webp' | asset_url }}" width="Auto" height="Auto" alt="Wir drucken alles für Sie in bester Qualität" option:image="Image2Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66587b11776e94d24aa707e9","origFileName":"Prinjekt_Work_4.jpg","fileName":"Prinjekt_Work_4.jpg","fileSize":143984,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66587b11776e94d24aa707e9_Prinjekt_Work_4.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image3 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902537-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image3big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck SLS" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image3big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image3big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image3big | img_url: '1920x' }} 1920w,{{ section.settings.image3big | img_url: '1600x' }} 1600w,{{ section.settings.image3big | img_url: '1366x' }} 1366w,{{ section.settings.image3big | img_url: '1024x' }} 1024w,{{ section.settings.image3big | img_url: '768x' }} 768w,{{ section.settings.image3big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681a52f0dab60ea1cb98c5","origFileName":"Prinjekt_Work_Hannover.jpg","fileName":"Prinjekt_Work_Hannover.jpg","fileSize":406514,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681a52f0dab60ea1cb98c5_Prinjekt_Work_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902537-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image3.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck SLS" option:image="Image3Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681a52f0dab60ea1cb98c5","origFileName":"Prinjekt_Work_Hannover.jpg","fileName":"Prinjekt_Work_Hannover.jpg","fileSize":406514,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681a52f0dab60ea1cb98c5_Prinjekt_Work_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        <a href="#" option:image4="" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902539-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image4big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_10.webp' | asset_url }}" width="Auto" height="Auto" alt="Individueller 3D-Druck in Deutschland" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image4big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image4big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image4big | img_url: '1920x' }} 1920w,{{ section.settings.image4big | img_url: '1600x' }} 1600w,{{ section.settings.image4big | img_url: '1366x' }} 1366w,{{ section.settings.image4big | img_url: '1024x' }} 1024w,{{ section.settings.image4big | img_url: '768x' }} 768w,{{ section.settings.image4big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66587b11698dbdf8618a7ec4","origFileName":"Prinjekt_Work_6.jpg","fileName":"Prinjekt_Work_6.jpg","fileSize":214208,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66587b11698dbdf8618a7ec4_Prinjekt_Work_6.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>
+        {%- if section.settings.image5 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190253b-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image5big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_3d_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Wir verwenden nur die besten Materialien FDM und SLA" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image5big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image5big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image5big | img_url: '1920x' }} 1920w,{{ section.settings.image5big | img_url: '1600x' }} 1600w,{{ section.settings.image5big | img_url: '1366x' }} 1366w,{{ section.settings.image5big | img_url: '1024x' }} 1024w,{{ section.settings.image5big | img_url: '768x' }} 768w,{{ section.settings.image5big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"6668170ea4e35e4ca7ab1a8f","origFileName":"Prinjekt_Work_3D.jpg","fileName":"Prinjekt_Work_3D.jpg","fileSize":321060,"height":1800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/6668170ea4e35e4ca7ab1a8f_Prinjekt_Work_3D.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190253b-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image5.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_3d_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Wir verwenden nur die besten Materialien FDM und SLA" option:image="Image5Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"6668170ea4e35e4ca7ab1a8f","origFileName":"Prinjekt_Work_3D.jpg","fileName":"Prinjekt_Work_3D.jpg","fileSize":321060,"height":1800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/6668170ea4e35e4ca7ab1a8f_Prinjekt_Work_3D.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image6 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190253d-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image6big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_3d-druck_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Hochwertiger 3D-Druck aus Deutschland " loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image6big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image6big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image6big | img_url: '1920x' }} 1920w,{{ section.settings.image6big | img_url: '1600x' }} 1600w,{{ section.settings.image6big | img_url: '1366x' }} 1366w,{{ section.settings.image6big | img_url: '1024x' }} 1024w,{{ section.settings.image6big | img_url: '768x' }} 768w,{{ section.settings.image6big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681b498e6f93b2de54da73","origFileName":"Prinjekt_Work_3D-Druck.jpg","fileName":"Prinjekt_Work_3D-Druck.jpg","fileSize":440665,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681b498e6f93b2de54da73_Prinjekt_Work_3D-Druck.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190253d-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image6.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_3d-druck_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Hochwertiger 3D-Druck aus Deutschland " option:image="Image6Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681b498e6f93b2de54da73","origFileName":"Prinjekt_Work_3D-Druck.jpg","fileName":"Prinjekt_Work_3D-Druck.jpg","fileSize":440665,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681b498e6f93b2de54da73_Prinjekt_Work_3D-Druck.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image7 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190253f-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image7big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_8.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt bietet alles für 3D-Druck" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image7big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image7big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image7big | img_url: '1920x' }} 1920w,{{ section.settings.image7big | img_url: '1600x' }} 1600w,{{ section.settings.image7big | img_url: '1366x' }} 1366w,{{ section.settings.image7big | img_url: '1024x' }} 1024w,{{ section.settings.image7big | img_url: '768x' }} 768w,{{ section.settings.image7big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"6658794269e38ae544980eaa","origFileName":"Prinjekt_Work_1.jpg","fileName":"Prinjekt_Work_1.jpg","fileSize":247710,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/6658794269e38ae544980eaa_Prinjekt_Work_1.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190253f-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image7.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_8.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt bietet alles für 3D-Druck" option:image="Image7Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"6658794269e38ae544980eaa","origFileName":"Prinjekt_Work_1.jpg","fileName":"Prinjekt_Work_1.jpg","fileSize":247710,"height":1400,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/6658794269e38ae544980eaa_Prinjekt_Work_1.jpg","width":1000,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image_8 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902541-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image8big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_serienfertigung_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck aus FDM" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image8big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image8big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image8big | img_url: '1920x' }} 1920w,{{ section.settings.image8big | img_url: '1600x' }} 1600w,{{ section.settings.image8big | img_url: '1366x' }} 1366w,{{ section.settings.image8big | img_url: '1024x' }} 1024w,{{ section.settings.image8big | img_url: '768x' }} 768w,{{ section.settings.image8big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681ad9f778ea90ce2b1291","origFileName":"Prinjekt_Work_Serienfertigung.jpg","fileName":"Prinjekt_Work_Serienfertigung.jpg","fileSize":592244,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681ad9f778ea90ce2b1291_Prinjekt_Work_Serienfertigung.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902541-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image_8.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_serienfertigung_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck aus FDM" option:image="Image8Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681ad9f778ea90ce2b1291","origFileName":"Prinjekt_Work_Serienfertigung.jpg","fileName":"Prinjekt_Work_Serienfertigung.jpg","fileSize":592244,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681ad9f778ea90ce2b1291_Prinjekt_Work_Serienfertigung.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image9 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902543-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image9big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_work_prototyping_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Individueller 3D-Druck" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image9big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image9big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image9big | img_url: '1920x' }} 1920w,{{ section.settings.image9big | img_url: '1600x' }} 1600w,{{ section.settings.image9big | img_url: '1366x' }} 1366w,{{ section.settings.image9big | img_url: '1024x' }} 1024w,{{ section.settings.image9big | img_url: '768x' }} 768w,{{ section.settings.image9big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681a42c755342d7768bd64","origFileName":"Prinjekt_Work_Prototyping.jpg","fileName":"Prinjekt_Work_Prototyping.jpg","fileSize":324157,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681a42c755342d7768bd64_Prinjekt_Work_Prototyping.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902543-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image9.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_work_prototyping_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Individueller 3D-Druck" option:image="Image9Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66681a42c755342d7768bd64","origFileName":"Prinjekt_Work_Prototyping.jpg","fileName":"Prinjekt_Work_Prototyping.jpg","fileSize":324157,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66681a42c755342d7768bd64_Prinjekt_Work_Prototyping.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image10 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902545-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image10big == nil -%}<img class="img_lightbox" src="{{ '3d-druck_in_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck für Architektur" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image10big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image10big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image10big | img_url: '1920x' }} 1920w,{{ section.settings.image10big | img_url: '1600x' }} 1600w,{{ section.settings.image10big | img_url: '1366x' }} 1366w,{{ section.settings.image10big | img_url: '1024x' }} 1024w,{{ section.settings.image10big | img_url: '768x' }} 768w,{{ section.settings.image10big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685b5b5aed4a2f605eea4b","origFileName":"3D-Druck_in_Hannover.jpg","fileName":"3D-Druck_in_Hannover.jpg","fileSize":192964,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685b5b5aed4a2f605eea4b_3D-Druck_in_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902545-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image10.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ '3d-druck_in_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck für Architektur" option:image="Image10Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685b5b5aed4a2f605eea4b","origFileName":"3D-Druck_in_Hannover.jpg","fileName":"3D-Druck_in_Hannover.jpg","fileSize":192964,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685b5b5aed4a2f605eea4b_3D-Druck_in_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image11 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902547-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image11big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_mond_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck für Protesen" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image11big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image11big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image11big | img_url: '1920x' }} 1920w,{{ section.settings.image11big | img_url: '1600x' }} 1600w,{{ section.settings.image11big | img_url: '1366x' }} 1366w,{{ section.settings.image11big | img_url: '1024x' }} 1024w,{{ section.settings.image11big | img_url: '768x' }} 768w,{{ section.settings.image11big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685c9f1ce37f8d0d867451","origFileName":"Prinjekt_Mond.jpg","fileName":"Prinjekt_Mond.jpg","fileSize":113878,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685c9f1ce37f8d0d867451_Prinjekt_Mond.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902547-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image11.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_mond_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck für Protesen" option:image="Image11Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685c9f1ce37f8d0d867451","origFileName":"Prinjekt_Mond.jpg","fileName":"Prinjekt_Mond.jpg","fileSize":113878,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685c9f1ce37f8d0d867451_Prinjekt_Mond.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image12 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902549-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image12big == nil -%}<img class="img_lightbox" src="{{ 'wir_liefern_gute_arbeit_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck in der Medizin" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image12big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image12big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image12big | img_url: '1920x' }} 1920w,{{ section.settings.image12big | img_url: '1600x' }} 1600w,{{ section.settings.image12big | img_url: '1366x' }} 1366w,{{ section.settings.image12big | img_url: '1024x' }} 1024w,{{ section.settings.image12big | img_url: '768x' }} 768w,{{ section.settings.image12big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7877f5a5723967e886e5","origFileName":"Wir_liefern_gute_arbeit.jpg","fileName":"Wir_liefern_gute_arbeit.jpg","fileSize":315173,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7877f5a5723967e886e5_Wir_liefern_gute_arbeit.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902549-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image12.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'wir_liefern_gute_arbeit_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck in der Medizin" option:image="Image12Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7877f5a5723967e886e5","origFileName":"Wir_liefern_gute_arbeit.jpg","fileName":"Wir_liefern_gute_arbeit.jpg","fileSize":315173,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7877f5a5723967e886e5_Wir_liefern_gute_arbeit.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image13 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190254b-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image13big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_aus_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Hochwertiger 3D-Druck" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image13big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image13big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image13big | img_url: '1920x' }} 1920w,{{ section.settings.image13big | img_url: '1600x' }} 1600w,{{ section.settings.image13big | img_url: '1366x' }} 1366w,{{ section.settings.image13big | img_url: '1024x' }} 1024w,{{ section.settings.image13big | img_url: '768x' }} 768w,{{ section.settings.image13big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685cb88dd9f1079856d5b7","origFileName":"Prinjekt_aus_Hannover.jpg","fileName":"Prinjekt_aus_Hannover.jpg","fileSize":145875,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685cb88dd9f1079856d5b7_Prinjekt_aus_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190254b-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image13.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_aus_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Hochwertiger 3D-Druck" option:image="Image13Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685cb88dd9f1079856d5b7","origFileName":"Prinjekt_aus_Hannover.jpg","fileName":"Prinjekt_aus_Hannover.jpg","fileSize":145875,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685cb88dd9f1079856d5b7_Prinjekt_aus_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image14 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190254d-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image14big == nil -%}<img class="img_lightbox" src="{{ '3d-druck_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt 3D-Druck aus Hannover" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image14big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image14big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image14big | img_url: '1920x' }} 1920w,{{ section.settings.image14big | img_url: '1600x' }} 1600w,{{ section.settings.image14big | img_url: '1366x' }} 1366w,{{ section.settings.image14big | img_url: '1024x' }} 1024w,{{ section.settings.image14big | img_url: '768x' }} 768w,{{ section.settings.image14big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685cc37e15a4860b5bc0a6","origFileName":"3D-Druck_Hannover.jpg","fileName":"3D-Druck_Hannover.jpg","fileSize":204705,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685cc37e15a4860b5bc0a6_3D-Druck_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190254d-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image14.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ '3d-druck_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt 3D-Druck aus Hannover" option:image="Image14Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685cc37e15a4860b5bc0a6","origFileName":"3D-Druck_Hannover.jpg","fileName":"3D-Druck_Hannover.jpg","fileSize":204705,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685cc37e15a4860b5bc0a6_3D-Druck_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image15 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190254f-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image15big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_hannover_3d_druck_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck Kunststoff" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image15big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image15big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image15big | img_url: '1920x' }} 1920w,{{ section.settings.image15big | img_url: '1600x' }} 1600w,{{ section.settings.image15big | img_url: '1366x' }} 1366w,{{ section.settings.image15big | img_url: '1024x' }} 1024w,{{ section.settings.image15big | img_url: '768x' }} 768w,{{ section.settings.image15big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d779dce5ab2a1e8464b6e","origFileName":"Prinjekt_Hannover_3D_Druck.jpg","fileName":"Prinjekt_Hannover_3D_Druck.jpg","fileSize":252111,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d779dce5ab2a1e8464b6e_Prinjekt_Hannover_3D_Druck.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190254f-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image15.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_hannover_3d_druck_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck Kunststoff" option:image="Image15Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d779dce5ab2a1e8464b6e","origFileName":"Prinjekt_Hannover_3D_Druck.jpg","fileName":"Prinjekt_Hannover_3D_Druck.jpg","fileSize":252111,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d779dce5ab2a1e8464b6e_Prinjekt_Hannover_3D_Druck.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image16 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902551-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image16big == nil -%}<img class="img_lightbox" src="{{ '3d_druck_prinjekt_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck für Dein Unternehmen" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image16big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image16big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image16big | img_url: '1920x' }} 1920w,{{ section.settings.image16big | img_url: '1600x' }} 1600w,{{ section.settings.image16big | img_url: '1366x' }} 1366w,{{ section.settings.image16big | img_url: '1024x' }} 1024w,{{ section.settings.image16big | img_url: '768x' }} 768w,{{ section.settings.image16big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d776e95649b74b40e0f2d","origFileName":"3D_Druck_Prinjekt_Hannover.jpg","fileName":"3D_Druck_Prinjekt_Hannover.jpg","fileSize":231641,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d776e95649b74b40e0f2d_3D_Druck_Prinjekt_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902551-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image16.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ '3d_druck_prinjekt_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Druck für Dein Unternehmen" option:image="Image16Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d776e95649b74b40e0f2d","origFileName":"3D_Druck_Prinjekt_Hannover.jpg","fileName":"3D_Druck_Prinjekt_Hannover.jpg","fileSize":231641,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d776e95649b74b40e0f2d_3D_Druck_Prinjekt_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image17 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902553-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image17big == nil -%}<img class="img_lightbox" src="{{ '3d_druck_in_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D Druck Service Deutschland" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image17big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image17big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image17big | img_url: '1920x' }} 1920w,{{ section.settings.image17big | img_url: '1600x' }} 1600w,{{ section.settings.image17big | img_url: '1366x' }} 1366w,{{ section.settings.image17big | img_url: '1024x' }} 1024w,{{ section.settings.image17big | img_url: '768x' }} 768w,{{ section.settings.image17big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d777816a6a4fb69972ef5","origFileName":"3D_Druck_in_Hannover.jpg","fileName":"3D_Druck_in_Hannover.jpg","fileSize":432634,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d777816a6a4fb69972ef5_3D_Druck_in_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902553-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image17.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ '3d_druck_in_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D Druck Service Deutschland" option:image="Image17Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d777816a6a4fb69972ef5","origFileName":"3D_Druck_in_Hannover.jpg","fileName":"3D_Druck_in_Hannover.jpg","fileSize":432634,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d777816a6a4fb69972ef5_3D_Druck_in_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image18 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902555-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image19big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_arbeit_9.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt druckt Deine Datei in 3D" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image19big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image19big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image19big | img_url: '1920x' }} 1920w,{{ section.settings.image19big | img_url: '1600x' }} 1600w,{{ section.settings.image19big | img_url: '1366x' }} 1366w,{{ section.settings.image19big | img_url: '1024x' }} 1024w,{{ section.settings.image19big | img_url: '768x' }} 768w,{{ section.settings.image19big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7762ce5ab2a1e846344b","origFileName":"Prinjekt_Arbeit.jpg","fileName":"Prinjekt_Arbeit.jpg","fileSize":376840,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7762ce5ab2a1e846344b_Prinjekt_Arbeit.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902555-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image18.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_arbeit_9.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt druckt Deine Datei in 3D" option:image="Image19Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7762ce5ab2a1e846344b","origFileName":"Prinjekt_Arbeit.jpg","fileName":"Prinjekt_Arbeit.jpg","fileSize":376840,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7762ce5ab2a1e846344b_Prinjekt_Arbeit.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image20 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902557-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image20big == nil -%}<img class="img_lightbox" src="{{ '3d-druck_aus_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Anfertigungen aus Deutschland" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image20big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image20big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image20big | img_url: '1920x' }} 1920w,{{ section.settings.image20big | img_url: '1600x' }} 1600w,{{ section.settings.image20big | img_url: '1366x' }} 1366w,{{ section.settings.image20big | img_url: '1024x' }} 1024w,{{ section.settings.image20big | img_url: '768x' }} 768w,{{ section.settings.image20big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d775309f6b0b57e834631","origFileName":"3D-Druck_aus_Hannover.jpg","fileName":"3D-Druck_aus_Hannover.jpg","fileSize":268440,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d775309f6b0b57e834631_3D-Druck_aus_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902557-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image20.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ '3d-druck_aus_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3D-Anfertigungen aus Deutschland" option:image="Image20Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d775309f6b0b57e834631","origFileName":"3D-Druck_aus_Hannover.jpg","fileName":"3D-Druck_aus_Hannover.jpg","fileSize":268440,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d775309f6b0b57e834631_3D-Druck_aus_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image21 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902559-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image21big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_bei_der_arbeit_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Wir sind Prinjekt aus Hannover" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image21big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image21big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image21big | img_url: '1920x' }} 1920w,{{ section.settings.image21big | img_url: '1600x' }} 1600w,{{ section.settings.image21big | img_url: '1366x' }} 1366w,{{ section.settings.image21big | img_url: '1024x' }} 1024w,{{ section.settings.image21big | img_url: '768x' }} 768w,{{ section.settings.image21big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7783f5a5723967e7dc8a","origFileName":"Prinjekt_bei_der_arbeit.jpg","fileName":"Prinjekt_bei_der_arbeit.jpg","fileSize":310616,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7783f5a5723967e7dc8a_Prinjekt_bei_der_arbeit.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de1902559-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image21.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_bei_der_arbeit_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Wir sind Prinjekt aus Hannover" option:image="Image21Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7783f5a5723967e7dc8a","origFileName":"Prinjekt_bei_der_arbeit.jpg","fileName":"Prinjekt_bei_der_arbeit.jpg","fileSize":310616,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7783f5a5723967e7dc8a_Prinjekt_bei_der_arbeit.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image22 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190255b-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image22big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_serienanfertigungen_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3d drucken lassen in Deutschland" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image22big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image22big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image22big | img_url: '1920x' }} 1920w,{{ section.settings.image22big | img_url: '1600x' }} 1600w,{{ section.settings.image22big | img_url: '1366x' }} 1366w,{{ section.settings.image22big | img_url: '1024x' }} 1024w,{{ section.settings.image22big | img_url: '768x' }} 768w,{{ section.settings.image22big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685cad34debc5783bf5762","origFileName":"Prinjekt_Serienanfertigungen_Hannover.jpg","fileName":"Prinjekt_Serienanfertigungen_Hannover.jpg","fileSize":523400,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685cad34debc5783bf5762_Prinjekt_Serienanfertigungen_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190255b-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image22.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_serienanfertigungen_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="3d drucken lassen in Deutschland" option:image="Image22Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"66685cad34debc5783bf5762","origFileName":"Prinjekt_Serienanfertigungen_Hannover.jpg","fileName":"Prinjekt_Serienanfertigungen_Hannover.jpg","fileSize":523400,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/66685cad34debc5783bf5762_Prinjekt_Serienanfertigungen_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image23 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190255d-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image23big == nil -%}<img class="img_lightbox" src="{{ 'prinjekt_3d_druck_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Hochwertige 3D-Anfertigungen" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image23big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image23big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image23big | img_url: '1920x' }} 1920w,{{ section.settings.image23big | img_url: '1600x' }} 1600w,{{ section.settings.image23big | img_url: '1366x' }} 1366w,{{ section.settings.image23big | img_url: '1024x' }} 1024w,{{ section.settings.image23big | img_url: '768x' }} 768w,{{ section.settings.image23big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7882bc34b5bf9773f0ce","origFileName":"Prinjekt_3D_Druck_Hannover.jpg","fileName":"Prinjekt_3D_Druck_Hannover.jpg","fileSize":238761,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7882bc34b5bf9773f0ce_Prinjekt_3D_Druck_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190255d-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image23.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'prinjekt_3d_druck_hannover_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Hochwertige 3D-Anfertigungen" option:image="Image23Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7882bc34b5bf9773f0ce","origFileName":"Prinjekt_3D_Druck_Hannover.jpg","fileName":"Prinjekt_3D_Druck_Hannover.jpg","fileSize":238761,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7882bc34b5bf9773f0ce_Prinjekt_3D_Druck_Hannover.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+        {%- if section.settings.image24 == nil -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190255f-e1902525" class="img_gallery_home_light w-inline-block w-lightbox">{%- if section.settings.image24big == nil -%}<img class="img_lightbox" src="{{ 'hannover_prinjekt_3d_druck_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt individueller 3D-Druck" loading="lazy">{%- else -%}<img class="img_lightbox" src="{{ section.settings.image24big.src | img_url: 'master' }}" width="Auto" height="Auto" alt="{{ section.settings.image24big.alt | escape }}" loading="lazy" srcset="{{ section.settings.image24big | img_url: '1920x' }} 1920w,{{ section.settings.image24big | img_url: '1600x' }} 1600w,{{ section.settings.image24big | img_url: '1366x' }} 1366w,{{ section.settings.image24big | img_url: '1024x' }} 1024w,{{ section.settings.image24big | img_url: '768x' }} 768w,{{ section.settings.image24big | img_url: '640x' }} 640w">{%- endif -%}
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7893ceb00eee399d40e7","origFileName":"Hannover_Prinjekt_3d_Druck.jpg","fileName":"Hannover_Prinjekt_3d_Druck.jpg","fileSize":245916,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7893ceb00eee399d40e7_Hannover_Prinjekt_3d_Druck.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- else -%}<a href="#" id="w-node-bfbd88d9-09cb-5cde-f146-d55de190255f-e1902525" class="img_gallery_home_light w-inline-block w-lightbox" style="background-image: url('{{ section.settings.image24.src | img_url: 'master' }}');"><img class="img_lightbox" src="{{ 'hannover_prinjekt_3d_druck_1.webp' | asset_url }}" width="Auto" height="Auto" alt="Prinjekt individueller 3D-Druck" option:image="Image24Big" loading="lazy">
+          <script type="application/json" class="w-json">{"items":[{"_id":"666d7893ceb00eee399d40e7","origFileName":"Hannover_Prinjekt_3d_Druck.jpg","fileName":"Hannover_Prinjekt_3d_Druck.jpg","fileSize":245916,"height":800,"url":"https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/666d7893ceb00eee399d40e7_Hannover_Prinjekt_3d_Druck.jpg","width":1200,"type":"image"}],"group":""}</script>
+        </a>{%- endif -%}
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","gallery_site_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "Gallerie-Section",
+  "tag": "div",
+  "class": "gallery_site_wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Überzeugen Sie sich selbst!"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Wir sind eine 3D-Druck-Firma, die höchste Präzision und Qualität liefert. Unser Fokus liegt darauf, dass jedes Teil perfekt gedruckt wird. Durch modernste Technologie und sorgfältig ausgewählte Materialien gewährleisten wir eine unvergleichliche Detailtreue und Genauigkeit. Unser erfahrenes Team arbeitet eng mit Kunden zusammen, um maßgeschneiderte Lösungen zu entwickeln. Strenge Qualitätskontrollen stellen sicher, dass jedes Produkt unsere hohen Standards erfüllt. Vertrauen Sie auf unsere Expertise für perfekte 3D-Druckteile."
+    },
+    {
+      "type": "image_picker",
+      "id": "image1",
+      "label": "Image1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image1big",
+      "label": "Image1Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2",
+      "label": "Image2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image2big",
+      "label": "Image2Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3",
+      "label": "Image3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image3big",
+      "label": "Image3Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image4big",
+      "label": "Image4Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image5",
+      "label": "Image5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image5big",
+      "label": "Image5Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image6",
+      "label": "Image6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image6big",
+      "label": "Image6Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image7",
+      "label": "Image7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image7big",
+      "label": "Image7Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Image 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "image8big",
+      "label": "Image8Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image9",
+      "label": "Image9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image9big",
+      "label": "Image9Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image10",
+      "label": "Image10"
+    },
+    {
+      "type": "image_picker",
+      "id": "image10big",
+      "label": "Image10Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image11",
+      "label": "Image11"
+    },
+    {
+      "type": "image_picker",
+      "id": "image11big",
+      "label": "Image11Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image12",
+      "label": "Image12"
+    },
+    {
+      "type": "image_picker",
+      "id": "image12big",
+      "label": "Image12Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image13",
+      "label": "Image13"
+    },
+    {
+      "type": "image_picker",
+      "id": "image13big",
+      "label": "Image13Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image14",
+      "label": "Image14"
+    },
+    {
+      "type": "image_picker",
+      "id": "image14big",
+      "label": "Image14Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image15",
+      "label": "Image15"
+    },
+    {
+      "type": "image_picker",
+      "id": "image15big",
+      "label": "Image15Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image16",
+      "label": "Image16"
+    },
+    {
+      "type": "image_picker",
+      "id": "image16big",
+      "label": "Image16Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image17",
+      "label": "Image17"
+    },
+    {
+      "type": "image_picker",
+      "id": "image17big",
+      "label": "Image17Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image18",
+      "label": "Image18"
+    },
+    {
+      "type": "image_picker",
+      "id": "image19big",
+      "label": "Image19Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image20",
+      "label": "Image20"
+    },
+    {
+      "type": "image_picker",
+      "id": "image20big",
+      "label": "Image20Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image21",
+      "label": "Image21"
+    },
+    {
+      "type": "image_picker",
+      "id": "image21big",
+      "label": "Image21Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image22",
+      "label": "Image22"
+    },
+    {
+      "type": "image_picker",
+      "id": "image22big",
+      "label": "Image22Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image23",
+      "label": "Image23"
+    },
+    {
+      "type": "image_picker",
+      "id": "image23big",
+      "label": "Image23Big"
+    },
+    {
+      "type": "image_picker",
+      "id": "image24",
+      "label": "Image24"
+    },
+    {
+      "type": "image_picker",
+      "id": "image24big",
+      "label": "Image24Big"
+    }
+  ]
+}
+{% endschema %}

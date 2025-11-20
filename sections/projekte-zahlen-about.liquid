@@ -1,0 +1,78 @@
+
+      <div id="w-node-cb7405ea-c844-4a5d-2395-bf85e55fe96c-e55fe96b" data-w-id="cb7405ea-c844-4a5d-2395-bf85e55fe96c" class="card1_home a1">
+        <h2 class="heading_h1 orange">{{ section.settings.number_1 }}</h2>
+        <p class="heading_h3">{{ section.settings.text_number1 | newline_to_br }}</p>
+      </div>
+      <div id="w-node-cb7405ea-c844-4a5d-2395-bf85e55fe971-e55fe96b" data-w-id="cb7405ea-c844-4a5d-2395-bf85e55fe971" class="card1_home a2">
+        <h2 class="heading_h1 orange">{{ section.settings.number2 }}</h2>
+        <p class="heading_h3">{{ section.settings.text_number2 | newline_to_br }}</p>
+      </div>
+      <div id="w-node-cb7405ea-c844-4a5d-2395-bf85e55fe978-e55fe96b" data-w-id="cb7405ea-c844-4a5d-2395-bf85e55fe978" class="card1_home a3">
+        <h2 class="heading_h1 orange">{{ section.settings.number_3 }}</h2>
+        <p class="heading_h3">{{ section.settings.text_number3 | newline_to_br }}</p>
+      </div>
+      <div id="w-node-cb7405ea-c844-4a5d-2395-bf85e55fe97d-e55fe96b" data-w-id="cb7405ea-c844-4a5d-2395-bf85e55fe97d" class="card1_home a4">
+        <h2 class="heading_h1 orange">{{ section.settings.number_4 }}</h2>
+        <p class="heading_h3">{{ section.settings.text_number4 | newline_to_br }}</p>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","info_about_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "Projekte-Zahlen-About",
+  "tag": "div",
+  "class": "info_about_wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "number_1",
+      "label": "Number-1",
+      "default": "300+"
+    },
+    {
+      "type": "text",
+      "id": "number2",
+      "label": "Number2",
+      "default": "20+"
+    },
+    {
+      "type": "text",
+      "id": "number_3",
+      "label": "Number-3",
+      "default": "1743+"
+    },
+    {
+      "type": "text",
+      "id": "number_4",
+      "label": "Number-4",
+      "default": "500+"
+    },
+    {
+      "type": "textarea",
+      "id": "text_number1",
+      "label": "Text-Number1",
+      "default": "Umgesetzte Projekte"
+    },
+    {
+      "type": "textarea",
+      "id": "text_number2",
+      "label": "Text-Number2",
+      "default": "GlücklicheKunden"
+    },
+    {
+      "type": "textarea",
+      "id": "text_number3",
+      "label": "Text-Number3",
+      "default": "Produzierte Einzelteile"
+    },
+    {
+      "type": "textarea",
+      "id": "text_number4",
+      "label": "Text-Number4",
+      "default": "Gedruckte Teile"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,49 @@
+
+      <div id="w-node-_36947410-fe7b-259d-8b08-f79baca1b94d-aca1b94c" class="inhalt_header_leistungen">
+        <h1 text-split="" letters-slide-up-hero="" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b94e-aca1b94c" class="heading_h1 mitte _60 _2em unten">{{ section.settings.heading }}</h1>
+        <p data-w-id="36947410-fe7b-259d-8b08-f79baca1b950" class="text_normal mitte _60">{{ section.settings.subtext | newline_to_br }}</p>
+        <a data-w-id="36947410-fe7b-259d-8b08-f79baca1b952" href="{{ section.settings.url_button }}" class="button w-button">{{ section.settings.url_button_text }}</a>
+      </div>
+      <div class="hero_leistungen_bg"><img class="img_leistungen_bg _1" src="{{ 'prinjekt_work_8.webp' | asset_url }}" alt="Hochwertiger 3D-Druck für jeden" data-w-id="36947410-fe7b-259d-8b08-f79baca1b955" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b955-aca1b94c" loading="lazy"><img class="img_leistungen_bg _2" src="{{ 'prinjekt_work_9.webp' | asset_url }}" alt="Prinjekt bietet alles rundum das Thema 3D-Druck" data-w-id="36947410-fe7b-259d-8b08-f79baca1b956" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b956-aca1b94c" loading="lazy"><img class="img_leistungen_bg _3" src="{{ 'prinjekt_work_10.webp' | asset_url }}" alt="Individueller 3D-Druck " data-w-id="36947410-fe7b-259d-8b08-f79baca1b957" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b957-aca1b94c" loading="lazy"><img class="img_leistungen_bg _4" src="{{ 'prinjekt_work_13.webp' | asset_url }}" alt="3D-Druck aus FDM " data-w-id="36947410-fe7b-259d-8b08-f79baca1b958" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b958-aca1b94c" loading="lazy"><img class="img_leistungen_bg out _5" src="{{ 'prinjekt_work_11.webp' | asset_url }}" alt="Wir benutzen als Material SLA und FDM" data-w-id="36947410-fe7b-259d-8b08-f79baca1b959" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b959-aca1b94c" loading="lazy"><img class="img_leistungen_bg _6" src="{{ 'prinjekt_work_12.webp' | asset_url }}" alt="3D-Druck in Deutschland" data-w-id="36947410-fe7b-259d-8b08-f79baca1b95a" id="w-node-_36947410-fe7b-259d-8b08-f79baca1b95a-aca1b94c" loading="lazy"></div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","header_leistungen_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "Hero-Leistungen",
+  "tag": "div",
+  "class": "header_leistungen_wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Wir liefern Arbeit, die begeistert"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button-Text",
+      "default": "JETZT 3D-DRUCK ERSTELLEN"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Der 3D-Druck ist revolutionär! Mit dieser Technologie können wir nicht nur Objekte herstellen, sondern auch unsere kreativen Visionen zum Leben erwecken. Von Prothesen bis zu kunstvollen Skulpturen bietet der 3D-Druck unendliche Möglichkeiten. Durch seine Effizienz beschleunigt er Produktionsprozesse und reduziert gleichzeitig Materialverschwendung. Der 3D-Druck ist eine Quelle der Inspiration und des Fortschritts, die die Welt neu gestaltet und Menschen weltweit begeistert. "
+    },
+    {
+      "type": "url",
+      "id": "url_button",
+      "label": "URL-Button"
+    },
+    {
+      "type": "text",
+      "id": "url_button_text",
+      "label": "URL-Button Text",
+      "default": "{{ section.settings.button_text }}"
+    }
+  ]
+}
+{% endschema %}

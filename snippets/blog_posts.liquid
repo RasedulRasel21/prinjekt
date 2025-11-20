@@ -1,0 +1,28 @@
+{% capture listItems %}
+{% paginate blogs['post'].articles by 999 %}
+{%- assign allItems = blogs['post'].articles -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="w-dyn-item">
+              <div class="blog_post_overview">
+                <div class="blog_post_overview_left">
+                  <h1 fs-cmssort-field="name" class="heading_h3 medium">{{ item.title }}</h1>
+                  <p class="text_normal _60">{{ item.excerpt }}</p>
+                  <a href="{{ item.url }}" class="button blog w-button">Weiterlesen</a>
+                  <div fs-cmssort-field="date" class="text_normal _60 _30px">{{ item.created_at | date: "%m/%e/%Y" }}</div>
+                </div>
+                <div class="blog_post_overview_right"><img src="{{ item.metafields.udesly['cover'].src }}" loading="lazy" class="image-5"></div>
+              </div>
+            </div>
+{%- endfor -%}
+{% endpaginate %}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+
+<div fs-cmssort-element="list" class="blog_post_list_section w-dyn-list" udy-collection="post">
+          {%- unless items_length == 0 -%}<div role="list" class="blog-list w-dyn-items">
+            {{ listItems }}
+          </div>{%- endunless -%}
+          {%- if items_length == 0 -%}<div class="w-dyn-empty">
+            <div>No items found.</div>
+          </div>{%- endif -%}
+        </div>

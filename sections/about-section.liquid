@@ -1,0 +1,53 @@
+
+      <div class="vorstellung_about_left">{%- if section.settings.image == nil -%}<img class="img_about_vorstellung" src="{{ 'das-ist-prinjekt-aus-hannover_1.webp' | asset_url }}" alt="Individueller 3D-Druck für Privatpersonen und Unternehmen " data-w-id="c30f465c-4627-ac56-e1ac-27b84a742844" loading="lazy">{%- else -%}<img class="img_about_vorstellung" src="{{ section.settings.image.src | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" data-w-id="c30f465c-4627-ac56-e1ac-27b84a742844" loading="lazy" srcset="{{ section.settings.image | img_url: '1920x' }} 1920w,{{ section.settings.image | img_url: '1600x' }} 1600w,{{ section.settings.image | img_url: '1366x' }} 1366w,{{ section.settings.image | img_url: '1024x' }} 1024w,{{ section.settings.image | img_url: '768x' }} 768w,{{ section.settings.image | img_url: '640x' }} 640w">{%- endif -%}</div>
+      <div class="vorstellung_about_rechts">
+        <h2 text-split="" letters-slide-up-hero="" class="heading_h2_medium">{{ section.settings.heading }}</h2>
+        <p data-w-id="c30f465c-4627-ac56-e1ac-27b84a742853" class="text_normal _20unten">{{ section.settings.subtext | newline_to_br }}</p>
+        <a href="{{ section.settings.linkarea }}" data-w-id="c30f465c-4627-ac56-e1ac-27b84a742855" class="button _0em w-button">{{ section.settings.linkarea_text }}</a>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","vorstellung_about_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "About-Section",
+  "tag": "div",
+  "class": "vorstellung_about_wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Hi! Wir sind Prinjekt, sind Experten im 3D-Druck aus Hannover und machen aus Deinem Design ein einzigarties 3D-Element!"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button-text",
+      "default": "Jetzt Bestellen"
+    },
+    {
+      "type": "richtext",
+      "id": "subtext",
+      "label": "Subtext"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "url",
+      "id": "linkarea",
+      "label": "Linkarea"
+    },
+    {
+      "type": "text",
+      "id": "linkarea_text",
+      "label": "Linkarea Text",
+      "default": "{{ section.settings.button_text }}"
+    }
+  ]
+}
+{% endschema %}

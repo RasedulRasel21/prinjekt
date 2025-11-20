@@ -1,0 +1,226 @@
+
+      <div class="material-bersicht-left-gk">
+        <div class="material-bersicht_gk_left">
+          <h2 text-split="" letters-slide-up-hero="" class="heading_h2">{{ section.settings.heading }}</h2>
+          <p letters-slide-up-hero="" text-split="" class="text_normal _70">{{ section.settings.subtext | newline_to_br }}</p>
+        </div>
+        <div class="material-bersicht_gk_rechts">
+          <a href="{{ section.settings.button_link }}" class="button oem w-button">{{ section.settings.button_link_text }}</a>
+        </div>
+      </div>
+      <div class="material-bersicht_right-gk">
+        <div data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614f86" class="card_leistungen">
+          <div class="material-bersicht_gk_oben">
+            <h2 class="heading_h3 klein">{{ section.settings.heading_fdm }}</h2>
+            <p class="text_normal material_oben_gk">{{ section.settings.subtext_fdm | newline_to_br }}</p>
+          </div>
+          <div class="material-bersicht_gk_unten">
+            <div class="sla_unten">
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614f8e-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614f8e" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_fdm1 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_fdm1 | newline_to_br }}</p>
+              </div>
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614f93-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614f93" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_fdm4 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_fdm4 | newline_to_br }}</p>
+              </div>
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614f98-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614f98" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_fdm3 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_fdm3 | newline_to_br }}</p>
+              </div>
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614f9d-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614f9d" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_fdm2 | newline_to_br }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_fdm2 | newline_to_br }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614fa2" class="card_leistungen">
+          <div class="material-bersicht_gk_oben">
+            <h2 class="heading_h3 klein">{{ section.settings.heading_sla }}</h2>
+            <p class="text_normal">{{ section.settings.subtext_sla | newline_to_br }}</p>
+          </div>
+          <div class="material-bersicht_gk_unten">
+            <div class="sla_unten">
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614faa-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614faa" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_sla1 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_sla1 | newline_to_br }}</p>
+              </div>
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614faf-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614faf" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_sla4 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_sla4 | newline_to_br }}</p>
+              </div>
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614fb4-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614fb4" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_sla3 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_sla3 | newline_to_br }}</p>
+              </div>
+              <div id="w-node-_23b9cb98-9322-8e0b-80d7-01b7be614fb9-be614f7b" data-w-id="23b9cb98-9322-8e0b-80d7-01b7be614fb9" class="card_materialien">
+                <h2 class="heading_h3 orange">{{ section.settings.heading_sla2 }}</h2>
+                <p class="text_normal">{{ section.settings.subtext_sla2 | newline_to_br }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","material-bersicht_wrapper_gk");</script>
+        
+{% schema %}
+{
+  "name": "Material-Geschäftskunden",
+  "tag": "div",
+  "class": "material-bersicht_wrapper_gk",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Wie drucken wir eigentlich?"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button-Text",
+      "default": "Materialübersicht"
+    },
+    {
+      "type": "text",
+      "id": "heading_fdm",
+      "label": "Heading-FDM",
+      "default": "Fused Deposition Modeling (FDM)"
+    },
+    {
+      "type": "text",
+      "id": "heading_fdm1",
+      "label": "Heading-FDM1",
+      "default": "Polylactide (PLA)"
+    },
+    {
+      "type": "text",
+      "id": "heading_fdm4",
+      "label": "Heading-FDM4",
+      "default": "Acrylester-Styrol-Acrylnitril (ASA)"
+    },
+    {
+      "type": "text",
+      "id": "heading_fdm3",
+      "label": "Heading-FDM3",
+      "default": "Acrylnitril-Butadien-Styrol (ABS)"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla",
+      "label": "Heading-SLA",
+      "default": "Stereolithography (SLA)"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla1",
+      "label": "Heading-SLA1",
+      "default": "Standard-Resin"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla4",
+      "label": "Heading-SLA4",
+      "default": "Pflanzenbasiertes Resin (ECO)"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla3",
+      "label": "Heading-SLA3",
+      "default": "Tough-Resin"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla2",
+      "label": "Heading-SLA2",
+      "default": "Water-Washable Resin"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Es gibt eine Mehrzahl an möglichen 3D-Druckverfahren. Wichtig ist, dass man sich für die Variante entscheidet, die am besten für Ihr Projekt geeignet ist oder lassen Sie sich von uns beraten."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_fdm",
+      "label": "Subtext-FDM",
+      "default": "Mit dem FDM-Druckverfahren lassen sich zahlreiche Kunststoffe drucken. Neben einer hohen Materialauswahl zeichnet sich der FDM-Druck außerdem durch eine hohe Stabilität aus. In den meisten Fällen können keine großen/langen Teile produziert werden. Durch unsere Ausstattung ist dies allerdings möglich. Insgesamt ist das FDM-Verfahren sehr preiswert – ein weiterer Vorteil, den wir direkt an unsere Kunden weitergeben."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_fdm1",
+      "label": "Subtext-FDM1",
+      "default": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_fdm4",
+      "label": "Subtext-FDM4",
+      "default": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_fdm3",
+      "label": "Subtext-FDM3",
+      "default": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche."
+    },
+    {
+      "type": "textarea",
+      "id": "heading_fdm2",
+      "label": "Heading-FDM2",
+      "default": "Polymethylmethacrylat (PMMA)"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_fdm2",
+      "label": "Subtext-FDM2",
+      "default": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla",
+      "label": "Subtext-SLA",
+      "default": "Beim SLA-Verfahren wird für ein Modell ein bestimmtes Kunstharz verwendet, das durch eine Lichtquelle ausgehärtet wird.Der Vorteil gegenüber anderen Druckvarianten zeigt sich darin, dass beim 3D-Druck auf allen Seiten eine Hochglanzoberfläche erzeugt werden kann und eine hohe Detailgenauigkeit beim Druck entsteht. "
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla1",
+      "label": "Subtext-SLA1",
+      "default": "Standard-Resin ist in der Regel am günstigsten. Es ist vor allem für Schauobjekte, Figuren oder sonstige Objekte ohne größere mechanische Beanspruchungen geeignet, da das Material andernfalls spröde wird."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla4",
+      "label": "Subtext-SLA4",
+      "default": "Das Eco-Resin ist biologisch abbaubar und aus Sojaöl hergestellt. Darüber hinaus ist es im Vergleich zum Standard-Resin fester und weniger spröde."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla3",
+      "label": "Subtext-SLA3",
+      "default": "Tough-Resin ist ein besonders stabiles Harz, welches weniger spröde ist als das normale Standard-Resin. Durch die höhere Festigkeit ist es bei mechanischen Beanspruchungen deutlich besser geeignet."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla2",
+      "label": "Subtext-SLA2",
+      "default": "Water-Washable-Resin weist eine sehr gute Feuchtigkeitsbeständigkeit auf. Außerdem besitzt es eine hohe Härte und Kratzfestigkeit."
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button-Link"
+    },
+    {
+      "type": "text",
+      "id": "button_link_text",
+      "label": "Button-Link Text",
+      "default": "{{ section.settings.button_text }}"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,106 @@
+
+      <div class="sla_oben">
+        <div class="sla_oben_left">
+          <h2 text-split="" letters-slide-up-hero="" class="heading_h2">{{ section.settings.heading }}</h2>
+          <p letters-slide-up-hero="" text-split="" class="text_normal">{{ section.settings.subtext | newline_to_br }}</p>
+        </div>
+        <div class="sla_oben_right">
+          <a href="{{ section.settings.button_link }}" class="button oem w-button">{{ section.settings.button_link_text }}</a>
+        </div>
+      </div>
+      <div class="sla_unten">
+        <div id="w-node-_4ed11d06-2838-910c-08e8-363b5a4c6a12-5a4c6a07" data-w-id="4ed11d06-2838-910c-08e8-363b5a4c6a12" class="card_materialien">
+          <h2 class="heading_h3 orange">{{ section.settings.heading_sla1 }}</h2>
+          <p class="text_normal">{{ section.settings.subtext_sla1 | newline_to_br }}</p>
+        </div>
+        <div id="w-node-_4ed11d06-2838-910c-08e8-363b5a4c6a17-5a4c6a07" data-w-id="4ed11d06-2838-910c-08e8-363b5a4c6a17" class="card_materialien">
+          <h2 class="heading_h3 orange">{{ section.settings.heading_sla3 }}</h2>
+          <p class="text_normal">{{ section.settings.subtext_sla3 | newline_to_br }}</p>
+        </div>
+        <div id="w-node-_4ed11d06-2838-910c-08e8-363b5a4c6a1c-5a4c6a07" data-w-id="4ed11d06-2838-910c-08e8-363b5a4c6a1c" class="card_materialien">
+          <h2 class="heading_h3 orange">{{ section.settings.heading_sla3 }}</h2>
+          <p class="text_normal">{{ section.settings.subtext_sla3 | newline_to_br }}</p>
+        </div>
+        <div id="w-node-_4ed11d06-2838-910c-08e8-363b5a4c6a21-5a4c6a07" data-w-id="4ed11d06-2838-910c-08e8-363b5a4c6a21" class="card_materialien">
+          <h2 class="heading_h3 orange">{{ section.settings.heading_sla2 }}</h2>
+          <p class="text_normal">{{ section.settings.subtext_sla2 | newline_to_br }}</p>
+        </div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","sla_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "SLA-INFO",
+  "tag": "div",
+  "class": "sla_wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Stereolithography (SLA)"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button-Text",
+      "default": "Materialübersicht"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla1",
+      "label": "Heading-SLA1",
+      "default": "Standard-Resin"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla3",
+      "label": "Heading-SLA3",
+      "default": "Tough-Resin"
+    },
+    {
+      "type": "text",
+      "id": "heading_sla2",
+      "label": "Heading-SLA2",
+      "default": "Water-Washable Resin"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext",
+      "label": "Subtext",
+      "default": "Beim SLA-Verfahren wird für ein Modell ein bestimmtes Kunstharz verwendet, das durch eine Lichtquelle ausgehärtet wird.Der Vorteil gegenüber anderen Druckvarianten zeigt sich darin, dass beim 3D-Druck auf allen Seiten eine Hochglanzoberfläche erzeugt werden kann und eine hohe Detailgenauigkeit beim Druck entsteht."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla1",
+      "label": "Subtext-SLA1",
+      "default": "Standard-Resin ist in der Regel am günstigsten. Es ist vor allem für Schauobjekte, Figuren oder sonstige Objekte ohne größere mechanische Beanspruchungen geeignet, da das Material andernfalls spröde wird."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla3",
+      "label": "Subtext-SLA3",
+      "default": "Tough-Resin ist ein besonders stabiles Harz, welches weniger spröde ist als das normale Standard-Resin. Durch die höhere Festigkeit ist es bei mechanischen Beanspruchungen deutlich besser geeignet."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_sla2",
+      "label": "Subtext-SLA2",
+      "default": "Water-Washable-Resin weist eine sehr gute Feuchtigkeitsbeständigkeit auf. Außerdem besitzt es eine hohe Härte und Kratzfestigkeit."
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button-Link"
+    },
+    {
+      "type": "text",
+      "id": "button_link_text",
+      "label": "Button-Link Text",
+      "default": "{{ section.settings.button_text }}"
+    }
+  ]
+}
+{% endschema %}

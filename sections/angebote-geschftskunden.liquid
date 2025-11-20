@@ -1,0 +1,88 @@
+
+      <div class="how_oben">
+        <div class="heading_h3 mitte">{{ section.settings.heading }}</div>
+      </div>
+      <div class="how_schritte">
+        <div data-w-id="9e6c4d93-c66a-fd4e-37da-a3b87fd5baa9" class="angebote_card left">
+          <div class="angebote_left">
+            <div class="number_how">{{ 't31' | t }}</div>
+          </div>
+          <div class="how_right">
+            <h2 class="heading_h4">{{ section.settings.heading_angebot1 }}</h2>
+            <p text-split="" letters-slide-up-hero="" class="text_normal">{{ section.settings.subtext_angebot1 | newline_to_br }}</p>
+          </div>
+        </div>
+        <div data-w-id="9e6c4d93-c66a-fd4e-37da-a3b87fd5bab2" class="angebote_card mitte">
+          <div class="angebote_left">
+            <div class="number_how">{{ 't32' | t }}</div>
+          </div>
+          <div class="how_right">
+            <h2 class="heading_h4">{{ section.settings.heading_angebot2 }}</h2>
+            <p text-split="" letters-slide-up-hero="" class="text_normal">{{ section.settings.subtext_angebot2 | newline_to_br }}</p>
+          </div>
+        </div>
+        <div data-w-id="9e6c4d93-c66a-fd4e-37da-a3b87fd5babb" class="angebote_card right">
+          <div class="angebote_left">
+            <div class="number_how">{{ 't33' | t }}</div>
+          </div>
+          <div class="how_right">
+            <h2 class="heading_h4">{{ section.settings.heading_angebot3 }}</h2>
+            <p text-split="" letters-slide-up-hero="" class="text_normal">{{ section.settings.subtext_angebot3 | newline_to_br }}</p>
+          </div>
+        </div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","angebote_wrapper_gesch-ftskunden");</script>
+        
+{% schema %}
+{
+  "name": "Angebote-Geschäftskunden",
+  "tag": "div",
+  "class": "angebote_wrapper_gesch-ftskunden",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Das bieten wir unseren Geschäftskunden zusätzlich an"
+    },
+    {
+      "type": "text",
+      "id": "heading_angebot1",
+      "label": "Heading-Angebot1",
+      "default": "Feuerfeste Funktionsteile"
+    },
+    {
+      "type": "text",
+      "id": "heading_angebot2",
+      "label": "Heading-Angebot2",
+      "default": "Amazon FBA"
+    },
+    {
+      "type": "text",
+      "id": "heading_angebot3",
+      "label": "Heading-Angebot3",
+      "default": "Versand an Warenlager"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_angebot1",
+      "label": "Subtext-Angebot1",
+      "default": "Zu den hohen Anforderungen, denen 3D-gedruckte Bauteile in einigen Bereichen gerecht werden müssen, gehört eine zertifizierte Feuerfestigkeit. Diese nennt sich UL94-Norm. Ein paar unserer Materialien erfüllen die Anforderungen in brandgefährdeten Bereichen."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_angebot2",
+      "label": "Subtext-Angebot2",
+      "default": "Amazon FBA ist mittlerweile ein fester Bestandteil vieler Händler, auch Ihre Bestellungen über uns können direkt mit Amazon FBA verknüpft werden. Damit sparen Sie sehr viel Zeit."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_angebot3",
+      "label": "Subtext-Angebot3",
+      "default": "Wenn Sie ein Produkt verkaufen wollen, aber ein externes Warenlager nutzen, stellt das für uns kein Problem dar. Je nach Auftrag produzieren wir die Teile für Sie und im Nachgang können wir das Produkt direkt an Ihr Warenlager schicken, sodass Sie sich nicht mehr darum kümmern müssen."
+    }
+  ]
+}
+{% endschema %}

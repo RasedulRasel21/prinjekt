@@ -1,0 +1,20 @@
+
+        <p animate="" class="text_big">{{ section.settings.textarea | newline_to_br }}</p>
+      
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","text_about_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "INFO_About",
+  "tag": "div",
+  "class": "text_about_wrapper",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "textarea",
+      "label": "Textarea"
+    }
+  ]
+}
+{% endschema %}

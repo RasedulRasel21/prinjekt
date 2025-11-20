@@ -1,0 +1,118 @@
+{% capture listItems %}
+{% paginate blogs['materialubersicht-sla'].articles by 999 %}
+{%- assign allItems = blogs['materialubersicht-sla'].articles -%}
+{%- for item in allItems  -%}
+                <div role="listitem" class="w-dyn-item">
+              <div class="material-bersicht_inhalt">
+                <div class="material-bersicht_inhalt_oben">
+                  <h3 class="heading_h4">{{ item.metafields.udesly['seitentitel'] }}</h3>
+                  <div class="popup-wrapper_sla">
+                    <div class="popup-inner">
+                      <a data-w-id="1a2745ab-ced6-9d78-246c-85d8c7c5f029" href="#" class="popup-close-sla w-inline-block">
+                        <div class="popup-close-icon w-embed"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 14 14">
+                            <path d="m1.61.21.1.08L7 5.6l5.3-5.3a1 1 0 0 1 1.49 1.32l-.08.1L8.4 7l5.3 5.3a1 1 0 0 1-1.32 1.49l-.1-.08L7 8.4l-5.3 5.3a1 1 0 0 1-1.49-1.32l.08-.1L5.6 7 .29 1.7A1 1 0 0 1 1.61.22Z" fill="currentColor" fill-rule="nonzero"></path>
+                          </svg></div>
+                      </a>
+                      <div class="popup-content-wrapper-2">
+                        <div class="popup-content">
+                          <div class="popup_oben">
+                            <div class="popup_left">
+                              <div class="popup_material_1">
+                                <h1 class="heading_h3">{{ item.title }}</h1>
+                                <div class="rich-text-block w-richtext">{{ item.content }}</div>
+                              </div>
+                              <div class="text_normal _60">{{ item.metafields.udesly['anwendungsfalle'] }}</div>
+                            </div>
+                            <div class="pop_right_img"><img src="{{ item.image | img_url: 'master' }}" loading="lazy" class="image-7"></div>
+                          </div>
+                          <div class="popup_unten">
+                            <div class="popup_left_unten">
+                              <div class="tabelle_popup">
+                                <h1 class="heading_h4">Technische Details</h1>
+                                <div class="tabelle_popup_1">
+                                  <div class="left_tabelle_popup">
+                                    <div class="text_normal bold">Gewicht g/cm3</div>
+                                  </div>
+                                  <div class="right_tablle_popup">
+                                    <div class="text_normal">{{ item.metafields.udesly['gewicht'] }}</div>
+                                  </div>
+                                </div>
+                                <div class="tabelle_popup_1">
+                                  <div class="left_tabelle_popup">
+                                    <div class="text_normal bold">Elongation at Break</div>
+                                  </div>
+                                  <div class="right_tablle_popup">
+                                    <div class="text_normal">{{ item.metafields.udesly['elongation'] }}</div>
+                                  </div>
+                                </div>
+                                <div class="tabelle_popup_1">
+                                  <div class="left_tabelle_popup">
+                                    <div class="text_normal bold">Tensile Strength</div>
+                                  </div>
+                                  <div class="right_tablle_popup">
+                                    <div class="text_normal">{{ item.metafields.udesly['tensile-strength'] }}</div>
+                                  </div>
+                                </div>
+                                <div class="tabelle_popup_1">
+                                  <div class="left_tabelle_popup">
+                                    <div class="text_normal bold">Flexural Modulus</div>
+                                  </div>
+                                  <div class="right_tablle_popup">
+                                    <div class="text_normal">{{ item.metafields.udesly['flexural-modulus'] }}</div>
+                                  </div>
+                                </div>
+                                <div class="tabelle_popup_1">
+                                  <div class="left_tabelle_popup">
+                                    <div class="text_normal bold">Heat Distortion Temperature</div>
+                                  </div>
+                                  <div class="right_tablle_popup">
+                                    <div class="text_normal">{{ item.metafields.udesly['heat-distortion-temperature'] }}</div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="button_popup">
+                                <a href="#" class="button _0em _1em w-button">Technisches Datenblatt</a>
+                              </div>
+                            </div>
+                            <div class="popup_right_unten">
+                              <div class="farbe_popup_section">
+                                <h1 class="heading_h4">Farbe</h1>
+                                <div class="farbe_popup" style="background-color: {{item.metafields.udesly['farben']}}"></div>
+                              </div>
+                              <div class="vorteile_popp_section">
+                                <h1 class="heading_h4">Vorteile</h1>
+                                <div class="rich-text-block-2 w-richtext">{{ item.metafields.udesly['vorteile-1'] }}</div>
+                              </div>
+                              <div class="vorteile_popp_section">
+                                <h1 class="heading_h4">Nachteile</h1>
+                                <div class="w-richtext">{{ item.metafields.udesly['nachteile-2'] }}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div data-w-id="1a2745ab-ced6-9d78-246c-85d8c7c5f068" class="popup-background-sla"></div>
+                    </div>
+                  </div>
+                  <div class="popup-group">
+                    <a data-w-id="1a2745ab-ced6-9d78-246c-85d8c7c5f024" href="#" class="popup-toggle-sla w-inline-block">
+                      <div class="popup-toggle-text">Mehr erfahren</div>
+                    </a>
+                  </div>
+                </div>
+                <div data-w-id="1a2745ab-ced6-9d78-246c-85d8c7c5f069" style="width:0%" class="line_wrapper_table"></div>
+              </div>
+            </div>
+{%- endfor -%}
+{% endpaginate %}
+{% endcapture %}
+{% assign items_length = listItems | strip | size %}
+
+<div class="collecction_material w-dyn-list" udy-collection="materialubersicht-sla">
+          {%- unless items_length == 0 -%}<div role="list" class="w-dyn-items">
+            {{ listItems }}
+          </div>{%- endunless -%}
+          {%- if items_length == 0 -%}<div class="w-dyn-empty">
+            <div>No items found.</div>
+          </div>{%- endif -%}
+        </div>

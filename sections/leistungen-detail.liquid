@@ -1,0 +1,102 @@
+
+      <div class="oben_leistungen">
+        <h2 letters-slide-up-hero="" text-split="" class="heading_h2 _60">{{ section.settings.heading }}</h2>
+      </div>
+      <div data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa087" class="line_wrapper"></div>
+      <div class="unten_leistungen">
+        <div class="leistungen_links_section">
+          <div class="leistung_1">
+            <h1 data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa08b" class="heading_h2 orange2">{{ section.settings.heading_leistung1 }}</h1>
+            <p data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa08d" class="text_normal">{{ section.settings.subtext_leistung1 | newline_to_br }}</p>
+            <div data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa08f" class="line_wrapper"></div>
+          </div>
+          <div class="leistung_1">
+            <h1 data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa091" class="heading_h2 orange2">{{ section.settings.heading_leistung2 }}</h1>
+            <p data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa093" class="text_normal">{{ section.settings.subtext_leistung2 | newline_to_br }}</p>
+            <div data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa095" class="line_wrapper"></div>
+          </div>
+          <div class="leistung_1">
+            <h1 data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa097" class="heading_h2 orange2">{{ section.settings.heading_leistung3 }}</h1>
+            <p data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa099" class="text_normal">{{ section.settings.subtext_leistung3 | newline_to_br }}</p>
+            <div data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa09b" class="line_wrapper"></div>
+          </div>
+          <div class="leistung_1">
+            <h1 data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa09d" class="heading_h2 orange2">{{ section.settings.heading_leistung4 }}</h1>
+            <p data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa09f" class="text_normal">{{ section.settings.subtext_leistung4 | newline_to_br }}</p>
+            <div data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa0a1" class="line_wrapper"></div>
+          </div>
+        </div>
+        <div class="leistungen_rechts_section">{%- if section.settings.image_leistungen == nil -%}<img class="img_leistungen" src="{{ 'prinjekt_team_1.webp' | asset_url }}" alt="WIr drucken Ihren Wunsch in bester Qualität" data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa0a3" loading="lazy">{%- else -%}<img class="img_leistungen" src="{{ section.settings.image_leistungen.src | img_url: 'master' }}" alt="{{ section.settings.image_leistungen.alt | escape }}" data-w-id="dbc5f1dc-743e-f361-73c7-a416e5efa0a3" loading="lazy" srcset="{{ section.settings.image_leistungen | img_url: '1920x' }} 1920w,{{ section.settings.image_leistungen | img_url: '1600x' }} 1600w,{{ section.settings.image_leistungen | img_url: '1366x' }} 1366w,{{ section.settings.image_leistungen | img_url: '1024x' }} 1024w,{{ section.settings.image_leistungen | img_url: '768x' }} 768w,{{ section.settings.image_leistungen | img_url: '640x' }} 640w">{%- endif -%}</div>
+      </div>
+    
+
+<script>var currentSection = document.currentScript.closest('.shopify-section');currentSection.setAttribute("class","leistungen_lesitungen_wrapper");</script>
+        
+{% schema %}
+{
+  "name": "Leistungen-Detail",
+  "tag": "div",
+  "class": "leistungen_lesitungen_wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "WIR DRUCKEN  IHREN WUNSCH IN BESTER QUALITÄT!"
+    },
+    {
+      "type": "text",
+      "id": "heading_leistung1",
+      "label": "Heading-Leistung1",
+      "default": "Serienfertigungen"
+    },
+    {
+      "type": "text",
+      "id": "heading_leistung2",
+      "label": "Heading-Leistung2",
+      "default": "Prototyping"
+    },
+    {
+      "type": "text",
+      "id": "heading_leistung3",
+      "label": "Heading-Leistung3",
+      "default": "3D-Scan"
+    },
+    {
+      "type": "text",
+      "id": "heading_leistung4",
+      "label": "Heading-Leistung4",
+      "default": "Design-Optimierung"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_leistung1",
+      "label": "Subtext-Leistung1",
+      "default": "Sie wollen mit einem neuen Produkt auf den Markt gehen und brauchen einen zuverlässigen Hersteller an Ihrer Seite? Dank unserer großen Drucker Farm können wir sogar Serienfertigungen anbieten. Sollten Sie einen konstanten Nachschub an Produkten benötigen, können wir eine nahezu 24/7 Fließbandfertigung aktivieren und jeden noch so großen Bedarf decken. Unsere Drucker haben eine sehr hohe Zuverlässigkeit und Genauigkeit. Sollte doch einmal etwas kaputt gehen, sind unsere In-House Techniker sofort zur Stelle und Ausfälle werden auf ein Minimum reduziert."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_leistung2",
+      "label": "Subtext-Leistung2",
+      "default": "Aller Anfang ist schwer. Wir begleiten sie bei der Entwicklung ihres Produktes und helfen ihnen, egal ob sie bereits eine technische Zeichnung haben oder nur die Idee im Kopf.Selten ist man bereits mit dem ersten Prototypen zufrieden und es braucht mehrere Versuche und Änderungen. Dabei können Details eine Rolle spielen oder ein komplettes Redesign, wenn der Prototyp nicht wie erwartet funktioniert. Wie lange der Prototyping-Prozess auch dauern mag. Wir sind erst zufrieden, wenn sie es sind!"
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_leistung3",
+      "label": "Subtext-Leistung3",
+      "default": "Mit unseren leistungsfähigen 3D-Scannern können wir Bauteile bis ins kleinste Detail scannen und in ein 3D-Modell umwandeln. Die Präzision beträgt dabei bis zu 0,02 mm und ist damit sogar für kleinste Teile oder Teile mit geringen Toleranzen geeignet, aber auch große Bauteile sind kein Problem. Selbst Farben können dabei präzise gescannt und digitalisiert werden. Das minimale Scanvolumen beträgt 10x10x10 mm und das maximale Scanvolumen beträgt 4x4x4 Meter! Sollten Sie ein zerbrochenes oder anderweitig defektes Bauteil ersetzen wollen, so können wir das Teil einscannen, um es dann digital zu reparieren und zu drucken."
+    },
+    {
+      "type": "textarea",
+      "id": "subtext_leistung4",
+      "label": "Subtext-Leistung4",
+      "default": "Sie haben bereits ein 3D-Design? Wir unterstützen sie bei der Optimierung ihres Designs unter Berücksichtigung neuester Erkenntnisse und Technologien der additiven Fertigung.Dabei können wir unter anderem den Materialverbrauch und die Druckzeit reduzieren, die Festigkeit des Modells verbessern und ihr Design für verschiedene handelsübliche und professionelle 3D-Drucker optimieren."
+    },
+    {
+      "type": "image_picker",
+      "id": "image_leistungen",
+      "label": "Image-Leistungen"
+    }
+  ]
+}
+{% endschema %}

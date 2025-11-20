@@ -9,388 +9,354 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/Prinjekt-1_Prinjekt_Wortmarke.png",
-    "logo_width": 150,
-    "favicon": "shopify://shop_images/fav.png",
-    "type_header_font": "francois_one_n4",
-    "heading_scale": 100,
-    "type_body_font": "sarabun_n4",
-    "body_scale": 100,
-    "page_width": 1500,
-    "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
-    "animations_reveal_on_scroll": true,
-    "animations_hover_elements": "none",
-    "buttons_border_thickness": 1,
-    "buttons_border_opacity": 100,
-    "buttons_radius": 0,
-    "buttons_shadow_opacity": 0,
-    "buttons_shadow_horizontal_offset": 0,
-    "buttons_shadow_vertical_offset": 4,
-    "buttons_shadow_blur": 5,
-    "variant_pills_border_thickness": 1,
-    "variant_pills_border_opacity": 55,
-    "variant_pills_radius": 40,
-    "variant_pills_shadow_opacity": 0,
-    "variant_pills_shadow_horizontal_offset": 0,
-    "variant_pills_shadow_vertical_offset": 4,
-    "variant_pills_shadow_blur": 5,
-    "inputs_border_thickness": 1,
-    "inputs_border_opacity": 55,
-    "inputs_radius": 0,
-    "inputs_shadow_opacity": 0,
-    "inputs_shadow_horizontal_offset": 0,
-    "inputs_shadow_vertical_offset": 4,
-    "inputs_shadow_blur": 5,
-    "card_style": "standard",
-    "card_image_padding": 0,
-    "card_text_alignment": "left",
-    "card_color_scheme": "scheme-2",
-    "card_border_thickness": 0,
-    "card_border_opacity": 10,
-    "card_corner_radius": 0,
-    "card_shadow_opacity": 0,
-    "card_shadow_horizontal_offset": 0,
-    "card_shadow_vertical_offset": 4,
-    "card_shadow_blur": 5,
-    "collection_card_style": "standard",
-    "collection_card_image_padding": 0,
-    "collection_card_text_alignment": "left",
-    "collection_card_color_scheme": "scheme-2",
-    "collection_card_border_thickness": 0,
-    "collection_card_border_opacity": 10,
-    "collection_card_corner_radius": 0,
-    "collection_card_shadow_opacity": 0,
-    "collection_card_shadow_horizontal_offset": 0,
-    "collection_card_shadow_vertical_offset": 4,
-    "collection_card_shadow_blur": 5,
-    "blog_card_style": "standard",
-    "blog_card_image_padding": 0,
-    "blog_card_text_alignment": "left",
-    "blog_card_color_scheme": "scheme-2",
-    "blog_card_border_thickness": 0,
-    "blog_card_border_opacity": 10,
-    "blog_card_corner_radius": 0,
-    "blog_card_shadow_opacity": 0,
-    "blog_card_shadow_horizontal_offset": 0,
-    "blog_card_shadow_vertical_offset": 4,
-    "blog_card_shadow_blur": 5,
-    "text_boxes_border_thickness": 0,
-    "text_boxes_border_opacity": 10,
-    "text_boxes_radius": 0,
-    "text_boxes_shadow_opacity": 0,
-    "text_boxes_shadow_horizontal_offset": 0,
-    "text_boxes_shadow_vertical_offset": 4,
-    "text_boxes_shadow_blur": 5,
-    "media_border_thickness": 1,
-    "media_border_opacity": 5,
-    "media_radius": 0,
-    "media_shadow_opacity": 0,
-    "media_shadow_horizontal_offset": 0,
-    "media_shadow_vertical_offset": 4,
-    "media_shadow_blur": 5,
-    "popup_border_thickness": 1,
-    "popup_border_opacity": 10,
-    "popup_corner_radius": 0,
-    "popup_shadow_opacity": 5,
-    "popup_shadow_horizontal_offset": 0,
-    "popup_shadow_vertical_offset": 4,
-    "popup_shadow_blur": 5,
-    "drawer_border_thickness": 1,
-    "drawer_border_opacity": 10,
-    "drawer_shadow_opacity": 0,
-    "drawer_shadow_horizontal_offset": 0,
-    "drawer_shadow_vertical_offset": 4,
-    "drawer_shadow_blur": 5,
-    "badge_position": "bottom left",
-    "badge_corner_radius": 40,
-    "sale_badge_color_scheme": "scheme-4",
-    "sold_out_badge_color_scheme": "scheme-3",
-    "brand_headline": "",
-    "brand_description": "<p></p>",
-    "brand_image_width": 100,
-    "social_facebook_link": "",
-    "social_instagram_link": "",
-    "social_youtube_link": "",
-    "social_tiktok_link": "",
-    "social_twitter_link": "",
-    "social_snapchat_link": "",
-    "social_pinterest_link": "",
-    "social_tumblr_link": "",
-    "social_vimeo_link": "",
-    "predictive_search_enabled": true,
-    "predictive_search_show_vendor": false,
-    "predictive_search_show_price": false,
-    "currency_code_enabled": true,
-    "cart_type": "notification",
-    "show_vendor": false,
-    "show_cart_note": false,
-    "cart_drawer_collection": "",
-    "cart_color_scheme": "scheme-1",
     "sections": {
-      "main-password-header": {
-        "type": "main-password-header",
+      "hero-section": {
+        "type": "hero-section",
         "settings": {
-          "color_scheme": "scheme-1"
+          "heading": "3D-Druck in höchster Qualität",
+          "subtext_header": "Unsere Leidenschaft gilt dem 3D-Druck und das spiegelt sich in jedem Detail wieder. Wir fertigen Ihr Modell nach Ihren individuellen Wünschen und beraten Sie bei der Auswahl des besten Materials. Bei Bedarf begleiten wir Ihre Projektidee von der Konstruktion bis zum Druck.",
+          "text_links": "Prototyping",
+          "text_mitte": "Einzelaufträge",
+          "text_rechts": "Serienanfertigungen",
+          "text_ber_button": "Klicken Sie auf den Link, um mit Ihrem 3D-Druck zu beginnen",
+          "untertitel": "Alle Uploads sind geschützt und werden nicht weitergegeben."
         }
       },
-      "main-password-footer": {
-        "type": "main-password-footer",
+      "how-to-upload": {
+        "type": "how-to-upload",
         "settings": {
-          "color_scheme": "scheme-1"
+          "heading": "So funktioniert es:",
+          "heading_m1": "3D-Model hochladen",
+          "heading_m2": "Material auswählen",
+          "heading_m3": "Bestellung bestätigen",
+          "subtext_m1": "Folgende Dateiformate sind möglich: STL, OBJ, STEP, 3MF",
+          "subtext_m2": "Wählen Sie aus einer großen Vielzahl von Materialien und Farben.",
+          "subtext_m3": "Wir fertigen schnell und zuverlässig und versenden termingerecht."
+        }
+      },
+      "angebote-startseite": {
+        "type": "angebote-startseite",
+        "settings": {
+          "heading": "Unsere Leistungen im Überblick",
+          "heading_b1": "Einzelaufträge",
+          "heading_b2": "Serienfertigung",
+          "heading_b3": "Prototypen",
+          "subtext_leistungen": "Wir sind Ihre Anlaufstelle für alles rund um das Thema 3D-Druck. Egal, ob Sie ein Unternehmen sind, das maßgeschneiderte Prototypen oder Serien benötigt, ein Künstler, der seine Ideen zum Leben erwecken möchte, oder ein Hobbybastler auf der Suche nach neuen Möglichkeiten - bei uns sind Sie genau richtig.",
+          "subtext_b1": "Senden Sie Ihre Druckdatei einfach über unser Upload-Tool. Wir werden Ihre Datei sorgfältig prüfen, Ihnen ggf. Empfehlungen zur Optimierung geben und Ihre Bestellung schnell und zuverlässig bearbeiten.",
+          "subtext_b2": "Mit unseren 3D-Druckverfahren ist oftmals eine schnellere und kostengünstigere Produktion Ihrer Serien möglich, als bei herkömmlichen Verfahren wie Spritzguss.",
+          "subtext_b3": "Wichtig dabei ist, Zeit und Kosten während der Entwicklung zu sparen. Das Material und Design muss am Ende stimmen. Gerne helfen wir Ihnen bei der Prototypenentwicklung."
+        }
+      },
+      "numbers_home": {
+        "type": "numbers_home",
+        "settings": {
+          "number_1": "7000",
+          "number_1_": "+",
+          "number_2": "2",
+          "number_2_": "M",
+          "number_2_text": "Teile Produziert",
+          "number_3": "90",
+          "number_3_": "+",
+          "number_3_text": "Verschiedene 3D-Drucker",
+          "number_4": "800",
+          "number_4_": "+",
+          "number_1_text": "Umgesetzte Projekte",
+          "number_4_text": "Zufriedene Kunden"
+        }
+      },
+      "branchen_home": {
+        "type": "branchen_home",
+        "settings": {
+          "heading": "Fertigungen für jede Branche",
+          "branche_1": "Haushalt / Konsumgüter",
+          "branche_2": "Lageristik",
+          "branche_3": "Forschung / Entwicklung",
+          "branche_4": "Elektronik",
+          "branche_5": "Gastro / Hotel",
+          "branche_6": "Automobilindustrie",
+          "branche_7": "Medizin / Zahnmedizin",
+          "branche_8": "Robotik / Maschinenbau"
+        }
+      },
+      "erfahrungen": {
+        "type": "erfahrungen",
+        "settings": {
+          "heading": "Erfahrungen",
+          "zahl_text": "10+",
+          "zahl_textarea": "Jahre",
+          "bigtext": ""
+        }
+      },
+      "reviews": {
+        "type": "reviews",
+        "settings": {
+          "name_r1": "Melina Witchen",
+          "heading": "Das sagen unsere Kunden",
+          "zahl_bewertungen": "5.0 (19 Bewertungen)",
+          "text_button": "Alle Renzensionen ansehen",
+          "text_r3": "Unsere Zusammenarbeit mit Prinjekt war von Anfang bis Ende ein voller Erfolg! Besonders beeindruckt hat uns die fachkundige Beratung – das Team hat sich Zeit genommen, unsere Anforderungen genau zu verstehen und wertvolle Empfehlungen gegeben. Der gesamte Prozess war transparent, professionell und äußerst effizient.Dank des schnellen Services und der hohen Qualität werden wir auch in Zukunft auf Prinjekt setzen. Absolut empfehlenswert!",
+          "name_r3": "Gürkan Bolat",
+          "text_r1": "Perfekter Service und top Qualität!Wir brauchten für unsere antike Kaffeemaschine einen speziellen Dichtungsring, den es so nicht mehr zu kaufen gibt. Die 3D-Druckerei hat das Problem schnell und professionell gelöst! Der Ring passt perfekt, die Qualität ist hervorragend, und der gesamte Ablauf von der Beratung bis zur Lieferungwar absolut unkompliziert.Preisleistungsverhältis Tip TopSuper freundlicher Service, schnelle Bearbeitung und ein tolles Ergebnis. Vielen Dank! Wir kommen gerne wieder!",
+          "text_r2": "Wir haben mit Prinjekt für einen Spielzeug-Prototypen zusammengearbeitet und sind absolut begeistert! Die Qualität war erstklassig, die Bearbeitung unglaublich schnell, und das Preis-Leistungs-Verhältnis einfach unschlagbar. Der gesamte Ablauf war professionell und reibungslos.Wir freuen uns darauf, auch in Zukunft mit Prinjekt zusammenzuarbeiten!",
+          "name_r2": "Toy Hereos"
+        }
+      },
+      "contact_section": {
+        "type": "contact_section",
+        "settings": {
+          "heading": "BESTELLEN SIE JETZTIHREN DRUCK!",
+          "button_text": "JETZT KONFIGURIEREN",
+          "text_l1": "Hochwertige Lösungen",
+          "text_l2": "Schnelles Prototyping",
+          "text_l3": "Individuelle Reparatur",
+          "textarea": "Bestellen Sie jetzt Ihren 3D-Druck bei uns und erleben Sie den Unterschied! Wir fertigen Ihr Produkt vor Ort mit modernsten, hochwertigen Druckern und senden es schnellstmöglich an Sie. Unsere 3D-Drucker sind auf dem neuesten Stand der Technik und gewährleisten höchste Präzision und Detailtreue. Wir verwenden ausschließlich hochwertiges Material, um sicherzustellen, dass Ihr Produkt nicht nur gut aussieht, sondern auch langlebig und funktional ist."
+        }
+      },
+      "gallery-home": {
+        "type": "gallery-home",
+        "settings": {
+          "button_text": "Mehr Beispiele ansehen"
+        }
+      },
+      "faq-home": {
+        "type": "faq-home",
+        "settings": {
+          "heading": "FAQ",
+          "heading_f1": "Was ist Prinjekt?",
+          "heading_f2": "Welches Material benutzt Ihr?",
+          "heading_f3": "Wie kann ich meinen Auftrag aufgeben?",
+          "heading_f4": "Wo habt Ihr Euren Sitzt?",
+          "heading_f5": "Wohin versendet Ihr alles?",
+          "heading_f6": "Achtet Ihr auf die Nachhaltigkeit?",
+          "textarea_f1": "",
+          "textarea_f2": "",
+          "textarea_f3": "",
+          "textarea_f4": "",
+          "textarea_f5": "",
+          "textarea_f6": ""
+        }
+      },
+      "hero-about": {
+        "type": "hero-about",
+        "settings": {
+          "heading": "Wer steckt hinter dem Next Level 3D-Druck?",
+          "text_button": "Mehr Erfahren",
+          "subtext": "Unsere Leidenschaft gilt dem 3D-Druck, und das spiegelt sich in jedem Detail wieder. Wir fertigen Ihr Modell nach Ihren Wünschen und verwenden dabei ausschließlich das von Ihnen gewählte Material. Auch Sonderwünsche bei den Druckeinstellungen sind für uns kein Problem.",
+          "linkarea": "",
+          "linkarea_text": "Mehr erfahren"
+        }
+      },
+      "projekte-zahlen-about": {
+        "type": "projekte-zahlen-about",
+        "settings": {
+          "number_1": "300+",
+          "number2": "20+",
+          "number_3": "1743+",
+          "number_4": "500+",
+          "text_number1": "Umgesetzte Projekte",
+          "text_number2": "Glückliche\nKunden",
+          "text_number3": "Produzierte Einzelteile",
+          "text_number4": "Gedruckte Teile"
+        }
+      },
+      "info_about": {
+        "type": "info_about",
+        "settings": {
+          "textarea": "<h2>Prinjekt, seit 2019 in der Fertigungsbranche etabliert, ist ein Pionier im Bereich 3D-Druck und Serienproduktion. Das Unternehmen bedient eine breite Palette von Kunden, sowohl privat als auch geschäftlich, und bietet maßgeschneiderte Lösungen für Ihre individuellen Anforderungen. Der Name \"Prinjekt\" selbst ist ein cleveres Wortspiel, das sich aus den Begriffen \"printing\" und \"injection-molding\" zusammensetzt.</h2>"
+        }
+      },
+      "about-section": {
+        "type": "about-section",
+        "settings": {
+          "heading": "Hi! Wir sind Prinjekt, sind Experten im 3D-Druck aus Hannover und machen aus Deinem Design ein einzigarties 3D-Element!",
+          "button_text": "Jetzt Bestellen",
+          "subtext": "<p>Prinjekt ist seit 2015 ein Meister und Pionier im 3D-Druck und in der Serienfertigung. Unser Unternehmen hat sich in der Fertigungsbranche fest etabliert und bietet maßgeschneiderte Lösungen für Kunden aus verschiedenen Bereichen. Unser Name, eine geschickte Fusion von 'printing' und 'injection-molding', spiegelt perfekt die Expertise unseres Unternehmens wider. Erfahren Sie mehr über unsere einzigartigen Umsetzungen und Leidenschaft für Innovation!</p>",
+          "linkarea": "",
+          "linkarea_text": "JETZT BESTELLEN"
+        }
+      },
+      "hero-leistungen": {
+        "type": "hero-leistungen",
+        "settings": {
+          "heading": "Wir liefern Arbeit, die begeistert",
+          "button_text": "JETZT 3D-DRUCK ERSTELLEN",
+          "subtext": "Der 3D-Druck ist revolutionär! Mit dieser Technologie können wir nicht nur Objekte herstellen, sondern auch unsere kreativen Visionen zum Leben erwecken. Von Prothesen bis zu kunstvollen Skulpturen bietet der 3D-Druck unendliche Möglichkeiten. Durch seine Effizienz beschleunigt er Produktionsprozesse und reduziert gleichzeitig Materialverschwendung. Der 3D-Druck ist eine Quelle der Inspiration und des Fortschritts, die die Welt neu gestaltet und Menschen weltweit begeistert.",
+          "url_button": "",
+          "url_button_text": "JETZT 3D-DRUCK ERSTELLEN"
+        }
+      },
+      "leistungen-detail": {
+        "type": "leistungen-detail",
+        "settings": {
+          "heading": "WIR DRUCKEN  IHREN WUNSCH IN BESTER QUALITÄT!",
+          "heading_leistung1": "Serienfertigungen",
+          "heading_leistung2": "Prototyping",
+          "heading_leistung3": "3D-Scan",
+          "heading_leistung4": "Design-Optimierung",
+          "subtext_leistung1": "Sie wollen mit einem neuen Produkt auf den Markt gehen und brauchen einen zuverlässigen Hersteller an Ihrer Seite? Dank unserer großen Drucker Farm können wir sogar Serienfertigungen anbieten. Sollten Sie einen konstanten Nachschub an Produkten benötigen, können wir eine nahezu 24/7 Fließbandfertigung aktivieren und jeden noch so großen Bedarf decken. Unsere Drucker haben eine sehr hohe Zuverlässigkeit und Genauigkeit. Sollte doch einmal etwas kaputt gehen, sind unsere In-House Techniker sofort zur Stelle und Ausfälle werden auf ein Minimum reduziert.",
+          "subtext_leistung2": "Aller Anfang ist schwer. Wir begleiten sie bei der Entwicklung ihres Produktes und helfen ihnen, egal ob sie bereits eine technische Zeichnung haben oder nur die Idee im Kopf.Selten ist man bereits mit dem ersten Prototypen zufrieden und es braucht mehrere Versuche und Änderungen. Dabei können Details eine Rolle spielen oder ein komplettes Redesign, wenn der Prototyp nicht wie erwartet funktioniert. Wie lange der Prototyping-Prozess auch dauern mag. Wir sind erst zufrieden, wenn sie es sind!",
+          "subtext_leistung3": "Mit unseren leistungsfähigen 3D-Scannern können wir Bauteile bis ins kleinste Detail scannen und in ein 3D-Modell umwandeln. Die Präzision beträgt dabei bis zu 0,02 mm und ist damit sogar für kleinste Teile oder Teile mit geringen Toleranzen geeignet, aber auch große Bauteile sind kein Problem. Selbst Farben können dabei präzise gescannt und digitalisiert werden. Das minimale Scanvolumen beträgt 10x10x10 mm und das maximale Scanvolumen beträgt 4x4x4 Meter! Sollten Sie ein zerbrochenes oder anderweitig defektes Bauteil ersetzen wollen, so können wir das Teil einscannen, um es dann digital zu reparieren und zu drucken.",
+          "subtext_leistung4": "Sie haben bereits ein 3D-Design? Wir unterstützen sie bei der Optimierung ihres Designs unter Berücksichtigung neuester Erkenntnisse und Technologien der additiven Fertigung.Dabei können wir unter anderem den Materialverbrauch und die Druckzeit reduzieren, die Festigkeit des Modells verbessern und ihr Design für verschiedene handelsübliche und professionelle 3D-Drucker optimieren."
+        }
+      },
+      "druckervermietung": {
+        "type": "druckervermietung",
+        "settings": {
+          "text_button_oben": "Nutzungsvereinbarung",
+          "text_button1": "Ablauf",
+          "text_button2": "Kosten",
+          "heading_dv1": "Kennenlernen und Einweisung",
+          "heading_dv2": "Ausweiskopie",
+          "heading_dv3": "Unterzeichnung des Mietvertrags",
+          "heading_dv4": "Abholung des Druckers bei Prinjekt",
+          "heading_dv5": "Vereinbarte Mietdauer",
+          "heading_dv6": "Telefonische Reparaturhilfe",
+          "heading_dv7": "Abgabe der Drucker oder Kauf",
+          "heading_dv8": "Rückgabe der Mietkaution",
+          "heading_k1": "Kosten im ersten Monat",
+          "heading_k2": "Kosten im zweiten Monat",
+          "heading_k3": "Kosten im dritten Monat",
+          "heading_k4": "Kosten vom 4. Monat bis zum des",
+          "heading": "Druckervermietung",
+          "subtext": "Bei uns können Sie nicht nur Ihre Objekte drucken lassen sondern auch ganz schnell & einfach einen unserer Drucker mieten.",
+          "subtext_dv1": "Bei unserem Kennenlernen erhalten Sie eine umfassende Einweisung in die Nutzung unserer Produkte.",
+          "subtext_dv2": "Wir fertigen daraufhin eine Kopie Ihres Ausweises an, um Ihre Identität und Adressdaten überprüfen zu können.",
+          "subtext_dv3": "Die Unterzeichnung des Mietvertrags erfolgt nach Abschluss der Verhandlungen und der Klärung aller Details .",
+          "subtext_dv4": "Die Abholung des Druckers bei Prinjekt kann nach Terminabsprache direkt bei uns vor Ort in Hannover erzeugen.",
+          "subtext_dv5": "Sie erhalten Ihren Drucker über die vereinbarte Mietdauer und können diesen mit zu Ihnen nach Hause negmen .",
+          "subtext_dv6": "Bei Problemen bieten wir telefonische Reparaturhilfe an, um Ihnen schnellstmöglich Unterstützung zu bieten.",
+          "subtext_dv7": "Die Abgabe der Drucker erfolgt nach Ablauf der Mietdauer oder bei Kaufentscheidung durch den Kunden.",
+          "subtext_dv8": "Die Rückgabe der Mietkaution erfolgt innerhalb von 7  Werktagen nach Rückgabe des Druckers und Überprüfung des Zustands.",
+          "subtext_k1": "15% Zahlung des Neuwerts des Druckers100€ Kaution (Rückgabe bei Einwandfreier Funktion)",
+          "subtext_k2": "10% Zahlung des Neuwerts des Druckers",
+          "subtext_k3": "10% Zahlung des Neuwerts des Druckers",
+          "subtext_k4": "08% Zahlung des Neuwerts des Druckers",
+          "datei_einfgen": "https://cdn.prod.website-files.com/65f1f2c47375f3a3ecc6c5bd/664fbc950ece029c0b41ccef_Mietmaschinen%20Nutzungsvereinbarung%20Prinjekt.pdf",
+          "datei_einfgen_text": "Nutzungsvereinbarung"
+        }
+      },
+      "wie-drucken-wir": {
+        "type": "wie-drucken-wir",
+        "settings": {
+          "heading": "Wie drucken wir eigentlich?",
+          "heading_fdm": "Fused Deposition Modeling (FDM)",
+          "heading_sla": "Stereolithography (SLA)",
+          "subtext": "Es gibt eine Mehrzahl an möglichen 3D-Druckverfahren. Wichtig ist, dass man sich für die Variante entscheidet, die am besten für Ihr Projekt geeignet ist oder lassen Sie sich von uns beraten.",
+          "subtext_fdm": "Mit dem FDM-Druckverfahren lassen sich zahlreiche Kunststoffe drucken. Neben einer hohen Materialauswahl zeichnet sich der FDM-Druck außerdem durch eine hohe Stabilität aus. In den meisten Fällen können keine großen/langen Teile produziert werden. Durch unsere Ausstattung ist dies allerdings möglich.Insgesamt ist das FDM-Verfahren sehr preiswert – ein weiterer Vorteil, den wir direkt an unsere Kunden weitergeben.",
+          "subtext_sla": "Beim SLA-Verfahren wird für ein Modell ein bestimmtes Kunstharz verwendet, das durch eine Lichtquelle ausgehärtet wird.Der Vorteil gegenüber anderen Druckvarianten zeigt sich darin, dass beim 3D-Druck auf allen Seiten eine Hochglanzoberfläche erzeugt werden kann und eine hohe Detailgenauigkeit beim Druck entsteht."
+        }
+      },
+      "fdm-info": {
+        "type": "fdm-info",
+        "settings": {
+          "heading": "Fused Deposition Modeling (FDM)",
+          "button_text": "Materialübersicht",
+          "heading_fdm1": "Polylactide (PLA)",
+          "heading_fdm4": "Acrylester-Styrol-Acrylnitril (ASA)",
+          "heading_fdm3": "Acrylnitril-Butadien-Styrol (ABS)",
+          "heading_fdm2": "Polymethylmethacrylat (PMMA)",
+          "subtext_fdm2": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas.",
+          "subtext": "Es gibt verschiedene Materialien, mit denen Sie Ihre Teile produzieren lassen können. Hier präsentieren wir Ihnen eine kleine Auswahl, welche wir im FDM-Bereich anbieten können:",
+          "subtext_fdm1": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt.",
+          "subtext_fdm4": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben.",
+          "subtext_fdm3": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche.",
+          "button_link": "shopify://pages/materialubersicht",
+          "button_link_text": "Materialübersicht"
+        }
+      },
+      "sla-info": {
+        "type": "sla-info",
+        "settings": {
+          "heading": "Stereolithography (SLA)",
+          "button_text": "Materialübersicht",
+          "heading_sla1": "Standard-Resin",
+          "heading_sla3": "Tough-Resin",
+          "heading_sla2": "Water-Washable Resin",
+          "subtext": "Beim SLA-Verfahren wird für ein Modell ein bestimmtes Kunstharz verwendet, das durch eine Lichtquelle ausgehärtet wird.Der Vorteil gegenüber anderen Druckvarianten zeigt sich darin, dass beim 3D-Druck auf allen Seiten eine Hochglanzoberfläche erzeugt werden kann und eine hohe Detailgenauigkeit beim Druck entsteht.",
+          "subtext_sla1": "Standard-Resin ist in der Regel am günstigsten. Es ist vor allem für Schauobjekte, Figuren oder sonstige Objekte ohne größere mechanische Beanspruchungen geeignet, da das Material andernfalls spröde wird.",
+          "subtext_sla3": "Tough-Resin ist ein besonders stabiles Harz, welches weniger spröde ist als das normale Standard-Resin. Durch die höhere Festigkeit ist es bei mechanischen Beanspruchungen deutlich besser geeignet.",
+          "subtext_sla2": "Water-Washable-Resin weist eine sehr gute Feuchtigkeitsbeständigkeit auf. Außerdem besitzt es eine hohe Härte und Kratzfestigkeit.",
+          "button_link": "shopify://pages/materialubersicht",
+          "button_link_text": "Materialübersicht"
+        }
+      },
+      "header-geschftskunden": {
+        "type": "header-geschftskunden",
+        "settings": {
+          "heading": "Der passende Druck für Ihre Firma!",
+          "text_button": "Jetzt einen 3D-Druck bestellen",
+          "subtext": "Bei uns steht der Kunde im Mittelpunkt – wir fertigen für jeden den passenden Druck an. Ob Sie ein Unternehmen sind, das präzise Bauteile benötigt, oder ein Privatkunde, der ein individuelles Design verwirklichen möchte – wir bieten maßgeschneiderte Lösungen für Ihre spezifischen Anforderungen.",
+          "text_link": "",
+          "text_link_text": "JETZT EINEN 3D-DRUCK ERSTELLEN"
+        }
+      },
+      "erfahrungen-geschftskunden": {
+        "type": "erfahrungen-geschftskunden",
+        "settings": {
+          "heading": "Erfahrungen",
+          "text_erfahrungen": ""
+        }
+      },
+      "material-geschftskunden": {
+        "type": "material-geschftskunden",
+        "settings": {
+          "heading": "Wie drucken wir eigentlich?",
+          "button_text": "Materialübersicht",
+          "heading_fdm": "Fused Deposition Modeling (FDM)",
+          "heading_fdm1": "Polylactide (PLA)",
+          "heading_fdm4": "Acrylester-Styrol-Acrylnitril (ASA)",
+          "heading_fdm3": "Acrylnitril-Butadien-Styrol (ABS)",
+          "heading_sla": "Stereolithography (SLA)",
+          "heading_sla1": "Standard-Resin",
+          "heading_sla4": "Pflanzenbasiertes Resin (ECO)",
+          "heading_sla3": "Tough-Resin",
+          "heading_sla2": "Water-Washable Resin",
+          "subtext": "Es gibt eine Mehrzahl an möglichen 3D-Druckverfahren. Wichtig ist, dass man sich für die Variante entscheidet, die am besten für Ihr Projekt geeignet ist oder lassen Sie sich von uns beraten.",
+          "subtext_fdm": "Mit dem FDM-Druckverfahren lassen sich zahlreiche Kunststoffe drucken. Neben einer hohen Materialauswahl zeichnet sich der FDM-Druck außerdem durch eine hohe Stabilität aus. In den meisten Fällen können keine großen/langen Teile produziert werden. Durch unsere Ausstattung ist dies allerdings möglich. Insgesamt ist das FDM-Verfahren sehr preiswert – ein weiterer Vorteil, den wir direkt an unsere Kunden weitergeben.",
+          "subtext_fdm1": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt.",
+          "subtext_fdm4": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben.",
+          "subtext_fdm3": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche.",
+          "heading_fdm2": "Polymethylmethacrylat (PMMA)",
+          "subtext_fdm2": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas.",
+          "subtext_sla": "Beim SLA-Verfahren wird für ein Modell ein bestimmtes Kunstharz verwendet, das durch eine Lichtquelle ausgehärtet wird.Der Vorteil gegenüber anderen Druckvarianten zeigt sich darin, dass beim 3D-Druck auf allen Seiten eine Hochglanzoberfläche erzeugt werden kann und eine hohe Detailgenauigkeit beim Druck entsteht.",
+          "subtext_sla1": "Standard-Resin ist in der Regel am günstigsten. Es ist vor allem für Schauobjekte, Figuren oder sonstige Objekte ohne größere mechanische Beanspruchungen geeignet, da das Material andernfalls spröde wird.",
+          "subtext_sla4": "Das Eco-Resin ist biologisch abbaubar und aus Sojaöl hergestellt. Darüber hinaus ist es im Vergleich zum Standard-Resin fester und weniger spröde.",
+          "subtext_sla3": "Tough-Resin ist ein besonders stabiles Harz, welches weniger spröde ist als das normale Standard-Resin. Durch die höhere Festigkeit ist es bei mechanischen Beanspruchungen deutlich besser geeignet.",
+          "subtext_sla2": "Water-Washable-Resin weist eine sehr gute Feuchtigkeitsbeständigkeit auf. Außerdem besitzt es eine hohe Härte und Kratzfestigkeit.",
+          "button_link": "shopify://pages/materialubersicht",
+          "button_link_text": "Materialübersicht"
+        }
+      },
+      "slider-geschftskunden": {
+        "type": "slider-geschftskunden",
+        "settings": {
+          "img_1": "",
+          "img_1_text": "IMG-1",
+          "img_2": "",
+          "img_2_text": "IMG-2",
+          "img_3": "",
+          "img_3_text": "IMG-3",
+          "img_4": "",
+          "img_4_text": "IMG-4",
+          "img_5": "",
+          "img_5_text": "IMG-5",
+          "img_6": "",
+          "img_6_text": "IMG-6"
+        }
+      },
+      "angebote-geschftskunden": {
+        "type": "angebote-geschftskunden",
+        "settings": {
+          "heading": "Das bieten wir unseren Geschäftskunden zusätzlich an",
+          "heading_angebot1": "Feuerfeste Funktionsteile",
+          "heading_angebot2": "Amazon FBA",
+          "heading_angebot3": "Versand an Warenlager",
+          "subtext_angebot1": "Zu den hohen Anforderungen, denen 3D-gedruckte Bauteile in einigen Bereichen gerecht werden müssen, gehört eine zertifizierte Feuerfestigkeit. Diese nennt sich UL94-Norm. Ein paar unserer Materialien erfüllen die Anforderungen in brandgefährdeten Bereichen.",
+          "subtext_angebot2": "Amazon FBA ist mittlerweile ein fester Bestandteil vieler Händler, auch Ihre Bestellungen über uns können direkt mit Amazon FBA verknüpft werden. Damit sparen Sie sehr viel Zeit.",
+          "subtext_angebot3": "Wenn Sie ein Produkt verkaufen wollen, aber ein externes Warenlager nutzen, stellt das für uns kein Problem dar. Je nach Auftrag produzieren wir die Teile für Sie und im Nachgang können wir das Produkt direkt an Ihr Warenlager schicken, sodass Sie sich nicht mehr darum kümmern müssen."
         }
       }
     },
-    "content_for_index": [],
-    "color_schemes": {
-      "scheme-1": {
-        "settings": {
-          "background": "#ebebeb",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#ffffff",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-2": {
-        "settings": {
-          "background": "#f3f3f3",
-          "background_gradient": "",
-          "text": "#121212",
-          "button": "#121212",
-          "button_label": "#f3f3f3",
-          "secondary_button_label": "#121212",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-3": {
-        "settings": {
-          "background": "#242833",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#000000",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-4": {
-        "settings": {
-          "background": "#121212",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#121212",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      },
-      "scheme-5": {
-        "settings": {
-          "background": "#334fb4",
-          "background_gradient": "",
-          "text": "#ffffff",
-          "button": "#ffffff",
-          "button_label": "#334fb4",
-          "secondary_button_label": "#ffffff",
-          "shadow": "#121212"
-        }
-      }
-    }
-  },
-  "presets": {
-    "Dawn": {
-      "logo_width": 90,
-      "color_schemes": {
-        "scheme-1": {
-          "settings": {
-            "background": "#FFFFFF",
-            "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#FFFFFF",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
-          }
-        },
-        "scheme-2": {
-          "settings": {
-            "background": "#F3F3F3",
-            "background_gradient": "",
-            "text": "#121212",
-            "button": "#121212",
-            "button_label": "#F3F3F3",
-            "secondary_button_label": "#121212",
-            "shadow": "#121212"
-          }
-        },
-        "scheme-3": {
-          "settings": {
-            "background": "#242833",
-            "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#000000",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
-          }
-        },
-        "scheme-4": {
-          "settings": {
-            "background": "#121212",
-            "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#121212",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
-          }
-        },
-        "scheme-5": {
-          "settings": {
-            "background": "#334FB4",
-            "background_gradient": "",
-            "text": "#FFFFFF",
-            "button": "#FFFFFF",
-            "button_label": "#334FB4",
-            "secondary_button_label": "#FFFFFF",
-            "shadow": "#121212"
-          }
-        }
-      },
-      "type_header_font": "assistant_n4",
-      "heading_scale": 100,
-      "type_body_font": "assistant_n4",
-      "body_scale": 100,
-      "page_width": 1200,
-      "spacing_sections": 0,
-      "spacing_grid_horizontal": 8,
-      "spacing_grid_vertical": 8,
-      "animations_reveal_on_scroll": true,
-      "animations_hover_elements": "none",
-      "buttons_border_thickness": 1,
-      "buttons_border_opacity": 100,
-      "buttons_radius": 0,
-      "buttons_shadow_opacity": 0,
-      "buttons_shadow_horizontal_offset": 0,
-      "buttons_shadow_vertical_offset": 4,
-      "buttons_shadow_blur": 5,
-      "variant_pills_border_thickness": 1,
-      "variant_pills_border_opacity": 55,
-      "variant_pills_radius": 40,
-      "variant_pills_shadow_opacity": 0,
-      "variant_pills_shadow_horizontal_offset": 0,
-      "variant_pills_shadow_vertical_offset": 4,
-      "variant_pills_shadow_blur": 5,
-      "inputs_border_thickness": 1,
-      "inputs_border_opacity": 55,
-      "inputs_radius": 0,
-      "inputs_shadow_opacity": 0,
-      "inputs_shadow_horizontal_offset": 0,
-      "inputs_shadow_vertical_offset": 4,
-      "inputs_shadow_blur": 5,
-      "card_style": "standard",
-      "card_image_padding": 0,
-      "card_text_alignment": "left",
-      "card_color_scheme": "scheme-2",
-      "card_border_thickness": 0,
-      "card_border_opacity": 10,
-      "card_corner_radius": 0,
-      "card_shadow_opacity": 0,
-      "card_shadow_horizontal_offset": 0,
-      "card_shadow_vertical_offset": 4,
-      "card_shadow_blur": 5,
-      "collection_card_style": "standard",
-      "collection_card_image_padding": 0,
-      "collection_card_text_alignment": "left",
-      "collection_card_color_scheme": "scheme-2",
-      "collection_card_border_thickness": 0,
-      "collection_card_border_opacity": 10,
-      "collection_card_corner_radius": 0,
-      "collection_card_shadow_opacity": 0,
-      "collection_card_shadow_horizontal_offset": 0,
-      "collection_card_shadow_vertical_offset": 4,
-      "collection_card_shadow_blur": 5,
-      "blog_card_style": "standard",
-      "blog_card_image_padding": 0,
-      "blog_card_text_alignment": "left",
-      "blog_card_color_scheme": "scheme-2",
-      "blog_card_border_thickness": 0,
-      "blog_card_border_opacity": 10,
-      "blog_card_corner_radius": 0,
-      "blog_card_shadow_opacity": 0,
-      "blog_card_shadow_horizontal_offset": 0,
-      "blog_card_shadow_vertical_offset": 4,
-      "blog_card_shadow_blur": 5,
-      "text_boxes_border_thickness": 0,
-      "text_boxes_border_opacity": 10,
-      "text_boxes_radius": 0,
-      "text_boxes_shadow_opacity": 0,
-      "text_boxes_shadow_horizontal_offset": 0,
-      "text_boxes_shadow_vertical_offset": 4,
-      "text_boxes_shadow_blur": 5,
-      "media_border_thickness": 1,
-      "media_border_opacity": 5,
-      "media_radius": 0,
-      "media_shadow_opacity": 0,
-      "media_shadow_horizontal_offset": 0,
-      "media_shadow_vertical_offset": 4,
-      "media_shadow_blur": 5,
-      "popup_border_thickness": 1,
-      "popup_border_opacity": 10,
-      "popup_corner_radius": 0,
-      "popup_shadow_opacity": 5,
-      "popup_shadow_horizontal_offset": 0,
-      "popup_shadow_vertical_offset": 4,
-      "popup_shadow_blur": 5,
-      "drawer_border_thickness": 1,
-      "drawer_border_opacity": 10,
-      "drawer_shadow_opacity": 0,
-      "drawer_shadow_horizontal_offset": 0,
-      "drawer_shadow_vertical_offset": 4,
-      "drawer_shadow_blur": 5,
-      "badge_position": "bottom left",
-      "badge_corner_radius": 40,
-      "sale_badge_color_scheme": "scheme-4",
-      "sold_out_badge_color_scheme": "scheme-3",
-      "brand_headline": "",
-      "brand_description": "<p></p>",
-      "brand_image_width": 100,
-      "social_twitter_link": "",
-      "social_facebook_link": "",
-      "social_pinterest_link": "",
-      "social_instagram_link": "",
-      "social_tiktok_link": "",
-      "social_tumblr_link": "",
-      "social_snapchat_link": "",
-      "social_youtube_link": "",
-      "social_vimeo_link": "",
-      "predictive_search_enabled": true,
-      "predictive_search_show_vendor": false,
-      "predictive_search_show_price": false,
-      "currency_code_enabled": true,
-      "cart_type": "notification",
-      "show_vendor": false,
-      "show_cart_note": false,
-      "cart_drawer_collection": "",
-      "cart_color_scheme": "scheme-1",
-      "sections": {
-        "main-password-header": {
-          "type": "main-password-header",
-          "settings": {
-            "color_scheme": "scheme-1"
-          }
-        },
-        "main-password-footer": {
-          "type": "main-password-footer",
-          "settings": {
-            "color_scheme": "scheme-1"
-          }
-        }
-      }
-    }
+    "content_for_index": []
   }
 }
