@@ -74,6 +74,88 @@
       padding-top: 0.5rem;
     }
   }
+
+  /* Dark Mode Toggle Styles - Pill Switch */
+  .dark-mode-toggle {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+
+  .dark-mode-toggle__track {
+    position: relative;
+    width: 56px;
+    height: 28px;
+    background: #e5e5e5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6px;
+    transition: background-color 0.3s ease;
+    border: 1px solid #d0d0d0;
+  }
+
+  .dark-mode-toggle__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: opacity 0.3s ease;
+  }
+
+  .dark-mode-toggle__icon--sun {
+    color: #f59e0b;
+  }
+
+  .dark-mode-toggle__icon--moon {
+    color: #94a3b8;
+  }
+
+  .dark-mode-toggle__thumb {
+    position: absolute;
+    left: 2px;
+    width: 24px;
+    height: 24px;
+    background: #3b4c99;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Dark mode active state */
+  body.dark-mode .dark-mode-toggle__track {
+    background: #374151;
+    border-color: #4b5563;
+  }
+
+  body.dark-mode .dark-mode-toggle__thumb {
+    transform: translateX(28px);
+    background: #1e293b;
+  }
+
+  body.dark-mode .dark-mode-toggle__icon--sun {
+    color: #fbbf24;
+  }
+
+  body.dark-mode .dark-mode-toggle__icon--moon {
+    color: #e2e8f0;
+  }
+
+  /* Focus state for accessibility */
+  .dark-mode-toggle:focus {
+    outline: none;
+  }
+
+  .dark-mode-toggle:focus-visible .dark-mode-toggle__track {
+    box-shadow: 0 0 0 2px rgba(59, 76, 153, 0.5);
+  }
+
+  /* Hover state */
+  .dark-mode-toggle:hover .dark-mode-toggle__thumb {
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  }
 </style>
 
 {%- style -%}
@@ -301,6 +383,31 @@
           </div>
         {%- endif -%}
       </a>
+
+      <!-- Dark Mode Toggle -->
+      <div class="dark-mode-toggle" id="dark-mode-toggle" role="switch" aria-checked="false" aria-label="Toggle dark mode" tabindex="0">
+        <div class="dark-mode-toggle__track">
+          <span class="dark-mode-toggle__icon dark-mode-toggle__icon--sun">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </span>
+          <span class="dark-mode-toggle__icon dark-mode-toggle__icon--moon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </span>
+          <span class="dark-mode-toggle__thumb"></span>
+        </div>
+      </div>
     </div>
   </header>
 </{{ header_tag }}>
@@ -424,6 +531,66 @@
   }
 
   customElements.define('sticky-header', StickyHeader);
+
+  // Dark Mode Toggle
+  class DarkModeToggle {
+    constructor() {
+      this.toggle = document.getElementById('dark-mode-toggle');
+      this.body = document.body;
+      this.storageKey = 'prinjekt-dark-mode';
+
+      if (this.toggle) {
+        this.init();
+      }
+    }
+
+    init() {
+      // Update aria-checked based on current state
+      this.updateAriaState();
+
+      // Add click event listener
+      this.toggle.addEventListener('click', () => this.handleToggle());
+
+      // Add keyboard support (Enter and Space)
+      this.toggle.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          this.handleToggle();
+        }
+      });
+    }
+
+    handleToggle() {
+      if (this.body.classList.contains('dark-mode')) {
+        this.disableDarkMode();
+        localStorage.setItem(this.storageKey, 'false');
+      } else {
+        this.enableDarkMode();
+        localStorage.setItem(this.storageKey, 'true');
+      }
+      this.updateAriaState();
+    }
+
+    enableDarkMode() {
+      this.body.classList.add('dark-mode');
+    }
+
+    disableDarkMode() {
+      this.body.classList.remove('dark-mode');
+    }
+
+    updateAriaState() {
+      const isDark = this.body.classList.contains('dark-mode');
+      this.toggle.setAttribute('aria-checked', isDark.toString());
+    }
+  }
+
+  // Initialize dark mode toggle when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => new DarkModeToggle());
+  } else {
+    new DarkModeToggle();
+  }
 {% endjavascript %}
 
 <script type="application/ld+json">
@@ -465,8 +632,6 @@
     }
   </script>
 {%- endif -%}
-
-{%- render 'mobile-bottom-menu', section: section -%}
 
 {% schema %}
 {
@@ -649,24 +814,6 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 20
-    },
-    {
-      "type": "header",
-      "content": "Mobile Bottom Menu"
-    },
-    {
-      "type": "text",
-      "id": "mobile_button_text",
-      "label": "Button Text",
-      "default": "Druck starten",
-      "info": "Text shown on the mobile bottom CTA button"
-    },
-    {
-      "type": "text",
-      "id": "mobile_button_url",
-      "label": "Button URL",
-      "default": "/pages/3d-druck",
-      "info": "URL for the mobile bottom CTA button (e.g., /pages/3d-druck)"
     }
   ],
   "blocks": [

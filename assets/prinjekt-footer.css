@@ -174,17 +174,30 @@
     padding: 40px 20px 20px;
   }
 
+  /* ONE COLUMN, EVERYTHING CENTERED */
   .footer-content {
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-items: center;  /* center each grid item */
+    text-align: center;     /* center text inside */
   }
 
   .footer-logo {
     grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .footer-nav,
+  .footer-contact {
+    align-items: center;
   }
 
   .footer-heading {
     font-size: 16px;
+  }
+
+  .footer-menu {
+    text-align: center;
   }
 
   .footer-menu a,
@@ -193,16 +206,8 @@
   }
 }
 
+/* Extra small tweaks */
 @media screen and (max-width: 480px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    gap: 25px;
-  }
-
-  .footer-logo {
-    justify-content: flex-start;
-  }
-
   .footer-logo-img {
     max-width: 120px;
   }

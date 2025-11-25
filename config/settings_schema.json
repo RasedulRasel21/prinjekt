@@ -196,17 +196,6 @@
         "default": 8,
         "unit": "px",
         "label": "t:settings_schema.layout.settings.spacing_grid_vertical.label"
-      },
-      {
-        "type": "header",
-        "content": "Dark Mode"
-      },
-      {
-        "type": "checkbox",
-        "id": "enable_dark_mode",
-        "label": "Enable Dark Mode",
-        "default": false,
-        "info": "Toggle dark mode for the entire theme"
       }
     ]
   },

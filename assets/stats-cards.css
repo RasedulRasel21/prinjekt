@@ -109,8 +109,10 @@ body.dark-mode .stats-card {
   background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b 80%);
   background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  opacity: 1; 
+  transform-style: preserve-3d;
 }
 
 body.dark-mode .stats-card__number {
-  color: var(--card-accent, #FFB24A) !important;
+  color: var(--card-accent, #FF9900) !important;
 }

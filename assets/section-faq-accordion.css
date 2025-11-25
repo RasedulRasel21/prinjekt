@@ -81,7 +81,7 @@
 
 .faq-btn {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 6px 12px;
   border-radius: 10px;
   text-decoration: none;
   font-weight: 400;
@@ -107,6 +107,14 @@
   font-family: "Myriad Pro", sans-serif !important;
 }
 
+@media (max-width: 768px) { 
+  .faq-btn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 300;
+}
+}
+
 /* Dark Mode */
 body.dark-mode .faq-accordion-section {
   background: #000 !important;
@@ -120,3 +128,8 @@ body.dark-mode .faq-item {
 }
 
 body.dark-mode .faq-trigger:focus-visible { outline: 2px solid #ffffff; outline-offset: 2px; }
+
+body.dark-mode .faq-btn {
+  background-color: #443010;
+  color: #ffffff;
+}

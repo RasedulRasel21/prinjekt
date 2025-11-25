@@ -34,7 +34,7 @@
 .rs22__btn{
   align-self:flex-start;
   display:inline-block;
-  padding:8px 14px;
+  padding:6px 12px !important;
   border-radius:10px;
   background:transparent;
   text-decoration:none; 
@@ -94,10 +94,24 @@ body.dark-mode .rs22-card {
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }
 
-@media (max-width: 767px){
-  .rs22-card__quote {
-    top: 4px;
-    left: 6px;
-  }
+body.dark-mode .rs22-btn {
+  color: #FF9900;
+  background-color: #ff99001a;
 }
 
+body.dark-mode .rs22__btn {
+  background-color: #443010;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .rs22__title {
+    font-size: 38px;
+    color: #FCFBFB;
+  }
+
+  .rs22__btn{
+  font-weight:300; 
+  font-size:14px !important;
+}
+ }

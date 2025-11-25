@@ -292,7 +292,6 @@
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'fonts.css' | asset_url | stylesheet_tag }}
     {{ 'fonts.css' | asset_url | stylesheet_tag }}
-    {{ 'mobile-bottom-menu.css' | asset_url | stylesheet_tag }}
 
     <link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -333,10 +332,22 @@
       if (Shopify.designMode) {
         document.documentElement.classList.add('shopify-design-mode');
       }
+      // Check dark mode preference from localStorage before page renders
+      (function() {
+        if (localStorage.getItem('prinjekt-dark-mode') === 'true') {
+          document.documentElement.classList.add('dark-mode-preload');
+        }
+      })();
     </script>
   </head>
 
-  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}{% if settings.enable_dark_mode %} dark-mode{% endif %}">
+  <body class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
+    <script>
+      // Apply dark mode class immediately to prevent flash
+      if (localStorage.getItem('prinjekt-dark-mode') === 'true') {
+        document.body.classList.add('dark-mode');
+      }
+    </script>
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ 'accessibility.skip_to_text' | t }}
     </a>
@@ -490,6 +501,7 @@
     setTimeout(hide, 8000);
   })();
 </script>
+
 
   </body>
 </html>

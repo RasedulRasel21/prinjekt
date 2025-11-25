@@ -29,19 +29,6 @@
   gap: 32px 48px;
 }
 
-@media (max-width: 1024px) {
-  .industry-icons__grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .industry-icons__grid {
-    grid-template-columns: repeat(2, 1fr); /* mobile: 2 per row */
-    gap: 24px;
-  }
-}
-
 .industry-icons__item {
   display: flex;
   flex-direction: column;
@@ -80,14 +67,50 @@
   color: rgba(0,0,0,.6);
 }
 
-/* Dark Mode */
+@media (max-width: 1024px) {
+  .industry-icons__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .industry-icons__grid {
+    grid-template-columns: repeat(2, 1fr); /* mobile: 2 per row */
+    gap: 16px;
+  }
+
+  .industry-icons__heading { 
+    width: 80%;
+    margin: 0 auto;
+    font-size: 36px;
+  }
+
+  .industry-icons__label {
+  font-size: 14px;
+}
+}
+
+@media (max-width: 480px) {
+  .industry-icons__heading { 
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Dark mode – Industry icons */
 body.dark-mode .industry-icons {
   background: #000 !important;
 }
 
-body.dark-mode .industry-icons__item .industry-icons__icon svg,
-body.dark-mode .industry-icons__item .industry-icons__icon svg * {
-  color: #ffa000 !important;
-  fill: #ffa000 !important;   /* useful if the icon uses fill */
-  stroke: #ffa000 !important; /* useful if the icon uses stroke */
+/* Heading + labels stay white */
+body.dark-mode .industry-icons__heading,
+body.dark-mode .industry-icons__label {
+  color: #ffffff !important;
+}
+
+/* Force icons to orange */
+body.dark-mode .industry-icons__icon svg,
+body.dark-mode .industry-icons__icon svg * {
+  stroke: #ffa000 !important;   /* line color */
+  fill: none !important;        /* keep them outline icons */
 }

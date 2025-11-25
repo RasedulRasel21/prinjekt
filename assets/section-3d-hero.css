@@ -61,7 +61,7 @@
 }
 
 .hero-3d-heading-highlight {
-  color: #FF9900;
+  color: #FF9900 !important;
   display: block;
   font-family: "Stara", sans-serif !important;
 }
@@ -69,7 +69,7 @@
 /* Description */
 .hero-3d-description {
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 1.3;
   font-weight: 300;
   color: #111111;
   max-width: 750px;
@@ -132,7 +132,7 @@
 /* CTA Box */
 .hero-outer-box{
   max-width: 900px;
-  margin: 0 auto 1.5rem;
+  margin: 0 auto 12px;
   padding: 3rem 2rem;
   background: transparent;
   border: 1px solid #3a3a3a;
@@ -212,7 +212,7 @@
   }
 
   .hero-3d-container {
-    padding: 1.5rem;
+    padding: 10px;
   }
 
   .hero-3d-heading {
@@ -221,10 +221,15 @@
   }
 
   .hero-3d-description {
+    font-size: 14px;
     margin-bottom: 2rem;
+    padding: 0 30px;
   }
 
   .hero-3d-features-container {
+    width: 270px;
+    height: 110px;
+    margin: 0 auto 30px;
     padding: 0 1rem;
   }
 
@@ -239,7 +244,7 @@
   }
 
   .hero-3d-feature {
-    padding: 8px 12px;
+    padding: 2px 6px;
     font-size: 14px;
     flex: 0 0 calc(50% - 4px);
     justify-content: center;
@@ -254,7 +259,8 @@
   }
 
   .hero-outer-box {
-    padding: 2rem 1.5rem;
+    margin: 0 20px;
+    /* padding: 2rem 1.5rem; */
   }
 
   .hero-3d-cta-box {
@@ -263,15 +269,23 @@
   }
 
   .hero-3d-cta-text {
-    /* font-size: 1.3rem; */
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px;
     margin-bottom: 1.25rem;
   }
 
   .hero-3d-button {
     background-color:rgb(224, 195, 150);
-    width: 60%;
-    padding: 0.875rem 2rem;
-    font-size: 0.95rem;
+    width: 70%;
+    padding: 9px 15px;
+    font-size: 14px;
+  }
+
+  .hero-3d-privacy {
+    width: 80%;
+    margin: 0 auto;
+    font-size: 14px;
   }
 }
 
@@ -281,7 +295,7 @@
   }
 
   .hero-3d-feature {
-    padding: 10px 15px;
+    padding: 2px 4px;
     font-size: 13px;
   }
 
@@ -291,9 +305,9 @@
 
   .hero-3d-button {
     background-color:rgb(224, 195, 150);
-    width: 60%;
-    font-size: 18px;
-    padding: 1rem;
+    width: 70%;
+    padding: 9px 15px;
+    font-size: 14px;
   }
 }
 
@@ -309,4 +323,17 @@ body.dark-mode .hero-3d-video-overlay {
 body.dark-mode .hero-3d-features {
   background: linear-gradient(105deg, #ff99001a, #1b1b1b 70%);
   border: 1px solid #3a3a3a;
+}
+
+body.dark-mode .hero-3d-heading-highlight {
+  color: #FF9900 !important;
+}
+
+body.dark-mode .hero-3d-description {
+  color: #FCFBFB !important;
+}
+
+body.dark-mode .hero-3d-button {
+  background-color: #443010;
+  color: #ffffff;
 }

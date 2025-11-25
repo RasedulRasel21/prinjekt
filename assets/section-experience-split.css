@@ -77,6 +77,9 @@
 
 /* MOBILE: "Erfahrungen   10+ / Jahre" in one row */
 @media (max-width: 768px) {
+  .xp-section { 
+    padding: 5px 0;
+  }
   .xp-grid {
     display: flex;
     flex-wrap: wrap;
@@ -86,7 +89,7 @@
   /* left + middle = first row */
   .xp-left {
     flex: 0 0 auto;
-    margin-right: 16px;
+    margin-right: 5px;
   }
 
   .xp-left-heading {
@@ -107,12 +110,12 @@
 
   .xp-number {
     display: block;
-    font-size: clamp(2.6rem, 9vw, 3.4rem);
+    font-size: 100px;
   }
 
   .xp-small {
     display: block;
-    font-size: 1.1rem;
+    font-size: 38px;
   }
 
   /* right text = full row below */
@@ -124,8 +127,8 @@
 
 @media (max-width: 640px) {
   .xp-middle { justify-content: flex-start; }
-  .xp-number { font-size: 72px; }
-  .xp-small { font-size: 28px; }
+  .xp-number { font-size: 90px; }
+  .xp-small { font-size: 38px; }
   .xp-left-heading { font-size: 22px; }
   .xp-right { font-size: 15px; }
 }
