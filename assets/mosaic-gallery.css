@@ -51,7 +51,7 @@
   opacity: 0.3;
 }
 
-/* Mosaic Layout Pattern - Matching Your Image */
+/* Mosaic Layout Pattern - Matching Your Image 
 .mosaic-item-1 {
   grid-column: span 3;
   grid-row: span 2;
@@ -150,26 +150,68 @@
 .mosaic-item-20 {
   grid-column: span 3;
   grid-row: span 2;
-}
+} */
 
 /* Tablet Responsive */
-@media screen and (max-width: 989px) {
+@media screen and (min-width: 768px) {
   .mosaic-gallery-grid {
-    grid-template-columns: repeat(8, 1fr);
-    grid-auto-rows: 150px;
-    gap: 6px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(7, 150px);
+    gap: 15px;
   }
+  .mosaic-item-3 {
+    grid-row: span 2;
+  }
+  .mosaic-item-4 {
+    grid-row: span 3;
+  }
+  .mosaic-item-6 {
+    grid-column: span 2;
+  }
+  .mosaic-item-7 {
+    grid-row: span 2;
+  }
+  .mosaic-item-10 {
+    grid-column: span 2;
+    grid-row: span 2;
+   }
+  .mosaic-item-9 {
+    grid-column: span 2; 
+  }
+  .mosaic-item-10 {
+    grid-column: span 2;
+    grid-row: span 2;
+   }
+   .mosaic-item-11 {
+    grid-column: span 2;
+   }
+   .mosaic-item-13 {
+    grid-column: span 2;
+   }
+   .mosaic-item-15 {
+    grid-column: span 2;
+   }
+   .mosaic-item-16 {
+    grid-column: span 2;
+   }
+   .mosaic-item-19 {
+    grid-column: span 2;
+   }
+   .mosaic-item-20 {
+    grid-column: span 2;
+   }
 
-  .mosaic-item-1,
+
+  /* .mosaic-item-1,
   .mosaic-item-2,
   .mosaic-item-6,
   .mosaic-item-7,
   .mosaic-item-8 {
     grid-column: span 4;
     grid-row: span 2;
-  }
+  } */
 
-  .mosaic-item-3,
+  /* .mosaic-item-3,
   .mosaic-item-4,
   .mosaic-item-10 {
     grid-column: span 4;
@@ -194,10 +236,10 @@
   .mosaic-item-20 {
     grid-column: span 4;
     grid-row: span 2;
-  }
+  } */
 }
 
-/* Mobile Responsive */
+/* Mobile Responsive 
 @media screen and (max-width: 749px) {
   .mosaic-gallery-section {
     padding: 40px 0;
@@ -277,9 +319,14 @@
   .mosaic-item {
     border-radius: 10px;
   }
+} */
+@media (max-width: 480px) {
+  .mosaic-gallery-grid{
+    grid-template-columns: 1fr; 
+  }
 }
 
 /* Dark Mode */
 body.dark-mode .mosaic-gallery-section {
-  background-color: #000 !important;
+  background-color: #111 !important;
 }

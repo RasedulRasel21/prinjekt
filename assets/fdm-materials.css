@@ -6,15 +6,17 @@
 }
 
 .fdm-container {
-  margin: 0 auto;
-  padding: 0 20px;
+    background-image: radial-gradient(circle at 0%,#ff990014,#fff0);
+    padding: 40px;
+    border: 1px solid #c7c7c7;
+    border-radius: 20px;
 }
 
 /* Header Styles */
 .fdm-header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: flex-end;
   margin-bottom: 40px;
   gap: 30px;
 }
@@ -44,12 +46,12 @@
 
 .fdm-button {
   display: inline-block;
-  padding: 8px 20px;
-  background-color: transparent;
+  padding: 5px 20px;
+  background-color: rgba(255, 153, 0, .4);
   color: #ff9800;
-  border: 2px solid #ff9800;
+  border: 1px solid #ff9800;
   border-radius: 10px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   text-decoration: none;
   transition: all 0.3s ease;
@@ -58,10 +60,12 @@
 }
 
 .fdm-button:hover {
-  background-color: #ff9800;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+  background-color: #f903;
+}
+
+.drucker-button-primary:hover, 
+.fdm-button:hover {
+  background-color: #f903!important;
 }
 
 /* Materials Grid */
@@ -72,23 +76,23 @@
 
 /* Material Card Styles */
 .fdm-material-card {
-  background: linear-gradient(to right, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  background-image: radial-gradient(circle at 0%,#ff990014,#fff0);
   padding: 32px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  border: 2px solid #c7c7c7;
+  border: 1px solid #c7c7c7;
 }
 
-.fdm-material-card::before {
+/* .fdm-material-card::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(to left, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   z-index: 0;
@@ -101,7 +105,7 @@
 
 .fdm-material-card:hover::before {
   opacity: 1;
-}
+} */
 
 .material-title {
   font-size: 32px !important;
@@ -114,6 +118,10 @@
   font-family: "Stara", sans-serif !important;
 }
 
+.dark-mode .material-title {
+  color: #FF9900!important;
+  opacity: .55;
+}
 .material-description {
   font-size: 16px !important;
   font-weight: 300;
@@ -127,10 +135,7 @@
 
 /* Tablet Styles */
 @media screen and (max-width: 1024px) {
-  .fdm-container {
-    padding: 0 20px;
-  }
-
+  
   .fdm-materials-grid {
     grid-template-columns: repeat(2, 1fr) !important;
   }
@@ -142,17 +147,7 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
-  .fdm-container {
-    padding: 0 16px;
-  }
-
-  .fdm-header {
-    flex-direction: column;
-    align-items: stretch;
-    margin-bottom: 32px;
-    gap: 20px;
-  }
-
+ 
   .fdm-title {
     font-size: 28px !important;
     margin-bottom: 12px;
@@ -163,13 +158,11 @@
   }
 
   .fdm-button {
-    width: 100%;
     text-align: center;
     padding: 14px 24px;
   }
 
   .fdm-materials-grid {
-    grid-template-columns: 1fr !important;
     gap: 16px !important;
   }
 
@@ -189,6 +182,16 @@
 
 /* Small Mobile Styles */
 @media screen and (max-width: 480px) {
+  .fdm-materials-grid {
+    grid-template-columns: 1fr!important;
+  }
+  .fdm-header {
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  .fdm-container {
+    padding: 20px; 
+  }
   .fdm-title {
     font-size: 24px !important;
   }
@@ -204,27 +207,27 @@
 
 /* Dark Mode – base card */
 body.dark-mode .fdm-materials-section {
-  background-color: #000 !important;
+  background-color: #111 !important;
 }
 
-body.dark-mode .fdm-material-card {
+/* body.dark-mode .fdm-material-card {
   border: 1px solid #3a3a3a !important;
-  background: radial-gradient(circle at 0% 50%, #1b1b1b, #000 80%) !important;
+  background-image: radial-gradient(circle at 0%,#ff990014,#fff0);
   transform: translate3d(0,0,0) scale3d(1,1,1) rotate(0) skew(0,0);
-}
+} */
 
 /* Override the light-mode ::before overlay in dark mode */
-body.dark-mode .fdm-material-card::before {
+/* body.dark-mode .fdm-material-card::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 0% 50%, rgba(255, 153, 0, 0.16), transparent 70%) !important;
+  
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   z-index: 0;
 }
 
-/* Hover state stays dark, just a bit brighter + shadow */
+
 body.dark-mode .fdm-material-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.6);
@@ -232,7 +235,7 @@ body.dark-mode .fdm-material-card:hover {
 
 body.dark-mode .fdm-material-card:hover::before {
   opacity: 1;
-}
+} */
 
 /* Text colors in dark mode */
 body.dark-mode .material-description {

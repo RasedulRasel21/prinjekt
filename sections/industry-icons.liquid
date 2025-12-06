@@ -7,7 +7,7 @@
 {{ 'industry-icons.css' | asset_url | stylesheet_tag }}
 
 <section class="industry-icons" id="industry-icons-{{ section.id }}">
-  <div class="industry-icons__inner"
+  <div class="industry-icons__inner page-width"
        style="--icon-size: {{ section.settings.icon_size }}px; --icon-color: {{ section.settings.icon_color }};">
     {%- if section.settings.heading != blank -%}
       <h2 class="industry-icons__heading">{{ section.settings.heading }}</h2>

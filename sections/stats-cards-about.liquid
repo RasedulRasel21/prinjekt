@@ -12,7 +12,7 @@
   id="stats-cards-{{ section.id }}"
   style="--stats-pad-y: {{ section.settings.padding_y | default: 100 }}px;"
 >
-  <div class="stats-cards__inner">
+  <div class="stats-cards__inner page-width">
     <div class="stats-cards__grid">
       {% for block in section.blocks %}
         {% assign num = block.settings.number %}

@@ -1,8 +1,9 @@
 {{ 'druckervermietung.css' | asset_url | stylesheet_tag }}
 
 <div class="drucker-section">
-  <div class="drucker-container">
-    <div class="drucker-header">
+  <div class="page-width">
+    <div class="drucker-bg">
+      <div class="drucker-header">
       <div class="drucker-header-left">
         <h2 class="drucker-title">{{ section.settings.title }}</h2>
         <p class="drucker-description">{{ section.settings.description }}</p>
@@ -30,6 +31,7 @@
               <div class="drucker-item-content">
                 <h4 class="drucker-item-title">{{ block.settings.title }}</h4>
                 <p class="drucker-item-description">{{ block.settings.description }}</p>
+                <hr class="hr-tag"/>
               </div>
             </div>
           {% endif %}
@@ -51,6 +53,7 @@
           {% endif %}
         {% endfor %}
       </div>
+    </div>
     </div>
   </div>
 </div>

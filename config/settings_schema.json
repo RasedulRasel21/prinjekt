@@ -16,6 +16,11 @@
         "label": "t:settings_schema.logo.settings.logo_image.label"
       },
       {
+        "type": "image_picker",
+        "id": "logo_dark_mode",
+        "label": "t:settings_schema.logo.settings.logo_image.dark.label"
+      },
+      {
         "type": "range",
         "id": "logo_width",
         "min": 50,

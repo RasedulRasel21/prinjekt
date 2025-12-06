@@ -9,7 +9,8 @@
 
 
 <section class="main-mos" id="mos-{{ section.id }}">
-  <div class="mos">
+  
+  <div class="mos page-width">
     {% if section.settings.heading != blank or section.settings.subheading != blank %}
       <header class="mos__header">
         {% if section.settings.heading != blank %}
@@ -29,7 +30,9 @@
     {% assign widths_all = "480,640,800,1024,1280,1600,2000,2400,3200" %}
   
     <div class="mos__grid" style="--mos-gap: {{ gap_px }}px; --mos-radius: {{ radius }}px;">
-  
+      <div class="mask-shadow">
+        <span></span>
+        </div>  
       {%- comment -%} a (square) {%- endcomment -%}
       {% assign img = section.settings.a_image %}
       {% assign alt = section.settings.a_alt | default: img.alt | default: '' %}

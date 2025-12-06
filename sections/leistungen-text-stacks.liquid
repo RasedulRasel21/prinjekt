@@ -8,25 +8,30 @@
 <link rel="stylesheet" href="{{ 'leistungen-text-stacks.css' | asset_url }}" media="all">
 
 <div class="services-section">
-  <div class="services-container">
-    <div class="services-content">
+  <div class="services-container page-width">
+    <div class="services-wrapper">
       <h1 class="services-main-title">{{ section.settings.main_title }}</h1>
-      
-      {% for block in section.blocks %}
-        <div class="service-item" {{ block.shopify_attributes }}>
-          <h2 class="service-title">{{ block.settings.title }}</h2>
-          <p class="service-description">{{ block.settings.description }}</p>
+      <div class="services-content">      
+        <div class="content">
+        {% for block in section.blocks %}
+          <div class="service-item" {{ block.shopify_attributes }}>
+            <h2 class="service-title">{{ block.settings.title }}</h2>
+            <p class="service-description">{{ block.settings.description }}</p>
+          </div>
+          <hr class="hr-tag" />
+        {% endfor %}
         </div>
-        <hr class="hr-tag" />
-      {% endfor %}
-    </div>
-    
-    <div class="services-image">
-      {% if section.settings.image != blank %}
-        <img src="{{ section.settings.image | img_url: 'master' }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy">
-      {% else %}
-        <div class="placeholder-image">{{ 'image' | placeholder_svg_tag }}</div>
-      {% endif %}
+        <div class="services-image">
+        {% if section.settings.image != blank %}
+          <img src="{{ section.settings.image | img_url: 'master' }}"
+            width="{{ section.settings.image.width }}"
+            height="{{ section.settings.image.height }}"
+            alt="{{ section.settings.image.alt | escape }}" loading="lazy">
+        {% else %}
+          <div class="placeholder-image">{{ 'image' | placeholder_svg_tag }}</div>
+        {% endif %}
+        </div>
+      </div>
     </div>
   </div>
 </div>

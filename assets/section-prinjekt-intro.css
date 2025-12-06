@@ -50,8 +50,12 @@
   color: #0b0b0b;
   font-weight: 500;
   word-break: normal;
-  overflow-wrap: anywhere;
-  hyphens: auto;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .prinjekt-hero-text .pht-content {
+    font-size: 36px;
+  }
 }
 
 /* remove default RTE margins so it reads as one block */
@@ -86,7 +90,7 @@
 /* -------------------------------------------------------- */
 
 body.dark-mode .prinjekt-hero-section {
-  background-color: #000000 !important;
+  background-color: #111 !important;
 }
 
 body.dark-mode .prinjekt-hero-text {

@@ -1,14 +1,19 @@
 /* === Industry Icons Grid === */
 .industry-icons {
   background: #ebebeb;
-  padding: 100px 0;
+  padding: 60px 0;
 }
 
 .industry-icons__inner {
-  max-width: var(--container-max, 1500px);
   margin: 0 auto;
-  padding: 0 20px;
   text-align: center;
+}
+
+@media(min-width: 1024px) {
+  .industry-icons__inner {
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+  }
 }
 
 .industry-icons__heading {
@@ -26,7 +31,7 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 32px 48px;
+  gap: 22px;
 }
 
 .industry-icons__item {
@@ -69,37 +74,39 @@
 
 @media (max-width: 1024px) {
   .industry-icons__grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
 @media (max-width: 768px) {
+  .industry-icons__heading { 
+    width: 80%;
+    margin: 20px auto;
+    font-size: 36px;
+    
+  }
+  .industry-icons__label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
   .industry-icons__grid {
     grid-template-columns: repeat(2, 1fr); /* mobile: 2 per row */
     gap: 16px;
   }
-
   .industry-icons__heading { 
-    width: 80%;
-    margin: 0 auto;
-    font-size: 36px;
-  }
-
-  .industry-icons__label {
-  font-size: 14px;
-}
-}
-
-@media (max-width: 480px) {
-  .industry-icons__heading { 
-    font-size: 30px;
+    font-size: 37px;
     margin-bottom: 20px;
+    letter-spacing: -2px;
+    line-height: 100%;
+    font-weight: 800;
   }
 }
 
 /* Dark mode – Industry icons */
 body.dark-mode .industry-icons {
-  background: #000 !important;
+  background: #111!important;
 }
 
 /* Heading + labels stay white */

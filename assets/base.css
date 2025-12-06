@@ -79,8 +79,21 @@
 .page-width {
   max-width: var(--page-width);
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2.5rem;
 }
+
+@media (min-width: 768px) {
+  .page-width {
+    padding: 0 3em;
+  }
+}
+
+/* @media(max-width: 1024px) {
+  .page-width {
+    padding-left: 20px;
+    padding-right: 20px; 
+  }
+} */
 
 body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
   max-width: 100%;
@@ -101,16 +114,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 750px) {
-  .page-width {
-    padding: 0 5rem;
-  }
-
-  .header.page-width,
-  .utility-bar__grid.page-width {
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
-  }
-
   .page-width--narrow {
     padding: 0 9rem;
   }
@@ -125,11 +128,6 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 }
 
 @media screen and (min-width: 990px) {
-  .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-
   .page-width--narrow {
     max-width: 72.6rem;
     padding: 0;
@@ -2209,7 +2207,7 @@ input[type='checkbox'] {
 }
 
 @media screen and (min-width: 990px) {
-  body:has(.section-header .header:not(.drawer-menu)) .utility-bar .page-width {
+  .utility-bar .page-width {
     padding-left: 5rem;
     padding-right: 5rem;
   }
@@ -2311,7 +2309,7 @@ input[type='checkbox'] {
 
 /* section-header */
 .section-header.shopify-section-group-header-group {
-  z-index: 3;
+  z-index: 50;
 }
 
 .shopify-section-header-sticky {
@@ -2448,11 +2446,6 @@ input[type='checkbox'] {
 .header__heading-link .h2 {
   line-height: 1;
   color: rgba(var(--color-foreground), 0.75);
-}
-
-.header__heading-logo {
-  height: auto;
-  max-width: 100%;
 }
 
 .header__heading-logo-wrapper {

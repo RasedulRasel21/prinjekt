@@ -4,19 +4,17 @@
   background-color: #ebebeb;
 }
 .prinjekt-hero .ph-wrapper {
-  max-width: 1500px;
   margin: 0 auto;
 }
 .prinjekt-hero .ph-card {
   /* background: var(--card-bg, #fff); */
   border-radius: 10px;
-  padding: clamp(16px, 2.5vw, 28px);
 }
 
 /* 40/60 split on desktop, stack on mobile */
 .prinjekt-hero .ph-grid {
   display: grid;
-  grid-template-columns: 0.4fr 0.6fr; /* image 40%, text 60% */
+  grid-template-columns:1fr 1fr; /* image 40%, text 60% */
   gap: clamp(16px, 3vw, 36px);
   align-items: center;
 }
@@ -42,9 +40,6 @@
 }
 
 /* Content */
-.prinjekt-hero .ph-content {
-  padding: clamp(6px, 1vw, 10px);
-}
 .prinjekt-hero .ph-heading {
   font-weight: 700;
   font-size: clamp(28px, 3.4vw + 8px, 48px);
@@ -67,29 +62,34 @@
   margin-bottom: 6px;
 }
 .prinjekt-hero .ph-desc p { margin: 0.45rem 0;font-family: "Myriad Pro", sans-serif !important; }
+.prinjekt-hero .ph-desc h2 {
+  font-size: 50px;
+  font-family: Stara,sans-serif;
+  font-weight: 600;
+
+}
+.prinjekt-hero .ph-desc h2 strong {
+  font-weight: 900;
+  color: #ff9900b5;
+}
 
 /* Button */
 .prinjekt-hero .ph-actions { margin-top: 6px; }
 .prinjekt-hero .ph-btn {
-  display: inline-block;
-  padding: 8px 20px;
-  background-color: transparent;
-  color: #ff9800;
-  border: 2px solid #ff9800;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  font-family: "Myriad Pro", sans-serif !important;
-
+  display:inline-block;
+  padding: 10px 15px !important;
+  border-radius:10px;
+  background: #ff99001a;
+  text-decoration:none; 
+  font-weight:400; 
+  font-size:20px;
+  color: #ff9900 !important;
+  border: 1px solid #ff9800;
+  line-height: normal; 
 }
+
 .prinjekt-hero .ph-btn:hover {
-  background-color: #ff9800;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+  background-color: #f903;
 }
 
 /* --- Taller image + vertically centered text (desktop) --- */
@@ -125,5 +125,5 @@
 
 /* Dark Mode */
 body.dark-mode .prinjekt-hero {
-  background-color: #000 !important;
+  background-color: #111 !important;
 }

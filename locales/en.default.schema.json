@@ -151,7 +151,10 @@
       "name": "Logo",
       "settings": {
         "logo_image": {
-          "label": "Logo"
+          "label": "Logo",
+          "dark": {
+            "label": "Dark Mode Logo"
+          }
         },
         "logo_width": {
           "label": "Width"

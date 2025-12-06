@@ -260,18 +260,13 @@
 
       /* Dark Mode Styles */
       body.dark-mode {
-        background-color: #000 !important;
         color: #fff !important;
+        background-color: #111 !important;
       }
-
-      body.dark-mode * {
-        color: #fff !important;
-      }
-
       body.dark-mode .color-background-1,
       body.dark-mode .color-scheme-1,
       body.dark-mode .gradient {
-        background-color: #000 !important;
+        background-color: #111 !important;
       }
 
       body.dark-mode h1,
@@ -286,6 +281,9 @@
       body.dark-mode li,
       body.dark-mode div {
         color: #fff !important;
+      }
+      * {
+        transition: background-color 300ms ease-in-out;
       }
     {% endstyle %}
 

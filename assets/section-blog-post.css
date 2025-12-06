@@ -7,7 +7,9 @@
     margin-top: calc(5rem + var(--page-width-margin));
   }
 }
-
+.article-template__hero-adapt.media {
+  border-radius: 20px; 
+}
 .article-template__hero-container {
   max-width: 130rem;
   margin: 0 auto;

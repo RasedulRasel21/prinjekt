@@ -40,9 +40,7 @@
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1200px;
   margin: 0 auto;
-  padding-top: -100px !important;
 }
 
 .hero-3d-content {
@@ -52,7 +50,7 @@
 /* Heading */
 .hero-3d-heading {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
-  font-weight: 700;
+  font-weight: 800;
   line-height: 1.2;
   margin: 0 0 1.5rem;
   color: #111111;
@@ -60,8 +58,9 @@
   font-family: "Stara", sans-serif !important;
 }
 
+
 .hero-3d-heading-highlight {
-  color: #FF9900 !important;
+  color: #FFB74A!important;
   display: block;
   font-family: "Stara", sans-serif !important;
 }
@@ -71,10 +70,11 @@
   font-size: 16px;
   line-height: 1.3;
   font-weight: 300;
-  color: #111111;
+  color: #111;
   max-width: 750px;
   margin: 0 auto 2.5rem;
   font-family: "Myriad Pro", sans-serif !important;
+  opacity: .6;
 }
 
 /* Features */
@@ -89,27 +89,23 @@
   display: flex;
   justify-content: center;
   margin-bottom: 2.5rem;
-  width: 100%;
-  max-width: 500px;
-  max-height: 42px;
+  width: max-content;  
   background: linear-gradient(90deg, #fcf2e3 0%, #ffffff 100%);
-  border: 1px solid #1E1E1E;
+  border: 1px solid #c7c7c7;
   border-radius: 10px;
   flex-wrap: nowrap;
+  padding: 10px;
+  gap: 20px;
 }
 
 .hero-3d-feature{
   display: inline-flex;
   align-items: center;
   gap: .5rem;
-  padding: 2px 4px;
   border-radius: 10px;
-  font-size: 14px;
   font-weight: 300;
   color: #111111;
   transition: all .3s ease;
-  flex: 1;
-  min-width: 0;
 }
 
 .hero-3d-feature-link {
@@ -126,7 +122,7 @@
 }
 
 .hero-3d-feature-text {
-  font-weight: 500;
+  font-weight: 300;
 }
 
 /* CTA Box */
@@ -152,9 +148,9 @@
 .hero-3d-cta-box {
   max-width: 800px;
   margin: 0 auto 1.5rem;
-  padding: 3rem 2rem;
+  padding: 6rem 2rem;
   background: transparent;
-  border: 1px dashed #f5a623;
+  border: 1px dashed #f90;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
@@ -164,35 +160,31 @@
   color: #111111;
   margin: 0 0 1.5rem;
   font-weight: 300;
+  opacity: .6;
   font-family: "Myriad Pro", sans-serif !important;
 }
 
 /* Button */
 .hero-3d-button {
-  width: 180px;
-  height: 40px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0 15px;
+  padding: 5px 15px;
   box-sizing: border-box;
-  background-color: #f2ddbd;
+  background-color: #ff99001a;
   color: #1a1a1a;
   font-size: 18px;
   font-weight: 400;
   text-decoration: none;
   border-radius: 10px;
-  border: 2px solid #ff9900;
+  border: 1px solid #ff9900;
   transition: all 0.3s ease;
   cursor: pointer;
   font-family: "Myriad Pro", Myriadpro, sans-serif;
 }
 
-.hero-3d-button:hover {
-  background-color: #e09517;
-  border-color: #e09517;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 10px rgba(245, 166, 35, 0.4);
+.dark-mode .hero-3d-button:hover, .hero-3d-button:hover {
+  background-color: #f903;
 }
 
 /* Privacy Text */
@@ -200,10 +192,24 @@
   font-size: 16px;
   color: #111111;
   font-weight: 300;
+  opacity: .6;
   margin: 0;
   font-family: "Myriad Pro", Myriadpro, sans-serif;
 }
-
+.hero-3d-section::after {
+  position: absolute; 
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0; 
+  top: 0; 
+  z-index: 1;
+  background: #ebebeb; 
+  opacity: .75;
+}
+.dark-mode .hero-3d-section::after {
+  background: #111;
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .hero-3d-section {
@@ -211,60 +217,52 @@
     padding: 4rem 0;
   }
 
-  .hero-3d-container {
-    padding: 10px;
+    .hero-3d-heading-highlight-group {
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    gap: 6px;
   }
+
 
   .hero-3d-heading {
     font-size: 50px;
     margin-bottom: 1rem;
+    line-height: 100%;
   }
 
   .hero-3d-description {
     font-size: 14px;
     margin-bottom: 2rem;
-    padding: 0 30px;
+    padding: 12px 30px 6px;
+    opacity: .6;
   }
 
   .hero-3d-features-container {
-    width: 270px;
-    height: 110px;
     margin: 0 auto 30px;
     padding: 0 1rem;
   }
 
   .hero-3d-features {
-    flex-wrap: wrap;
-    max-width: 100%;
-    max-height: none;
-    gap: 5px;
+    gap: 10px;
     padding: 6px;
     margin-top: 8px;
     margin-bottom: 10px;
   }
-
   .hero-3d-feature {
     padding: 2px 6px;
     font-size: 14px;
-    flex: 0 0 calc(50% - 4px);
+    flex: 1;
     justify-content: center;
-  }
-
-  .hero-3d-feature:nth-child(3) {
-    flex: 0 0 100%;
   }
 
   .hero-3d-feature-icon {
     font-size: 1.1rem;
-  }
-
-  .hero-outer-box {
-    margin: 0 20px;
-    /* padding: 2rem 1.5rem; */
+    line-height: 100%;
   }
 
   .hero-3d-cta-box {
-    padding: 2rem 1.5rem;
+    padding: 3rem 1.5rem;
     margin-bottom: 1rem;
   }
 
@@ -273,41 +271,31 @@
     margin: 0 auto;
     font-size: 14px;
     margin-bottom: 1.25rem;
+    line-height: 120%;
+    opacity: .6;
   }
 
-  .hero-3d-button {
-    background-color:rgb(224, 195, 150);
-    width: 70%;
-    padding: 9px 15px;
-    font-size: 14px;
-  }
 
   .hero-3d-privacy {
     width: 80%;
     margin: 0 auto;
     font-size: 14px;
+    line-height: 120%;
+    opacity: 0.6;
+    padding-top: 4px;
   }
 }
 
 @media (max-width: 480px) {
-  .hero-3d-features {
-    padding: 8px;
-  }
+   .hero-3d-features {
+      flex-wrap: wrap;
+      gap: 2px;
+    }
 
-  .hero-3d-feature {
-    padding: 2px 4px;
-    font-size: 13px;
-  }
-
-  .hero-3d-cta-box {
+   .hero-3d-cta-box {
     padding: 1.5rem 1rem;
-  }
-
-  .hero-3d-button {
-    background-color:rgb(224, 195, 150);
-    width: 70%;
-    padding: 9px 15px;
-    font-size: 14px;
+    padding-top: 3em;
+    padding-bottom: 3em;
   }
 }
 
@@ -318,6 +306,7 @@ body.dark-mode .hero-3d-section {
 
 body.dark-mode .hero-3d-video-overlay {
   background: #000 !important;
+
 }
 
 body.dark-mode .hero-3d-features {
@@ -326,7 +315,7 @@ body.dark-mode .hero-3d-features {
 }
 
 body.dark-mode .hero-3d-heading-highlight {
-  color: #FF9900 !important;
+  color:rgba(255, 153, 0, 0.71)!important;
 }
 
 body.dark-mode .hero-3d-description {
@@ -336,4 +325,11 @@ body.dark-mode .hero-3d-description {
 body.dark-mode .hero-3d-button {
   background-color: #443010;
   color: #ffffff;
+}
+
+/* 26-11-2025 */
+
+.hero-3d-feature-icon {
+  display: flex;
+  align-items: center;
 }

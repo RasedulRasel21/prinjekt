@@ -181,45 +181,45 @@
         "material_gVezWm": {
           "type": "material",
           "settings": {
-            "material_name": "Polylactide (PLA)",
+            "material_name": "Standard-Resin",
             "title_size": 24,
             "title_color": "#f5a623",
-            "material_description": "PLA ist ein biokompatibler Kunststoff. Er wird aus regenerativen Rohstoffen wie z.B. Maisstärke hergestellt.",
+            "material_description": "Standard-Resin ist in der Regel am günstigsten. Es ist vor allem für Schauobjekte, Figuren oder sonstige Objekte ohne größere mechanische Beanspruchungen geeignet, da das Material andernfalls spröde wird.",
             "description_color": "#4a4a4a",
-            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+            "card_background": "linear-gradient(135deg, rgba(254, 248, 240, 1), rgba(249, 237, 224, 1) 100%)"
           }
         },
         "material_4eUPw8": {
           "type": "material",
           "settings": {
-            "material_name": "Acrylnitril-Butadien-Styrol (ABS)",
+            "material_name": "Tough-Resin",
             "title_size": 24,
             "title_color": "#f5a623",
-            "material_description": "ABS überzeugt durch eine hohe Hitzebeständigkeit, sowie eine kratzfeste Oberfläche.",
+            "material_description": "Tough-Resin ist ein besonders stabiles Harz, welches weniger spröde ist als das normale Standard-Resin. Durch die höhere Festigkeit ist es bei mechanischen Beanspruchungen deutlich besser geeignet.",
             "description_color": "#4a4a4a",
-            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+            "card_background": "linear-gradient(135deg, rgba(254, 248, 240, 1), rgba(249, 237, 224, 1) 100%)"
           }
         },
         "material_yEBNFb": {
           "type": "material",
           "settings": {
-            "material_name": "Polymethylmethacrylat (PMMA)",
+            "material_name": "Water-Washable Resin",
             "title_size": 24,
             "title_color": "#f5a623",
-            "material_description": "PMMA wird oft auch als Acrylglas oder Plexiglas bezeichnet. Seine Lichtdurchlässigkeit ist höher als die von Mineralglas.",
+            "material_description": "Water-Washable-Resin weist eine sehr gute Feuchtigkeitsbeständigkeit auf. Außerdem besitzt es eine hohe Härte und Kratzfestigkeit.",
             "description_color": "#4a4a4a",
-            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+            "card_background": "linear-gradient(135deg, rgba(254, 248, 240, 1), rgba(249, 237, 224, 1) 100%)"
           }
         },
         "material_ENz8X7": {
           "type": "material",
           "settings": {
-            "material_name": "Acrylester-Styrol-Acrylnitril (ASA)",
+            "material_name": "Pflanzenbasiertes Resin (ECO)",
             "title_size": 24,
             "title_color": "#f5a623",
-            "material_description": "ASA hat eine kratzfeste Oberfläche und ist sehr resistent gegenüber Chemikalien. Auch UV-Licht kann diesem Material nichts anhaben.",
+            "material_description": "Das Eco-Resin ist biologisch abbaubar und aus Sojaöl hergestellt. Darüber hinaus ist es im Vergleich zum Standard-Resin fester und weniger spröde.",
             "description_color": "#4a4a4a",
-            "card_background": "linear-gradient(135deg, #fef8f0 0%, #f9ede0 100%)"
+            "card_background": "linear-gradient(135deg, rgba(254, 248, 240, 1), rgba(249, 237, 224, 1) 100%)"
           }
         }
       },
@@ -235,10 +235,10 @@
         "padding_top": 60,
         "padding_bottom": 60,
         "container_width": 1500,
-        "title": "Fused Deposition Modeling (FDM)",
+        "title": "Stereolithography (SLA)",
         "title_size": 42,
         "title_color": "#1a1a1a",
-        "description": "Es gibt verschiedene Materialien, mit denen Sie Ihre Teile produzieren lassen können. Hier präsentieren wir Ihnen eine kleine Auswahl, welche wir im FDM-Bereich anbieten können:",
+        "description": "Beim SLA-Verfahren wird für ein Modell ein bestimmtes Kunstharz verwendet, das durch eine Lichtquelle ausgehärtet wird.Der Vorteil gegenüber anderen Druckvarianten zeigt sich darin, dass beim 3D-Druck auf allen Seiten eine Hochglanzoberfläche erzeugt werden kann und eine hohe Detailgenauigkeit beim Druck entsteht.",
         "description_color": "#4a4a4a",
         "button_text": "",
         "button_link": "",

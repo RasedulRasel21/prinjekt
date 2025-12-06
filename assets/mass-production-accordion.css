@@ -1,11 +1,10 @@
 /* Mass Production Accordion Section */
 .mass-production-section {
-  padding: 60px 20px;
+  padding-block: 60px;
   background-color: #ebebeb;
 }
 
 .mass-production-section .container {
-  max-width: 1500px;
   margin: 0 auto;
 }
 
@@ -215,7 +214,7 @@
 
 @media screen and (max-width: 768px) {
   .mass-production-section {
-    padding: 40px 15px;
+    padding-block: 40px;
   }
   
   .section-title {
@@ -308,13 +307,13 @@
 
 /* Dark Mode */
 body.dark-mode .mass-production-section {
-  background-color: #000 !important;
+  background-color: #111 !important;
 }
 
 body.dark-mode .accordion-header,
 body.dark-mode .accordion-inner {
   border: 1px solid #3a3a3a !important;
-  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990014, #1b1b1b 80%);
-  background: radial-gradient(circle at 0%, #ff990014, #1b1b1b) !important;
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #322005d9, #1b1b1b 80%);
+  background: radial-gradient(circle farthest-corner at 0% 50%, #322005d9, #1b1b1b 80%);
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
 }

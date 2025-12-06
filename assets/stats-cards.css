@@ -7,6 +7,14 @@
 .stats-cards__inner {
   position: relative;
 }
+
+
+@media screen and (max-width: 768px) {
+    .stats-cards {
+        padding: 40px 0px;
+    }
+}
+
 .stats-cards__heading {
   margin: 0 0 6px;
   font-size: 28px;
@@ -50,7 +58,7 @@
 .stats-card__content {
   position: relative;
   z-index: 2;
-  padding: 28px;
+  padding: 10px 20px;
   flex: 1 1 auto;
   display: flex;
   flex-direction: column;
@@ -64,7 +72,9 @@
   letter-spacing: 0.5px;
   color: var(--card-accent, #FFB24A);
   font-family: "Stara", sans-serif !important;
+  opacity: .55;
 }
+
 
 .stats-card__label {
   margin-top: 10px;
@@ -95,13 +105,18 @@
 /* Spacing tweaks for small screens */
 @media (max-width: 749px) {
   .stats-card { min-height: 160px; }
-  .stats-card__number { font-size: 44px; }
-  .stats-card__label { font-size: 20px; }
+  .stats-card__number { 
+    font-size: 5em;
+    opacity: .5;
+    line-height: 54%;
+  
+  }
+  .stats-card__label { font-size: 26px; }
 }
 
 /* Dark Mode */
 body.dark-mode .stats-cards {
-  background: #000 !important;
+  background: #111 !important;
 }
 
 body.dark-mode .stats-card {
@@ -114,5 +129,5 @@ body.dark-mode .stats-card {
 }
 
 body.dark-mode .stats-card__number {
-  color: var(--card-accent, #FF9900) !important;
+  color: var(--card-accent, #ff9900b5) !important;
 }

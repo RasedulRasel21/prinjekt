@@ -6,7 +6,7 @@
 .hero-floating-section {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  height: 100lvh;
   padding: var(--hero-pad-top, 100px) 0 var(--hero-pad-bottom, 0);
   overflow: hidden;
   background-color: #ebebeb;
@@ -15,8 +15,7 @@
 .hero-floating-container {
   position: relative;
   width: 100%;
-  height: 100%;
-  min-height: 100vh;
+  height: 100lvh;
 }
 
 /* Floating Images Background */
@@ -109,7 +108,6 @@
   z-index: 2;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
   padding: 20px 20px;
 }
 
@@ -128,6 +126,17 @@
   margin: 0 0 30px 0;
   letter-spacing: -0.02em;
   font-family: "Stara", sans-serif !important;
+}
+
+@media (max-width: 1024px) {
+  .hero-heading {
+    font-size: 66px;
+    font-weight: 900;
+  }
+  .hero-floating-section, .hero-floating-container, .hero-content-wrapper {
+    height: auto; 
+    
+  }
 }
 
 /* Description */
@@ -151,26 +160,22 @@
 }
 
 .hero-button {
-  display: inline-block;
-  padding: 8px 20px;
-  background-color: transparent;
-  color: #ff9800;
-  border: 2px solid #ff9800;
-  border-radius: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-  font-family: "Myriad Pro", sans-serif !important;
+  display:inline-block;
+  padding: 10px 15px !important;
+  border-radius:10px;
+  background: #ff99001a;
+  text-decoration:none; 
+  font-weight:400; 
+  font-size:20px;
+  color: #ff9900 !important;
+  border: 1px solid #ff9800;
+  line-height: normal; 
 }
 
 .hero-button:hover {
-  background-color: #ff9800;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(255, 152, 0, 0.3);
+  background-color: #f903;
 }
+
 
 /* Secondary Heading Section */
 .hero-floating-section::after {
@@ -229,10 +234,6 @@
   .floating-image-8 {
     width: 140px !important;
     height: 150px !important;
-  }
-
-  .hero-heading {
-    font-size: 2.8rem;
   }
 
   .hero-content {
@@ -330,11 +331,6 @@
     border-radius: 10px;
   }
 
-  .hero-heading {
-    font-size: 24px;
-    margin-bottom: 14px;
-  }
-
   .hero-description {
     font-size: 14px;
     margin-bottom: 22px;
@@ -343,8 +339,6 @@
   .hero-button {
     padding: 12px 22px;
     font-size: 0.9rem;
-    width: 100%;
-    max-width: 320px;
   }
 
   .hero-button-wrapper {
@@ -368,7 +362,7 @@
     min-height: auto !important;
   }
   .hero-heading {
-    font-size: 24px;
+    font-size: 44px;
   }
 
   .hero-content {
@@ -388,7 +382,7 @@
 
 /* Dark Mode */
 body.dark-mode .hero-floating-section {
-  background-color: #000 !important;
+  background-color: #111 !important;
 }
 
 /* FINAL MOBILE HEIGHT FIX */

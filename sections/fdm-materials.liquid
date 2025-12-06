@@ -1,7 +1,8 @@
 {{ 'fdm-materials.css' | asset_url | stylesheet_tag }}
 
 <section class="fdm-materials-section" style="background-color: {{ section.settings.background_color }}; padding-top: {{ section.settings.padding_top }}px; padding-bottom: {{ section.settings.padding_bottom }}px;">
-  <div class="fdm-container" style="max-width: {{ section.settings.container_width }}px;">
+  <div class="page-width">
+  <div class="fdm-container">
     <!-- Header -->
     <div class="fdm-header">
       <div class="fdm-header-content">
@@ -28,7 +29,7 @@
       <div class="fdm-materials-grid" style="grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr); gap: {{ section.settings.card_gap }}px;">
         {% for block in section.blocks %}
           <div class="fdm-material-card" {{ block.shopify_attributes }} 
-               style="background: {{ block.settings.card_background }}; border-radius: {{ section.settings.card_border_radius }}px;">
+               style="border-radius: {{ section.settings.card_border_radius }}px;">
             {% if block.settings.material_name != blank %}
               <h3 class="material-title" style="color: {{ block.settings.title_color }}; font-size: {{ block.settings.title_size }}px;">
                 {{ block.settings.material_name }}
@@ -44,14 +45,10 @@
       </div>
     {% endif %}
   </div>
+</div>
 </section>
 
 <style>
-  .fdm-button:hover {
-    background-color: {{ section.settings.button_border_color }} !important;
-    color: {{ section.settings.button_hover_text_color }} !important;
-  }
-  
   .fdm-material-card:hover .material-title {
     color: {{ section.settings.card_title_hover_color }} !important;
   }

@@ -160,7 +160,13 @@
 
 {%- style -%}
   .header {
-    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 3rem {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px 3rem;
+    padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 0px;
+  }
+
+  @media (max-width: 1024px) {
+    .header {
+      padding: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px 20px;
+    }
   }
 
   .section-header {
@@ -179,6 +185,24 @@
       padding-top: {{ section.settings.padding_top }}px;
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
+  }
+  .dark-mode .header__heading-logo {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all 300ms ease-in-out; 
+  }
+  .header__heading-logo-dark-mode {
+    width: 0;
+    height: 0;
+    opacity: 0; 
+    transition: all 300ms ease-in-out; 
+  }
+  .dark-mode .header__heading-logo-dark-mode {
+    width: {{ settings.logo_width }}px;
+    height: {{ settings.logo_width | divided_by: settings.logo.aspect_ratio }}px; 
+    opacity: 1; 
+    transition: all 300ms ease-in-out; 
   }
 {%- endstyle -%}
 
@@ -234,7 +258,7 @@
         <h1 class="header__heading">
       {%- endif -%}
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-        {%- if settings.logo != blank -%}
+        {%- if settings.logo != blank or settings.logo_dark_mode != blank -%}
           <div class="header__heading-logo-wrapper">
             {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
             {%- assign logo_height = settings.logo_width | divided_by: settings.logo.aspect_ratio -%}
@@ -245,6 +269,18 @@
               | image_url: width: 600
               | image_tag:
                 class: 'header__heading-logo motion-reduce',
+                widths: widths,
+                height: logo_height,
+                width: settings.logo_width,
+                alt: logo_alt,
+                sizes: sizes,
+                preload: true
+            }}
+            {{
+              settings.logo_dark_mode
+              | image_url: width: 600
+              | image_tag:
+                class: 'header__heading-logo-dark-mode motion-reduce',
                 widths: widths,
                 height: logo_height,
                 width: settings.logo_width,

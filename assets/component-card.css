@@ -12,9 +12,20 @@
 
 .card:not(.ratio) {
   display: flex;
-  flex-direction: column;
+  flex-direction: row-reverse;
   height: 100%;
+  align-items: stretch;
+  gap: 40px; 
+  border: 1px solid #c7c7c7;
+  border-radius: 20px; 
+  overflow: hidden; 
+  background-image: radial-gradient(circle farthest-corner at 0% 50%, #ff990030, #ebebeb 22%);
 }
+.dark-mode .card:not(.ratio) {
+  background-image: radial-gradient(circle farthest-corner at 0% 50%,#ff990030,#111 22%);
+}
+
+
 
 .card.card--horizontal {
   --text-alignment: left;
@@ -39,7 +50,35 @@
 .card--card {
   height: 100%;
 }
-
+.article-card .card__heading {
+  font-size: 40px;
+  font-family: Myriadpro, sans-serif;
+  line-height: 1; 
+}
+.article-card__excerpt {
+  line-height: 1.4; 
+}
+.article-card .article-button {
+    display: block;
+    width: min-content; 
+    padding: 10px 15px !important;
+    border-radius: 10px;
+    background: #ff99001a;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 20px;
+    color: #f90 !important;
+    border: 1px solid #ff9800;
+    line-height: normal;
+    margin-bottom: 40px; 
+}
+.article-card .article-button:hover {
+  background: #f903;
+  text-decoration:none;
+}
+.underline-links-hover:hover .article-button {
+  text-decoration: none; 
+}
 .card--card,
 .card--standard .card__inner {
   position: relative;
@@ -385,12 +424,6 @@
   .card-wrapper .media.media--hover-effect > img:only-child {
     transition: transform var(--duration-long) ease;
   }
-
-  .card:hover .media.media--hover-effect > img:first-child:only-child,
-  .card-wrapper:hover .media.media--hover-effect > img:first-child:only-child {
-    transform: scale(1.03);
-  }
-
   .card-wrapper:hover .media.media--hover-effect > img:first-child:not(:only-child) {
     opacity: 0;
   }
@@ -421,11 +454,6 @@
 
 .card--standard > .card__content {
   padding: 0;
-}
-
-.card--standard > .card__content .card__information {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .card--card.card--media .card__inner .card__information,
@@ -591,5 +619,22 @@
 
   .grid__item:nth-child(8n) .product-card-wrapper:hover .shape--blob {
     clip-path: polygon(var(--shape--blob-5));
+  }
+}
+
+.card__information {
+  padding: 20px; 
+}
+
+@media (max-width: 480px) {
+  .article-card .card__heading{
+    font-size: 32px; 
+  }
+  .card:not(.ratio) {
+    flex-direction: column;
+    gap: 10px;  
+  }
+  .blog-articles {
+    gap: 50px!important
   }
 }

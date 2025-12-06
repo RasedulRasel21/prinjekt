@@ -12,79 +12,89 @@
   background: #ebebeb;
 }
 
+@media (max-width: 768px) {
+  .rs22 {
+    padding: 40px 0px;
+  }
+}
+
 /* Grid: mobile 1 col, desktop 2 cols (50/50) */
 .rs22__container{
-  max-width: var(--max);
   margin: 0 auto;
-  padding: 32px 16px;
+  padding-top: 32px;
+  padding-bottom: 32px;
   display: grid;
   grid-template-columns: 1fr;   /* mobile */
   gap: var(--gap);
 }
-@media (min-width: 992px){
-  .rs22__container{ grid-template-columns: 1fr 1fr; align-items: start; }
+@media (min-width: 768px){
+  .rs22__container{ grid-template-columns: 1fr 1fr;}
 }
 
 /* TOP-LEFT info */
 .rs22__left{ display:flex; flex-direction:column; gap:12px; }
 .rs22__title{ margin:0; font-size: clamp(28px,3.4vw,48px); font-weight: 700; line-height:1.1; }
 .rs22__rating{ display:flex; align-items:center; gap:8px; font-size: 16px, font-weight: 300 }
-.rs22__stars .star{ width:18px; height:18px; fill: var(--brand); font-size: 16px, font-weight: 300 }
-.rs22__rating-text{ font-size: 16px, font-weight: 300; color: var(--muted); }
+.rs22__stars .star{ width:24px; height:24px; fill: var(--brand); font-size: 16px, font-weight: 300 }
+.rs22__rating-text{ font-size: 16px, font-weight: 300; color: var(--muted);  opacity: .6;}
+.rs22__stars{
+  display: flex;
+  align-items: center;
+}
 .rs22__btn{
   align-self:flex-start;
   display:inline-block;
-  padding:6px 12px !important;
+  padding: 10px 15px !important;
   border-radius:10px;
-  background:transparent;
+  background: #ff99001a;
   text-decoration:none; 
   font-weight:400; 
   font-size:20px;
-  color: #ff9800;
-  border: 2px solid #ff9800;
+  color: #ff9900 !important;
+  border: 1px solid #ff9800;
+  line-height: normal; 
 }
 
 .rs22__btn:hover{
-  background-color: #ff9800;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+  background-color:#f903;
 }
 
 /* Card styles — gradient like your first request */
 .rs22-card{
+  display: flex;
   position: relative;
-  background: linear-gradient(to right, #fef3e2 0%, #fefaf5 50%, #ffffff 100%);
+  flex-direction: column;
+  background: radial-gradient(circle at 0%,#ff990014,#fff0);
   border: 1px solid #111111;
   border-radius: var(--radius);
   box-shadow: 0 2px 10px rgba(0,0,0,.05);
   padding: 30px;
 }
-.rs22-card__quote{ position:absolute; top:12px; left:16px; font-size:60px; font-weight: 500; line-height:1; color:#e0cdb4; }
-.rs22-card__subtitle{ margin:0 0 10px; font-weight:700; font-size:24px; font-weight: 300; padding-left:18px; }
-.rs22-card__text{ font-size:24px; font-weight: 300; line-height:1.55; padding-left:18px; color:#222; }
+.rs22-card__quote{ font-size:60px; font-weight: 500; line-height:1; }
+.rs22-card__subtitle{ margin:0 0 10px; font-weight:700; font-size:24px; font-weight: 300; }
+.rs22-card__text{ font-size:22px; font-weight: 300; line-height:1.55; color:#222; }
 .rs22-card__author{ margin-top:16px; font-weight:700; font-size:20px; font-weight: 600; color:#111111;  text-align: right; }
 
 /* Placement on desktop:
    - .rs22__left auto-fills top-left
    - .rs22-card--top auto-fills top-right
    - next two cards fill bottom-left and bottom-right (50/50) */
-@media (min-width: 992px){
+/* @media (min-width: 992px){
   .rs22-card--top{ grid-column: 2; grid-row: 1; }
   .rs22-card--bl{ grid-column: 1; grid-row: 2; }
   .rs22-card--br{ grid-column: 2; grid-row: 2; }
-}
+} */
 
 /* Mobile stack */
-@media (max-width: 991.98px){
-  .rs22-card{ padding: 20px; }
-  .rs22-card__subtitle{ font-size:16px; }
-  .rs22-card__text{ font-size:14px; }
-}
+/* @media (max-width: 991.98px){
+  .rs22-card{ padding: 100px 20px 20px; }
+  .rs22-card__subtitle{ font-size:16px; opacity: .8; }
+  .rs22-card__text{ font-size:14px; opacity: .8;}
+} */
 
 /* Dark Mode */
 body.dark-mode .rs22 {
-  background: #000 !important;
+  background: #111!important;
 }
 
 body.dark-mode .rs22-card {
@@ -106,12 +116,21 @@ body.dark-mode .rs22__btn {
 
 @media (max-width: 768px) {
   .rs22__title {
-    font-size: 38px;
-    color: #FCFBFB;
+    font-size: 44px;
+    line-height: 100%;
+    font-family: Stara, sans-serif !important;
   }
 
   .rs22__btn{
   font-weight:300; 
   font-size:14px !important;
 }
+.rs22-card__author {
+    font-size: 16px;
+}
  }
+@media (max-width: 480px) {
+  .rs22-card__text {
+    font-size: 14px; 
+  }
+}

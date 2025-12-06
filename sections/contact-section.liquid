@@ -1,7 +1,7 @@
 {{ 'contact-section.css' | asset_url | stylesheet_tag }}
 
-<div class="contact-section">
-  <div class="contact-container">
+<div class="contact-container page-width">
+  <div class="contact-section">
     {% if section.settings.title != blank %}
       <h2 class="contact-title">{{ section.settings.title }}</h2>
     {% endif %}

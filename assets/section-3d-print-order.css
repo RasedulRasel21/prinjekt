@@ -7,20 +7,18 @@
 }
 
 .print-order-container {
-  max-width: 1400px;
   margin: 0 auto;
 }
+
 
 .print-order-content {
   display: flex;
   align-items: center;
-  gap: 60px;
 }
 
 /* Left Side Styles */
 .print-order-left {
-  flex: 0 0 45%;
-  max-width: 550px;
+  flex: 1;
 }
 
 .print-order-title {
@@ -44,32 +42,24 @@
 }
 
 .print-order-button {
-  display: inline-block;
-  background-color: transparent;
-  color: #ff9800;
-  border: 2px solid #ff9800;
-  padding: 6px 12px !important;
-  font-size: 20px;
-  font-weight: 400;
-  text-decoration: none;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-family: "Myriad Pro", sans-serif !important;
+   align-self:flex-start;
+  display:inline-block;
+  padding: 10px 15px !important;
+  border-radius:10px;
+  background: #ff99001a;
+  text-decoration:none; 
+  font-weight:400; 
+  font-size:20px;
+  color: #ff9900 !important;
+  border: 1px solid #ff9800;
+  line-height: normal; 
 }
 
-.print-order-button:hover {
-  background-color: #ff9800;
-  color: #fff;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(255, 152, 0, 0.3);
+.print-order-button:hover, .dark-mode .print-order-button:hover {
+  background-color: #f903;
 }
 
 /* Right Side Styles */
-.print-order-right {
-  flex: 1;
-}
 
 .print-order-right-inner {
   display: flex;
@@ -138,11 +128,11 @@
 .print-order-image-wrapper {
   position: relative;
   flex: 1;
-  height: 450px;
+  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 400px;
+  width: 250px;
 }
 
 .print-order-image {
@@ -161,13 +151,13 @@
 }
 
 /* Responsive Styles */
-@media (max-width: 1200px) {
+@media (max-width: 1024px) {
   .print-order-content {
     gap: 40px;
   }
 
   .print-order-left {
-    flex: 0 0 42%;
+    flex: 1;
   }
 
   .print-order-title {
@@ -179,7 +169,7 @@
   }
 
   .print-order-image-wrapper {
-    min-width: 350px;
+    min-width: 200px;
     height: 400px;
   }
 }
@@ -194,7 +184,7 @@
   }
 
   .print-order-image-wrapper {
-    min-width: 300px;
+    min-width: 200px;
     height: 350px;
   }
 
@@ -210,7 +200,7 @@
 @media (max-width: 900px) {
   .print-order-content {
     flex-direction: column;
-    gap: 50px;
+    gap: 0px!important;
   }
 
   .print-order-left {
@@ -228,6 +218,7 @@
     flex-direction: column;
     width: 100%;
     gap: 30px;
+    display: none;
   }
 
   .print-order-image-wrapper {
@@ -247,7 +238,7 @@
 
 @media (max-width: 768px) {
   .print-order-section {
-    padding: 50px 20px;
+    padding: 40px 0px;
   }
 
   .print-order-title {
@@ -261,7 +252,7 @@
   }
 
   .print-order-image-wrapper {
-    height: 350px;
+    height: 200px;
   }
 
   .print-order-features {
@@ -294,18 +285,25 @@
 
 /* Dark Mode */
 body.dark-mode .print-order-section {
-  background: #000 !important;
+  background: #111 !important;
 }
 
 body.dark-mode .feature-item:hover {
-  background-color: #ff9800;
+  background-color: #ebebeb;
   transform: translateX(5px);
+  color: #111!important;
 }
 
 body.dark-mode .feature-item.active {
-  background-color: #ff9800;
-  color: #000;
-  border-color: #000;
+  background-color: #ebebeb;
+  color: #111;
+  border-color: #000!important;
+}
+body.dark-mode .feature-item:hover .feature-text, body.dark-mode .feature-item.active .feature-text {
+  color: #111!important;
+}
+body.dark-mode .feature-item:hover .feature-icon svg, body.dark-mode .feature-item.active .feature-icon svg {
+  stroke: #111; 
 }
 
 body.dark-mode .print-order-button {

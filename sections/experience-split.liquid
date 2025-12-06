@@ -6,26 +6,28 @@
 {{ 'section-experience-split.css' | asset_url | stylesheet_tag }}
 
 <section class="xp-section" style="">
-  <div class="xp-container{% if section.settings.use_page_width %} page-width{% endif %}" style="max-width: {{ section.settings.max_width }}px; padding-top: {{ section.settings.pt }}px; padding-bottom: {{ section.settings.pb }}px;">
+  <div class="xp-container page-width" style="padding-top: {{ section.settings.pt }}px; padding-bottom: {{ section.settings.pb }}px;">
     <div class="xp-grid">
       <!-- Left -->
-      <div class="xp-left">
-        {% if section.settings.left_heading != blank %}
-          <h3 class="xp-left-heading" style="color: {{ section.settings.text_color }};">
-            {{ section.settings.left_heading }}
-          </h3>
-        {% endif %}
-      </div>
+      <div class="xp-grid_left">
+        <div class="xp-left">
+          {% if section.settings.left_heading != blank %}
+            <h3 class="xp-left-heading" style="color: {{ section.settings.text_color }};">
+              {{ section.settings.left_heading }}
+            </h3>
+          {% endif %}
+        </div>
 
-      <!-- Middle -->
-      <div class="xp-middle">
-        <div class="xp-number-wrap" style="color: {{ section.settings.text_color }};">
-          {% if section.settings.middle_big != blank %}
-            <span class="xp-number">{{ section.settings.middle_big }}</span>
-          {% endif %}
-          {% if section.settings.middle_small != blank %}
-            <span class="xp-small">{{ section.settings.middle_small }}</span>
-          {% endif %}
+        <!-- Middle -->
+        <div class="xp-middle">
+          <div class="xp-number-wrap" style="color: {{ section.settings.text_color }};">
+            {% if section.settings.middle_big != blank %}
+              <span class="xp-number">{{ section.settings.middle_big }}</span>
+            {% endif %}
+            {% if section.settings.middle_small != blank %}
+              <span class="xp-small">{{ section.settings.middle_small }}</span>
+            {% endif %}
+          </div>
         </div>
       </div>
 

@@ -223,3 +223,9 @@ predictive-search[loading] .predictive-search__results-groups-wrapper ~ .predict
   object-fit: contain;
   font-family: 'object-fit: contain';
 }
+.dark-mode .search-modal__form button svg {
+  stroke: #111; 
+}
+.dark-mode #predictive-search-results *, .dark-mode #predictive-search-results .predictive-search__item-content p {
+  color: #111!important; 
+}

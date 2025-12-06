@@ -1,7 +1,7 @@
 {{ 'services-mosaic.css' | asset_url | stylesheet_tag }}
 
 <section class="services-mosaic">
-  <div class="services-container">
+  <div class="services-container page-width">
     {% if section.settings.heading != blank %}
       <h2 class="services-heading">{{ section.settings.heading }}</h2>
     {% endif %}
@@ -12,8 +12,30 @@
 
     <div class="mosaic-grid">
       {% for block in section.blocks %}
+      
+        {% comment %} {% calculate block position for col span %} {% endcomment %}
+        {% assign remainder = forloop.index | modulo: 9 %}
+        {%  assign beforelast = forloop.length | minus: 1 %}
+        {% if block.type == 'text_card' %}          
+          {% if forloop.index == beforelast or forloop.first %}
+            {% assign span_col_class_text_card = 'sm-col-span-4' %}
+          {% else %}
+            {% assign span_col_class_text_card = 'sm-col-span-3' %}
+          {% endif %}
+        {% elsif block.type == 'image_card' %}
+          {% if forloop.last  %}
+            {% assign span_col_class = 'sm-col-span-5' %}
+          {% elsif remainder == 3 or remainder != 3 and forloop.index > 2 %}
+            {% assign span_col_class = 'sm-col-span-3' %}
+          {% else %}
+            {% assign span_col_class = 'sm-col-span-2' %}
+          {% endif %}
+        {% endif %}
+        {% comment %}
+          end of calculation
+        {% endcomment %}
         {% if block.type == 'text_card' %}
-          <div class="mosaic-card mosaic-card-text" {{ block.shopify_attributes }}>
+          <div class="mosaic-card mosaic-card-text {{ span_col_class_text_card }}" {{ block.shopify_attributes }}>
             <div class="card-content">
               {% if block.settings.title != blank %}
                 <h3 class="card-title">{{ block.settings.title }}</h3>
@@ -24,21 +46,27 @@
             </div>
           </div>
         {% elsif block.type == 'image_card' %}
-          <div class="mosaic-card mosaic-card-image" {{ block.shopify_attributes }}>
-            {% if block.settings.image != blank %}
-              <img 
-                src="{{ block.settings.image | img_url: 'master' }}" 
-                alt="{{ block.settings.image.alt | escape }}"
-                loading="lazy"
-                class="card-image"
-              >
-            {% else %}
-              <div class="card-image-placeholder">
-                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
-              </div>
-            {% endif %}
-          </div>
-        {% endif %}
+            <div 
+              class="mosaic-card mosaic-card-image {% if block.settings.hide_mobile %}hide-mobile{% endif %} {% if remainder == 3 %}sm-row-span-2{% endif %} {{ span_col_class}}" 
+              {{ block.shopify_attributes }}
+            >
+              {% if block.settings.image != blank %}
+                <img 
+                  src="{{ block.settings.image | img_url: 'master' }}" 
+                  alt="{{ block.settings.image.alt | escape }}"
+                  width="{{ block.settings.image.width }}"
+                  height="{{ block.settings.image.height }}"
+                  loading="lazy"
+                  class="card-image"
+                >
+              {% else %}
+                <div class="card-image-placeholder">
+                  {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                </div>
+              {% endif %}
+            </div>
+          {% endif %}
+
       {% endfor %}
     </div>
   </div>
@@ -100,6 +128,12 @@
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "checkbox",
+          "id": "hide_mobile",
+          "label": "Hide on mobile",
+          "default": false
         }
       ]
     }

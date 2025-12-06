@@ -76,14 +76,14 @@
         <div class="card__content">
           <div class="card__information">
             <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
-              <a href="{{ article.url }}" class="full-unstyled-link">
+              <a href="{{ article.url }}" class="underline-links-hover">
                 {{ article.title | truncate: 50 | escape }}
               </a>
             </h3>
             <div class="article-card__info caption-with-letter-spacing h5">
-              {%- if show_date -%}
-                <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-              {%- endif -%}
+            {%- if show_date -%}
+              <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
+            {%- endif -%}
               {%- if show_author -%}
                 <span>{{ article.author }}</span>
               {%- endif -%}
@@ -115,14 +115,12 @@
       <div class="card__content">
         <div class="card__information">
           <h3 class="card__heading{% if show_excerpt %} h2{% endif %}">
-            <a href="{{ article.url }}" class="full-unstyled-link">
               {{ article.title | truncate: 50 | escape }}
-            </a>
           </h3>
           <div class="article-card__info caption-with-letter-spacing h5">
-            {%- if show_date -%}
+            {% comment %} {%- if show_date -%}
               <span class="circle-divider">{{ article.published_at | time_tag: format: 'date' }}</span>
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
             {%- if show_author -%}
               <span>{{ article.author }}</span>
             {%- endif -%}
@@ -142,6 +140,13 @@
                 <span>{{ 'blogs.article.comments' | t: count: article.comments_count }}</span>
               {%- endif -%}
             </div>
+          {%- endif -%}
+          
+          <a href="{{ article.url }}" class="article-button">
+          {{ "blogs.article.read_more_title" | t: title: title }}
+          </a>
+          {%- if show_date -%}
+              <span class="circle-divider">{{ article.published_at | date: "%d/%m/%Y" }}</span>
           {%- endif -%}
         </div>
         {%- if show_badge -%}

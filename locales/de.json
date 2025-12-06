@@ -92,7 +92,7 @@
   "blogs": {
     "article": {
       "blog": "Blog",
-      "read_more_title": "Weiterlesen: {{ title }}",
+      "read_more_title": "Weiterlesen",
       "comments": {
         "one": "{{ count }} Kommentar",
         "other": "{{ count }} Kommentare"

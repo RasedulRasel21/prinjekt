@@ -5,6 +5,47 @@
 
 {{ 'section-how-it-works.css' | asset_url | stylesheet_tag }}
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const cards = document.querySelectorAll(".howitworks__card");
+  cards.forEach((element) => {
+    element.addEventListener("mousemove", function (e) {
+      const rect = element.getBoundingClientRect();
+      const x = e.clientX - rect.left; 
+      const y = e.clientY - rect.top; 
+
+      const offsetX = (x / rect.width) * 2 - 1;
+      const offsetY = (y / rect.height) * 2 - 1;
+
+      // Map to rotation degrees
+      const rotateX = offsetY * 2; 
+      const rotateY = offsetX * 2;
+
+      element.style.transform = `
+    perspective(600px)
+      translate3d(0, 0, 0)
+      scale3d(1, 1, 1)
+      rotateX(${rotateX}deg)
+      rotateY(${rotateY}deg)
+
+  `;
+    });
+
+    element.addEventListener("mouseleave", function () {
+      element.style.transform = `
+      perspective(600px)
+      translate3d(0, 0, 0)
+      scale3d(1, 1, 1)
+      rotateX(0deg)
+      rotateY(0deg)
+
+    `;
+    });
+  });
+});
+
+</script>
+
 <section class="howitworks" id="howitworks-{{ section.id }}">
   <div class="howitworks__inner page-width">
     {% if section.settings.heading != blank %}

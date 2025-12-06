@@ -7,7 +7,7 @@ Right: 3 stacked full-width review cards (subtitle, description, author)
 {{ 'customer-reviews.css' | asset_url | stylesheet_tag }}
 
 <section id="reviews-{{ section.id }}" class="rs22">
-  <div class="rs22__container">
+  <div class="rs22__container page-width">
     <!-- TOP-LEFT: title + rating + button -->
     <div class="rs22__left">
       {% if section.settings.heading != blank %}
@@ -43,7 +43,9 @@ Right: 3 stacked full-width review cards (subtitle, description, author)
     <!-- TOP-RIGHT: Review #1 -->
     {% if top %}
       <article class="rs22-card rs22-card--top" {{ top.shopify_attributes }}>
-        <div class="rs22-card__quote" aria-hidden="true">“</div>
+        <div class="rs22-card__quote" aria-hidden="true"><svg width="65" height="65" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.5">
+  <path d="M14.9422 13.2328L13.6719 11.2797C4.88281 17.1875 0 24.3656 0 30.2734C0 35.9859 4.2 38.6719 7.76406 38.6719C12.2562 38.6719 15.4297 34.8625 15.4297 30.8594C15.4297 27.4906 13.2813 24.6094 10.4 23.5344C9.57031 23.2406 8.78906 22.9969 8.78906 21.5813C8.78906 19.775 10.1078 17.0906 14.9422 13.2328ZM34.3266 13.2328L33.0563 11.2797C24.3641 17.1875 19.3844 24.3656 19.3844 30.2734C19.3844 35.9859 23.6813 38.6719 27.2453 38.6719C31.7859 38.6719 35.0094 34.8625 35.0094 30.8594C35.0094 27.4906 32.8125 24.6094 29.8328 23.5344C29.0031 23.2406 28.2703 22.9969 28.2703 21.5813C28.2703 19.775 29.6375 17.0891 34.325 13.2313L34.3266 13.2328Z" fill="currentcolor"></path>
+</svg></div>
         {% if top.settings.subtitle != blank %}
           <h3 class="rs22-card__subtitle">{{ top.settings.subtitle }}</h3>
         {% endif %}
@@ -59,7 +61,9 @@ Right: 3 stacked full-width review cards (subtitle, description, author)
     <!-- BOTTOM: Review #2 and #3 (50% | 50%) -->
     {% for block in bottom %}
       <article class="rs22-card {% if forloop.index == 1 %}rs22-card--bl{% else %}rs22-card--br{% endif %}" {{ block.shopify_attributes }}>
-        <div class="rs22-card__quote" aria-hidden="true">“</div>
+        <div class="rs22-card__quote" aria-hidden="true"><svg width="65" height="65" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg" opacity="0.5">
+  <path d="M14.9422 13.2328L13.6719 11.2797C4.88281 17.1875 0 24.3656 0 30.2734C0 35.9859 4.2 38.6719 7.76406 38.6719C12.2562 38.6719 15.4297 34.8625 15.4297 30.8594C15.4297 27.4906 13.2813 24.6094 10.4 23.5344C9.57031 23.2406 8.78906 22.9969 8.78906 21.5813C8.78906 19.775 10.1078 17.0906 14.9422 13.2328ZM34.3266 13.2328L33.0563 11.2797C24.3641 17.1875 19.3844 24.3656 19.3844 30.2734C19.3844 35.9859 23.6813 38.6719 27.2453 38.6719C31.7859 38.6719 35.0094 34.8625 35.0094 30.8594C35.0094 27.4906 32.8125 24.6094 29.8328 23.5344C29.0031 23.2406 28.2703 22.9969 28.2703 21.5813C28.2703 19.775 29.6375 17.0891 34.325 13.2313L34.3266 13.2328Z" fill="currentcolor"></path>
+</svg></div>
         {% if block.settings.subtitle != blank %}
           <h3 class="rs22-card__subtitle">{{ block.settings.subtitle }}</h3>
         {% endif %}
@@ -90,7 +94,7 @@ Right: 3 stacked full-width review cards (subtitle, description, author)
       "name": "Review",
       "settings": [
         { "type": "text", "id": "subtitle", "label": "Subtitle", "default": "Perfekter Service und top Qualität!" },
-        { "type": "textarea", "id": "text", "label": "Description", "default": "Wir brauchten für unsere antike Kaffeemaschine einen speziellen Dichtring..." },
+        { "type": "richtext", "id": "text", "label": "Description"},
         { "type": "text", "id": "author", "label": "Author", "default": "Melina Witchen" }
       ]
     }
